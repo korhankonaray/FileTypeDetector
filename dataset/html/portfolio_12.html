@@ -1,0 +1,344 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>Klassio RSV</title> 
+	<meta id="extViewportMeta" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />	
+
+	<!-- Home screen icon  Mathias Bynens mathiasbynens.be/notes/touch-icons -->
+	<!-- For iPhone 4 with high-resolution Retina display: -->
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/icon.png">
+	<!-- For first-generation iPad: -->
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/icon.png">
+	<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+	<link rel="apple-touch-icon-precomposed" href="images/icon.png">
+	<!-- For nokia devices: -->
+	<link rel="shortcut icon" href="images/icon.png">
+
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.8.24.custom.css" />
+	<link rel="stylesheet" href="css/themes/default/RSVmain.min.css" />
+	<link rel="stylesheet" href="css/themes/default/jquery.mobile.structure-1.1.1.min.css" />
+	<link rel="stylesheet" href="css/flexslider.css">
+	<link rel="stylesheet" href="css/photoswipe.css">
+	<link rel="stylesheet" href="css/add2home.css">
+	
+	
+        <link rel="stylesheet/less" href="css/style.blue.css">
+
+	 <!-- fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600' rel='stylesheet' type='text/css'>
+	
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script src="js/jquery-ui-1.8.24.custom.min.js"></script>
+	
+	<script type="text/javascript" src="js/jquery.mobile-1.1.1.min.js"></script>
+        <script type="text/javascript" src="js/less-1.3.3.min.js"></script>
+        <!--<script type="text/javascript" src="js/jquery-ui-effects.js"></script>-->
+
+	<script src="js/helper.js"></script>
+	<script src="js/jquery.flexslider-min.js"></script>
+	<script src="js/iphone-style-checkboxes.js"></script>
+	<script src="js/klass.min.js"></script>
+	<script src="js/code.photoswipe.jquery-3.0.5.min.js"></script>
+	<script src="js/add2home.js"></script>
+	<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+        
+	<script type="text/javascript" src="js/app.js?v=30"></script>
+</head> 
+
+<body>
+	<!-- Splash screen -->
+  	 <div id="splash"> 
+	   <img id="splash-bg" src="images/splash/splash-alternate.png" alt="splash image"/>
+	   <img id="splash-title" src="images/splash/main.png" alt="splash title" />
+	 </div> 
+  <!-- end splash screen -->
+	<div id="menu">
+		<form action="search.html"><h3><input id="search" type="text" placeholder="Search" /> </h3></form>
+		<ul>
+			<li class="active"><a href="./" data-transition="pop" class="contentLink">Home</a></li>
+			<li><a href="company-profile.html" data-transition="pop" class="contentLink">Company Profile</a></li>
+			<li><a href="products-services.html"data-transition="pop" class="contentLink">Products &amp; Services</a></li>
+			<li><a href="portfolio.html" data-transition="pop" class="contentLink">Portfolio</a></li>
+			<li><a href="news-events.html" data-transition="pop" class="contentLink">News &amp; Events</a></li>
+			<li><a href="gallery.html" data-transition="pop" class="contentLink">Gallery</a></li>
+			<li><a href="typography.html" data-transition="pop" class="contentLink">Typography</a></li>
+			<li><a href="blog.html" data-transition="pop" class="contentLink">Wordpress Blog</a></li>
+			<li><a href="twitter.html" data-transition="slide" class="contentLink">Twitter Feeds</a></li>
+			<li><a href="video-channel.html" data-transition="pop" class="contentLink">Video Channel</a></li>
+			<li><a href="contact-us.html" data-transition="pop" class="contentLink">Contact Us</a></li>
+			<li><a href="about.html" data-transition="slide" class="contentLink">About</a></li>
+		</ul>
+	</div><div data-dom-cache="false" data-role="page" class="pages" id="home" data-theme="a">
+	<div data-role="header">
+            <div class="left">
+                <a href="#" class="showMenu menu-button"><img src="images/menu-button.png" width="40" /></a>
+            </div>
+            <h1><p class="no-margin">Portfolio</p><p class="no-margin">Klassio RSV</p></h1>
+            
+	</div>
+        <div class="header-shadow"></div>
+        <!-- /header -->
+    
+	<div data-role="content" data-theme="a" class="minus-shadow">
+		<div class="cherry-slider" style="height: 70px;">
+			<div anim="fade"anim-speed="400"anim-direction="right"anim-position-right="30"anim-position-top="5" class="anim-item"><img src="images/content/project-management.png" width="64" /></div>
+			<div anim="fade"anim-speed="300"anim-direction="left"anim-position-left="30"anim-position-top="25"  class="anim-item"><p class="little-padding white-bg gray-border">OUR&nbsp;RECENT&nbsp;WORKS</p></div>
+
+			<div anim="fade"anim-speed="1500" class="anim-item wait-item"></div>
+			<div anim-action="break"anim="fade"anim-speed="700" class="anim-item"></div>
+			
+			<div anim="fade"anim-speed="400"anim-direction="right"anim-position-left="30"anim-position-top="5" class="anim-item"><img src="images/content/software-development.png" width="64" /></div>
+			<div anim="fade"anim-speed="300"anim-direction="left"anim-position-right="30"anim-position-top="25"  class="anim-item"><p class="little-padding white-bg gray-border">MANY&nbsp;SUCCESS&nbsp;STORIES</p></div>
+			
+			<div anim="fade"anim-speed="1500" class="anim-item wait-item"></div>
+			<div anim-action="break"anim="fade"anim-speed="700" class="anim-item"></div>
+			
+			<div anim="slide"anim-speed="400"anim-direction="right"anim-position-left="30"anim-position-top="10" class="anim-item"><img src="images/content/software-development.png" width="55" /></div>
+			<div anim="slide"anim-speed="400"anim-direction="right"anim-position-left="100"anim-position-top="10" class="anim-item"><img src="images/content/project-management.png" width="55" /></div>
+			<div anim="slide"anim-speed="400"anim-direction="right"anim-position-left="170"anim-position-top="10" class="anim-item"><img src="images/content/cargo-logistics.png" width="55" /></div>
+			<div anim="slide"anim-speed="400"anim-direction="right"anim-position-left="240"anim-position-top="10" class="anim-item"><img src="images/content/interior-decoration.png" width="55" /></div>
+			
+			<div anim="drop"anim-speed="300"anim-direction="down"anim-position-left="30"anim-position-top="43"  class="anim-item"><p class="little-padding white-bg gray-border">CATERING&nbsp;QUALITY</p></div>
+			<div anim="drop"anim-speed="300"anim-direction="down"anim-position-right="30"anim-position-top="43"  class="anim-item"><p class="little-padding white-bg gray-border">IN&nbsp;VARIOUS&nbsp;SECTORS</p></div>
+			
+			<div anim="fade"anim-speed="2500" class="anim-item wait-item"></div>
+			<div anim-action="break"anim="fade"anim-speed="700" class="anim-item"></div>
+			<div anim-action="restart"anim="fade"anim-speed="700" class="anim-item wait-item"></div>
+		</div>
+
+		<div class="white-content-box" data-ajax="false">
+			<h2>Web Design</h2>
+			<ul class="shadow-inner-images round-inner-images gallery column-split flexible-column">
+				<li>
+					<a href="portfolio-detail.html" data-transition="slide" class="center little-padding">
+					    <img src="images/content/library.jpg" />
+					    <br/>
+					    <strong>Project One</strong>
+					    <br/>
+					    This is a brief description.
+					</a>
+				</li>
+				<li>
+					<a href="portfolio-detail.html" data-transition="slide" class="center little-padding">
+					    <img src="images/content/stair-case.jpg" />
+					    <br/>
+					    <strong>Project One</strong>
+					    <br/>
+					    This is a brief description.
+					</a>
+				</li>
+				<li>
+					<a href="portfolio-detail.html" data-transition="slide" class="center little-padding">
+					    <img src="images/content/library.jpg" />
+					    <br/>
+					    <strong>Project One</strong>
+					    <br/>
+					    This is a brief description.
+					</a>
+				</li>
+				<li>
+					<a href="portfolio-detail.html" data-transition="slide" class="center little-padding">
+					    <img src="images/content/stair-case.jpg" />
+					    <br/>
+					    <strong>Project One</strong>
+					    <br/>
+					    This is a brief description.
+					</a>
+				</li>
+				<li>
+					<a href="portfolio-detail.html" data-transition="slide" class="center little-padding">
+					    <img src="images/content/library.jpg" />
+					    <br/>
+					    <strong>Project One</strong>
+					    <br/>
+					    This is a brief description.
+					</a>
+				</li>
+				<li>
+					<a href="portfolio-detail.html" data-transition="slide" class="center little-padding">
+					    <img src="images/content/stair-case.jpg" />
+					    <br/>
+					    <strong>Project One</strong>
+					    <br/>
+					    This is a brief description.
+					</a>
+				</li>
+				<li>
+					<a href="portfolio-detail.html" data-transition="slide" class="center little-padding">
+					    <img src="images/content/library.jpg" />
+					    <br/>
+					    <strong>Project One</strong>
+					    <br/>
+					    This is a brief description.
+					</a>
+				</li>
+				<li>
+					<a href="portfolio-detail.html" data-transition="slide" class="center little-padding">
+					    <img src="images/content/stair-case.jpg" />
+					    <br/>
+					    <strong>Project One</strong>
+					    <br/>
+					    This is a brief description.
+					</a>
+				</li>
+				
+				
+			</ul>
+			<div class="clear"></div>
+		</div>
+
+		<img src="images/shadow.png" />
+		
+		<div class="white-content-box" data-ajax="false">
+			<h2>Logistics</h2>
+			<ul class="shadow-inner-images round-inner-images gallery column-split one-column">
+				<li>
+					<a href="portfolio-detail.html" data-transition="slide" class="center little-padding">
+					    <img src="images/content/library.jpg" />
+					    <br/>
+					    <strong>Project One</strong>
+					    
+					    
+					</a>
+				</li>
+				<li>
+					<a href="portfolio-detail.html" data-transition="slide" class="center little-padding">
+					    <img src="images/content/stair-case.jpg" />
+					    <br/>
+					    
+					    <strong>Project One</strong>
+					    
+					    
+					</a>
+				</li>
+				<li>
+					<a href="portfolio-detail.html" data-transition="slide" class="center little-padding">
+					    <img src="images/content/library.jpg" />
+					    <br/>
+					    
+					    <strong>Project One</strong>
+					    
+					    
+					</a>
+				</li>
+				<li>
+					<a href="portfolio-detail.html" data-transition="slide" class="center little-padding">
+					    <img src="images/content/stair-case.jpg" />
+					    <br/>
+					    
+					    <strong>Project One</strong>
+					    
+					    
+					</a>
+				</li>
+				<li>
+					<a href="portfolio-detail.html" data-transition="slide" class="center little-padding">
+					    <img src="images/content/library.jpg" />
+					    <br/>
+					    
+					    <strong>Project One</strong>
+					    
+					    
+					</a>
+				</li>
+				<li>
+					<a href="portfolio-detail.html" data-transition="slide" class="center little-padding">
+					    <img src="images/content/stair-case.jpg" />
+					    <br/>
+					    
+					    <strong>Project One</strong>
+					    
+					    
+					</a>
+				</li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+		
+		<img src="images/shadow.png" />
+		
+		<div class="white-content-box" data-ajax="false">
+			<h2>Project Management</h2>
+			<ul class="shadow-inner-images round-inner-images gallery column-split three-column">
+				<li>
+					<a href="portfolio-detail.html" data-transition="slide" class="center little-padding">
+					    <img src="images/content/library.jpg" />
+					    <br/>
+					    <strong>Project One</strong>
+					    
+					    
+					</a>
+				</li>
+				<li>
+					<a href="portfolio-detail.html" data-transition="slide" class="center little-padding">
+					    <img src="images/content/stair-case.jpg" />
+					    <br/>
+					    
+					    <strong>Project One</strong>
+					    
+					    
+					</a>
+				</li>
+				<li>
+					<a href="portfolio-detail.html" data-transition="slide" class="center little-padding">
+					    <img src="images/content/library.jpg" />
+					    <br/>
+					    
+					    <strong>Project One</strong>
+					    
+					    
+					</a>
+				</li>
+				<li>
+					<a href="portfolio-detail.html" data-transition="slide" class="center little-padding">
+					    <img src="images/content/stair-case.jpg" />
+					    <br/>
+					    
+					    <strong>Project One</strong>
+					    
+					    
+					</a>
+				</li>
+				<li>
+					<a href="portfolio-detail.html" data-transition="slide" class="center little-padding">
+					    <img src="images/content/library.jpg" />
+					    <br/>
+					    
+					    <strong>Project One</strong>
+					    
+					    
+					</a>
+				</li>
+				<li>
+					<a href="portfolio-detail.html" data-transition="slide" class="center little-padding">
+					    <img src="images/content/stair-case.jpg" />
+					    <br/>
+					    
+					    <strong>Project One</strong>
+					    
+					    
+					</a>
+				</li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+		<img src="images/shadow.png" />
+
+
+
+	</div><!-- /content -->
+        
+        <div class="bread-crumb">
+            <ul>
+                <li><a data-transition="pop" href="index.html"><img src="images/bc-home.png" width="16" /></a></li>
+                <li><span>Portfolio</span></li>
+            </ul>
+        </div>
+        <div data-role="footer"><p>&copy; Klassio RSV. All Rights Reserved. <span><a class="scroll-to-top"><img src="images/top.png" width="32"/></a></span></p></div>
+</div><!-- /page -->
+</body>
+</html>

@@ -1,0 +1,471 @@
+/* fonts import */
+@import url(http://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here);
+
+
+@import url(http://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Condensed);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans|Oswald);
+
+
+
+/* headings */
+h3{
+	_border-left: 5px solid #009fcb;
+}
+
+h3,h4,h5,h6 {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 400;
+}   
+p{
+	font-family: 'PT Sans', serif;
+}
+body{
+}
+/* hover effects 
+	and object oriented classes
+*/
+	.button_hl{
+		-webkit-transition: .45s  ease;
+		-moz-transition: .45s ease;
+		-o-transition: .45s ease;
+		transition: .45s ease;
+	}
+
+
+		.button_hl:hover{
+			box-shadow: 0 0 20px rgba(255,255,255,1);
+			-webkit-transition: .1s  ease;
+			-moz-transition: .1s ease;
+			-o-transition: .1s ease;
+			transition: .1s ease;	
+		}
+		
+	/* image alignment */
+	.img_align{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	/* features animation */
+	.feature_an{
+		position: relative;
+		-webkit-transition: .45s  ease;
+		-moz-transition: .45s ease;
+		-o-transition: .45s ease;
+		transition: .45s ease;
+	}
+		.feature_an:hover{
+			top: -5px;
+
+			-webkit-transition: .1s  ease;
+			-moz-transition: .1s ease;
+			-o-transition: .1s ease;
+			transition: .1s ease;
+
+		}
+
+/* scroll to top button styling */
+.scroll_me{
+	display: none;
+	position: fixed;
+	bottom: 60px;
+	right: 20px;
+	width: 50px;
+	height: 50px;
+	background-color: rgba(0,0,0,0.3);
+
+	cursor: pointer;
+	border-radius: 10px;
+	border: 1px solid rgba(255,255,255,0.2);
+}
+
+	.scroll_me span{
+		position: relative;
+		left:15px;
+		top: 3px;
+		width: 0; 
+		height: 0; 
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		
+		border-bottom: 10px solid rgba(255,255,255,0.8);
+	}
+
+
+/* header */
+.header_bg{
+	background-color: #009fcb;
+}
+
+.logo{
+	color: white;
+	font-size: 39px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.6);
+
+	_height: 30px;
+}
+.logo p{
+	font-family: 'Just Me Again Down Here', cursive;
+}
+
+.logo span{
+	font-family: 'Helvetica', arial, sans-serif;
+	font-size: 14px;
+}
+
+.call_us{
+	float: right;
+	padding-top: 8px;
+	font-size: 11px;
+}
+
+/* slider */
+.slider_bg{
+	background:url(../img/slider_bg.png) center top repeat-x;
+	
+	_height: 721px;
+	_height: 121px;
+
+	color:white;
+
+	padding-top: 20px;
+}
+
+.slider_overflow_bg{
+	background-color: #009fcb;
+}
+
+
+.slider_bg h1,h2,h3,h4,h5,h6{
+	color: white;
+}
+.slider_bg section h1{
+	margin-top: 40%;
+
+	text-align: center;
+	padding: 0px 30px;
+	font-size: 39px;
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.6);
+}
+.description{
+	margin-top: 40px;
+}
+
+.store_btns{
+	margin-top: 32px;
+}
+.slider_bg section p{
+	line-height: 24px;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-align: center;
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.6);
+}
+
+
+
+.iphone img{
+	margin-left: auto;
+	margin-right: auto;
+	display:block;
+}
+
+.btn_store{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+	border-radius: 5px;
+	box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+
+}
+
+
+/* quotes */
+.quotes{
+	font-size: 21px;
+	font-style: italic;
+	font-family: Georgia;
+	text-align: center;
+
+	padding-top: 30px;
+	padding-bottom: 20px;
+
+}
+.quotes p{
+	_display: inline-block;
+	_padding-right: 10px;
+}
+
+blockquote{
+	border-left: 0px;
+}
+
+#nav2{
+	display: none;
+}
+
+/* body */
+.body_triangle{
+	background: url(../img/body_triangle.png) no-repeat center top;
+
+	line-height: 24px;
+
+	_padding-bottom: 20px;
+	padding-top: 30px;
+
+
+}
+
+.body_triangle img{
+	margin-top: 0px;
+	margin-bottom: 40px;
+}
+
+.body_triangle h1,
+.body_triangle h2,
+.body_triangle h3,
+.body_triangle h4,
+.body_triangle h5,
+.body_triangle h6
+{
+	color:#444;
+	margin-top:20px;
+	margin-bottom:20px;
+
+	text-align: center;
+}
+
+.extra_space{
+	margin-top: 20px !important;
+}
+/* big quote */
+.big_quote{
+	text-align: center;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 400;
+
+}
+
+/* first sliding testimonials */
+.flexslider2{
+	display: none;
+}
+.flexslider2 .flex-control-nav{
+	display: none;
+}
+.flexslider2 .flex-direction-nav{
+	display: none;
+}
+/* slider styling */
+
+.flexslider img{
+	margin: 0;
+}
+
+.flex-control-nav li a{
+	background-color: rgba(0,180,230,0.2);
+}
+.flex-control-nav .flex-active{
+	background-color: #009fcb !important;
+}
+/* blog posts styling */
+.blog_h3 h3{
+	margin-top: 0px;
+}
+.blog_header{
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+	font-weight: 500;
+	text-align: right !important;
+	line-height: 24px;
+	position: relative;
+	top:-1px;
+}
+.blog_date{
+	text-align: right;
+	font-size: 10px;
+}
+
+/* partners */
+.logos{
+	margin-bottom: 0px;
+}
+
+/* footer */
+.footer_bg{
+	background:url(../img/footer.jpg) center top repeat-x;
+
+	padding-top:20px;
+}
+
+.footer_bg_tile{
+	background: url(../img/footer_tile.jpg);
+}
+
+footer h1,
+footer h2,
+footer h3,
+footer h4, 
+footer h5, 
+footer h6{
+	color:#eee;
+	text-align: center;
+
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+footer h4{
+	color:#eee;
+	font-weight: 300;
+}
+footer p{
+	line-height: 24px;
+	color: #ccc;
+	font-weight: 200;
+}
+
+footer{
+	text-shadow:0 1px 0px rgba(0,0,0,1);
+}
+
+
+/* twitter styling */
+#twitter_update_list li{
+	font-family: 'PT Sans', serif;
+	color:#ccc;
+	font-weight: 200;
+	list-style: none;
+	padding-bottom: 26px;
+	margin-left: -24px;
+	line-height: 24px;
+}
+#twitter_update_list li span a{
+	font-size: 12px;
+	color: #009fcb;
+	font-weight: 300;
+}
+
+#twitter_update_list li a{
+	color: #999;
+}
+
+#appendedInputButton{
+	_background:url(../img/footer_bg.jpg);
+	background: rgba(255,255,255,0.04);
+	border:1px solid #444;
+	border-top: 1px solid #444;
+	border-bottom: 1px solid #666;
+
+	color:#aaa;
+}
+
+.transparent{
+	padding-top:16px;
+	padding-bottom: 0;
+	background-color: rgba(0,0,0,0.15);
+}
+/* fotter left copyright */
+.footer_bg p{
+	padding-top: 2px;
+}
+
+/* social icons */
+
+.social img{
+	position:relative;
+	top: -2px;
+
+	opacity: 0.7;
+	_margin-top: 15px;
+	margin-left: 15px;
+	margin-bottom: 10px;
+	float: right;
+
+}
+	.social img:hover{
+		opacity: 1;
+		-webkit-transition: .1s ease;
+		-moz-transition: .1s ease;
+		-o-transition: .1s ease;
+		transition: .1s ease;
+	}
+
+
+
+/* responsive changes */
+
+@media (max-width: 767px) {
+
+	.slider_bg section h1{
+		margin-top: 10px;
+	}
+
+	.description{
+		margin-top: 20px;
+	}
+
+	.flex-prev,.flex-next{
+		opacity: 0 !important;
+	}
+/*
+	.logo{
+		font-family: 'Just Me Again Down Here', cursive;
+		color: white;
+		font-size: 39px;
+		padding-top: 15px;
+		padding-bottom: 0px;
+		text-shadow: 0px 1px 1px rgba(0,0,0,0.6);
+
+		height: 0px;
+	}
+
+	.social img{
+
+		opacity: 0.7;
+		margin-top: 0px;
+		margin-left: 10px;
+		margin-bottom: 10px;
+		float: right;
+	}
+	*/
+
+	
+}
+
+@media (max-width: 480px) {
+
+	.slider_bg section h1{
+		margin-top: 5px;
+	}
+
+	.description{
+		margin-top: 20px;
+	}
+/*
+	.logo{
+		font-family: 'Just Me Again Down Here', cursive;
+		color: white;
+		font-size: 39px;
+		padding-top: 15px;
+		padding-bottom: 40px;
+		text-shadow: 0px 1px 1px rgba(0,0,0,0.6);
+	}
+
+	.social img{
+		display: none;
+
+		opacity: 0.7;
+		margin-top: 5px;
+		margin-left: 2px;
+		margin-bottom: 10px;
+		float: right;
+	}
+	*/
+	
+
+
+}

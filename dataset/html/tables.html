@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Tables | Archon Admin Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Loading Bootstrap -->
+	<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+	<!-- Loading Stylesheets -->    
+	<link href="css/demo.css" rel="stylesheet">
+	<link href="css/archon.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+
+	<!-- Loading Custom Stylesheets -->    
+	<link href="css/custom.css" rel="stylesheet">
+
+	<link rel="shortcut icon" href="images/favicon.ico">
+
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="frame">
+		<div class="sidebar">
+			<div class="wrapper">
+
+				<!-- Replace the src of the image with your logo -->
+				<a href="index.html" class="logo"><img src="images/logo.png" alt="Archon Admin" /></a>
+				<ul class="nav  nav-list">
+
+					<!-- sidebar input search box -->
+					<li class="nav-search">
+						<div class="form-group">
+							<input type="text" class="form-control nav-search" placeholder="Search through site" />
+							<span class="input-icon fui-search"></span>
+						</div>
+					</li>
+
+					<!-- Sidebar header @add class nav-header for sidebar header -->
+					<li class="nav-header">Overview</li>
+					<li><a href="index.html"><i class="fa fa-dashboard"></i>Dashboard </a></li>
+					<li>
+						<a class="dropdown" href="#"><i class="fa fa-tint"></i> UI Features <span class="label">11</span></a>
+						<ul>
+							<li><a href="buttons.html"><i class="fa fa-bullhorn"></i> Buttons &amp; Notifications</a></li>
+							<li><a href="alerts.html"><i class="fa fa-bell"></i> Alerts</a></li>
+							<li><a href="progressbars.html"><i class="fa fa-rub"></i> Progress Bars</a></li>
+							<li><a href="labelsbadges.html"><i class="fa fa-bullseye"></i> Labels &amp; Badges </a></li>
+							<li><a href="breadcrumbs.html"><i class="fa fa-ellipsis-horizontal"></i>Breadcrumbs</a></li>
+							<li><a href="pagination.html"><i class="fa fa-sort-amount-asc"></i> Pagination</a></li>
+							<li><a href="sliders.html"><i class="fa fa-minus"></i> Sliders</a></li>
+							<li><a href="nestable.html"><i class="fa fa-list"></i> Nestable</a></li>
+							<li><a href="utilities.html"><i class="fa fa-tag"></i> Utilities</a></li>
+							<li><a href="image-crop.html"><i class="fa fa-crop"></i> Image Crop</a></li>
+							<li><a href="file-manager.html"><i class="fa fa-file"></i> File Manager</a></li>
+						</ul>	
+					</li>
+					<li><a href="widgets.html"><i class="fa fa-group"></i>Widgets</a></li>
+
+					<!-- Sidebar header @add class nav-header for sidebar header -->
+					<li class="nav-header">Pages</li>
+					<li><a href="template.html"><i class="fa fa-list-alt"></i>Template Page</a></li>
+					<li><a href="faq.html"><i class="fa fa-pagelines"></i>FAQ</a></li>
+					<li><a href="invoice.html"><i class="fa fa-money"></i>Invoice</a></li>
+					<li><a href="timeline.html"><i class="fa fa-clock-o"></i>Timeline</a></li>
+					<li><a href="calendar.html"><i class="fa fa-calendar"></i>Calendar</a></li>
+					<li><a href="gallery.html"><i class="fa fa-picture-o"></i>Gallery</a></li>
+					<li><a href="mail.html"><i class="fa fa-envelope"></i>Mail</a></li>
+					<li class="frontend"><a href="frontend/index.html"><i class="fa fa-building"></i>Front End<span class="label">14</span></a></li>
+					<li class="frontend"><a href="frontend/index-v2.html"><i class="fa fa-building"></i>Front End Single Page</a></li>
+					<li> <!-- Example for second level menu -->
+						<a class="dropdown" href="#"><i class="fa fa-user"></i> Profile <span class="label">2</span></a>
+						<ul>
+							<li><a href="profile.html"><i class="fa fa-user"></i> Model One</a></li>
+							<li><a href="profileTwo.html"><i class="fa fa-user"></i> Model Two</a></li>
+						</ul>	
+					</li>
+					<li> <!-- Example for Third level menu -->
+						<a class="dropdown" href="#"><i class="fa fa-sitemap"></i> 3 Level menu <span class="label">3</span></a>
+						<ul>
+							<li><a href="#"><i class="fa fa-hdd"></i> Submenu </a></li>
+							<li><a href="#"><i class="fa fa-coffee"></i>Submenu </a></li>
+							<li>
+								<a class="dropdown" href="#"><i class="fa fa-sitemap"></i> One More <span class="label">3</span></a>
+								<ul>
+									<li><a href="#"><i class="fa fa-hdd"></i> Submenu </a></li>
+									<li><a href="#"><i class="fa fa-coffee"></i>Submenu </a></li>
+									<li>
+										<a class="dropdown" href="#"><i class="fa fa-sitemap"></i> More here <span class="label">3</span></a>
+										<ul>
+											<li><a href="#"><i class="fa fa-hdd"></i> Submenu </a></li>
+											<li><a href="#"><i class="fa fa-coffee"></i>Submenu</a></li>
+											<li><a href="#"><i class="fa fa-crop"></i> One More</a></li>
+										</ul>	
+									</li>
+								</ul>	
+							</li>
+						</ul>	
+					</li>
+
+
+					<!-- Sidebar header @add class nav-header for sidebar header -->
+					<li class="nav-header">Components</li>
+					<li>
+						<a class="dropdown" href="#"><i class="fa fa-table"></i>Tables <span class="label">3</span></a>
+						<ul>
+							<li class="active"><a href="tables.html"><i class="fa fa-table"></i> Basic Tables </a></li>
+							<li><a href="dynamic-tables.html"><i class="fa fa-table"></i> Dynamic Tables </a></li>
+							<li><a href="editing-tables.html"><i class="fa fa-table"></i> Editable Tables </a></li>
+						</ul>
+					</li>
+					<li><a href="grid.html"><i class="fa fa-th-large"></i>Grid</a></li>
+					<li><a href="panels.html"><i class="fa fa-windows"></i>Panels</a></li>
+					<li><a href="wells.html"><i class="fa fa-square-o"></i>Wells</a></li>
+					<li> <!-- Example for second level menu -->
+						<a class="dropdown" href="#"><i class="fa fa-bar-chart-o"></i> Charts <span class="label">4</span></a>
+						<ul>
+							<li><a href="morris.html"><i class="fa fa-bar-chart-o"></i> Morris</a></li>
+							<li><a href="nvd.html"><i class="fa fa-hdd"></i> NVD</a></li>
+							<li><a href="flot.html"><i class="fa fa-bolt"></i>Flot</a></li>
+							<li><a href="knobs.html"><i class="fa fa-dot-circle-o"></i>Knobs</a></li>
+						</ul>	
+					</li>
+					<li><a href="typography.html"><i class="fa fa-text-width"></i>Typography</a></li>
+					<li>
+						<a class="dropdown" href="forms.html"><i class="fa fa-list-alt"></i>Forms  <span class="label">8</span></a>
+						<ul>
+							<li><a href="form-elements.html"><i class="fa  fa-tasks"></i> Form Elements</a></li>
+							<li><a href="forms.html"><i class="fa fa-indent"></i>Forms</a></li>
+							<li><a href="inputgroups.html"><i class="fa fa-group"></i> Input Groups</a></li>
+							<li><a href="form-editor.html"><i class="fa fa-code"></i>Wysiwyg & Markdown</a></li>
+							<li><a href="form-wizard.html"><i class="fa fa-coffee"></i>Form wizard</a></li>
+							<li><a href="file-uploads.html"><i class="fa fa-file"></i>Dropzone & File Upload</a></li>
+							<li><a href="multiple-file-upload.html"><i class="fa fa-copy"></i>Multiple File Upload</a></li>
+							<li><a href="input-masks.html"><i class="fa fa-list-alt"></i>Input Masks</a></li>
+						</ul>	
+					</li>
+					<li><a href="icons.html"><i class="fa fa-truck"></i>Icons</a></li>
+				</ul>
+
+			</div><!-- /Wrapper -->
+		</div><!-- /Sidebar -->
+
+		<!-- Main content starts here-->
+		<div class="content">
+			<div class="navbar">
+				<a href="#" onclick="return false;" class="btn pull-left toggle-sidebar "><i class="fa fa-list"></i></a>
+				<a class="navbar-brand" href="index.html">Archon</a>
+
+				<!-- Top right user menu -->
+				<ul class="nav navbar-nav user-menu pull-right">
+					<!-- First nav user item -->
+					<li class="dropdown hidden-xs">
+						<a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i></a>
+						<ul class="dropdown-menu right inbox">
+							<li class="dropdown-menu-title">
+								INBOX <span>(25)</span>
+							</li>
+							<li>
+								<img src="images/theme/avatarTwo.png" alt="" class="avatar">
+								<div class="message">
+									<span class="username">Anusha</span> 
+									<span class="mini-details">(6) <i class="fa fa-paper-clip"></i></span>
+									<span class="time pull-right"> 06:58 PM</span>
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ... </p>
+								</div>
+							</li>
+							<li>
+								<img src="images/theme/avatarFive.png" alt="" class="avatar">
+								<div class="message">
+									<span class="username">Veeru</span> 
+									<span class="mini-details">(2) <i class="fa fa-paper-clip"></i></span>
+									<span class="time pull-right"> 09:58 AM</span>
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ... </p>
+								</div>
+							</li>
+							<li>
+								<img src="images/theme/avatarSix.png" alt="" class="avatar">
+								<div class="message">
+									<span class="username">Nag</span> 
+									<span class="mini-details">(6) <i class="fa fa-paper-clip"></i></span>
+									<span class="time pull-right">Yesterday</span>
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ... </p>
+								</div>
+							</li>
+							<li>
+								<img src="images/theme/avatarSeven.png" alt="" class="avatar">
+								<div class="message">
+									<span class="username">Harish</span> 
+									<span class="mini-details"> <i class="fa fa-picture-o"></i></span>
+									<span class="time pull-right">14/12/2013</span>
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ... </p>
+								</div>
+							</li>
+							<li class="dropdown-menu-footer">
+								<a href="#">View All Messages</a>
+							</li>
+						</ul>
+					</li><!-- /dropdown -->
+
+					<!-- Second nav user item -->
+					<li class="dropdown hidden-xs">
+						<a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i></a>
+						<ul class="dropdown-menu right notifications">
+							<li class="dropdown-menu-title">
+								Notifications
+							</li>
+							<li>
+								<i class="fa fa-cog avatar text-success"></i>
+								<div class="message">
+									<span class="username text-success">New settings activated</span> 
+									<span class="time pull-right"> 06:58 PM</span>
+								</div>
+							</li>
+							<li>
+								<i class="fa fa-shopping-cart avatar text-danger"></i>
+								<div class="message">
+									<span class="username text-danger">You have 2 returns</span> 
+									<span class="time pull-right"> 04:29 PM</span>
+								</div>
+							</li>
+							<li>
+								<i class="fa fa-user avatar text-success"></i>
+								<div class="message">
+									<span class="username text-success">New User registered</span> 
+									<span class="time pull-right"> Yesterday</span>
+								</div>
+							</li>
+							<li>
+								<i class="fa fa-comment avatar text-info"></i>
+								<div class="message">
+									<span class="username text-info">New Comment received</span> 
+									<span class="time pull-right"> Yesterday</span>
+								</div>
+							</li>
+							<li>
+								<i class="fa fa-cog avatar text-warning"></i>
+								<div class="message">
+									<span class="username text-warning">User deleted</span> 
+									<span class="time pull-right"> 2 days ago</span>
+								</div>
+							</li>
+							<li>
+								<i class="fa fa-dollar avatar"></i>
+								<div class="message">
+									<span class="username">Earned 200 points</span> 
+									<span class="time pull-right">3 days ago</span>
+								</div>
+							</li>
+							<li>
+								<i class="fa fa-hdd avatar text-danger"></i>
+								<div class="message">
+									<span class="username text-danger">Memory size exceeded </span> 
+									<span class="time pull-right"> 1 week ago</span>
+								</div>
+							</li>
+
+							<li class="dropdown-menu-footer">
+								<a href="#">View All Notifications</a>
+							</li>
+						</ul>
+					</li><!-- / dropdown -->
+
+					<li class="dropdown user-name">
+						<a class="dropdown-toggle" data-toggle="dropdown"><img src="images/theme/avatarSeven.png" class="user-avatar" alt="" />Vijay Kumar</a>
+							<ul class="dropdown-menu right inbox user">
+								<li class="user-avatar">
+									<img src="images/theme/avatarSeven.png" class="user-avatar" alt="" />
+									Vijay Kumar
+								</li>
+							<li>
+								<i class="fa fa-user avatar"></i>
+								<div class="message">
+									<span class="username"><a href="profile.html">Profile</a></span> 
+								</div>
+							</li>
+							<li>
+								<i class="fa fa-cogs avatar"></i>
+								<div class="message">
+									<span class="username">Settings </span> 
+								</div>
+							</li>
+							<li>
+								<i class="fa fa-book avatar"></i>
+								<div class="message">
+									<span class="username">Help </span> 
+								</div>
+							</li>
+							<li><a href="#">Logout</a></li>
+						</ul>
+					</li><!-- / dropdown -->				
+				</ul><!-- / Top right user menu -->
+
+			</div><!-- / Navbar-->
+
+			<div id="main-content">
+				<div class="row">
+					<div class="col-mod-12">
+						<ul class="breadcrumb">
+							<li><a href="index.html">Dashboard</a></li>
+							<li><a href="#">Tables</a></li>
+							<li><a href="tables.html">Basic Tables</a></li>
+							<li class="active">Bread Crumb</li>
+						</ul>
+					</div>
+				</div>
+				<h3 class="page-header">Basic Tables</h3>
+				<!-- Users widget -->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="panel panel-users">
+							<div class="panel-heading">
+								<h3 class="panel-title">Users Widget
+									<span class="pull-right">
+										<a  href="#" class="panel-minimize"><i class="fa fa-chevron-up"></i></a>
+										<a  href="#"  class="panel-settings"><i class="fa fa-cog"></i></a>
+										<a  href="#"  class="panel-close"><i class="fa fa-times"></i></a>
+									</span>
+								</h3>
+							</div>
+							<div class="panel-body">
+								<table class="table users-table table-condensed table-hover " >
+									<thead>
+										<tr>
+											<th  class="visible-lg">#</th>
+											<th >Avatar</th>
+											<th  class="visible-lg">First Name</th>
+											<th class="visible-lg">Last Name</th>
+											<th class="visible-lg">Email</th>
+											<th>Username</th>
+											<th>&nbsp;</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="visible-lg">1</td>
+											<td><img src="images/theme/avatarOne.png" alt="" class="avatar"></td>
+											<td class="visible-lg">John </td>
+											<td class="visible-lg">Deo</td>
+											<td class="visible-lg">johndeo@example.com</td>
+											<td>@johndeo</td>
+											<td>
+												<button type="button" class="btn btn-success"><i class="fa fa-envelope"></i></button>
+												<button type="button" class="btn btn-info"><i class="fa fa-eye"></i></button>
+												<button type="button" class="btn btn-warning"><i class="fa fa-edit"></i></button>
+											</td>
+										</tr>
+										<tr>
+											<td class="visible-lg">2</td>
+											<td><img src="images/theme/avatarTwo.png" alt="" class="avatar"></td>
+											<td  class="visible-lg">Jane </td>
+											<td class="visible-lg">Doe</td>
+											<td class="visible-lg">johndeo@example.com</td>
+											<td>@johndeo</td>
+											<td>
+												<button type="button" class="btn btn-success"><i class="fa fa-envelope"></i></button>
+												<button type="button" class="btn btn-info"><i class="fa fa-eye"></i></button>
+												<button type="button" class="btn btn-warning"><i class="fa fa-edit"></i></button>
+											</td>
+										</tr>
+										<tr>
+											<td class="visible-lg">3</td>
+											<td><img src="images/theme/avatarThree.png" alt="" class="avatar"></td>
+											<td  class="visible-lg">Jump </td>
+											<td class="visible-lg">Deo</td>
+											<td class="visible-lg">johndeo@example.com</td>
+											<td>@johndeo</td>
+											<td>
+												<button type="button" class="btn btn-success"><i class="fa fa-envelope"></i></button>
+												<button type="button" class="btn btn-info"><i class="fa fa-eye"></i></button>
+												<button type="button" class="btn btn-warning"><i class="fa fa-edit"></i></button>
+											</td>
+										</tr>
+										<tr>
+											<td  class="visible-lg">4</td>
+											<td><img src="images/theme/avatarFour.png" alt="" class="avatar"></td>
+											<td  class="visible-lg">Jump </td>
+											<td class="visible-lg">Doe</td>
+											<td class="visible-lg">johndeo@example.com</td>
+											<td>@johndeo</td>
+											<td>
+												<button type="button" class="btn btn-success"><i class="fa fa-envelope"></i></button>
+												<button type="button" class="btn btn-info"><i class="fa fa-eye"></i></button>
+												<button type="button" class="btn btn-warning"><i class="fa fa-edit"></i></button>
+											</td>
+										</tr>
+										<tr>
+											<td class="visible-lg">5</td>
+											<td><img src="images/theme/avatarOne.png" alt="" class="avatar"></td>
+											<td class="visible-lg">John </td>
+											<td class="visible-lg">Deo</td>
+											<td class="visible-lg">johndeo@example.com</td>
+											<td>@johndeo</td>
+											<td>
+												<button type="button" class="btn btn-success"><i class="fa fa-envelope"></i></button>
+												<button type="button" class="btn btn-info"><i class="fa fa-eye"></i></button>
+												<button type="button" class="btn btn-warning"><i class="fa fa-edit"></i></button>
+											</td>
+										</tr>
+										<tr>
+											<td class="visible-lg">6</td>
+											<td><img src="images/theme/avatarTwo.png" alt="" class="avatar"></td>
+											<td  class="visible-lg">Jane </td>
+											<td class="visible-lg">Doe</td>
+											<td class="visible-lg">johndeo@example.com</td>
+											<td>@johndeo</td>
+											<td>
+												<button type="button" class="btn btn-success"><i class="fa fa-envelope"></i></button>
+												<button type="button" class="btn btn-info"><i class="fa fa-eye"></i></button>
+												<button type="button" class="btn btn-warning"><i class="fa fa-edit"></i></button>
+											</td>
+										</tr>
+										<tr>
+											<td class="visible-lg">7</td>
+											<td><img src="images/theme/avatarThree.png" alt="" class="avatar"></td>
+											<td  class="visible-lg">Jump </td>
+											<td class="visible-lg">Deo</td>
+											<td class="visible-lg">johndeo@example.com</td>
+											<td>@johndeo</td>
+											<td>
+												<button type="button" class="btn btn-success"><i class="fa fa-envelope"></i></button>
+												<button type="button" class="btn btn-info"><i class="fa fa-eye"></i></button>
+												<button type="button" class="btn btn-warning"><i class="fa fa-edit"></i></button>
+											</td>
+										</tr>
+										<tr>
+											<td  class="visible-lg">8</td>
+											<td><img src="images/theme/avatarFour.png" alt="" class="avatar"></td>
+											<td  class="visible-lg">Jump </td>
+											<td class="visible-lg">Doe</td>
+											<td class="visible-lg">johndeo@example.com</td>
+											<td>@johndeo</td>
+											<td>
+												<button type="button" class="btn btn-success"><i class="fa fa-envelope"></i></button>
+												<button type="button" class="btn btn-info"><i class="fa fa-eye"></i></button>
+												<button type="button" class="btn btn-warning"><i class="fa fa-edit"></i></button>
+											</td>
+										</tr>
+										<tr>
+											<td class="visible-lg">9</td>
+											<td><img src="images/theme/avatarOne.png" alt="" class="avatar"></td>
+											<td class="visible-lg">John </td>
+											<td class="visible-lg">Deo</td>
+											<td class="visible-lg">johndeo@example.com</td>
+											<td>@johndeo</td>
+											<td>
+												<button type="button" class="btn btn-success"><i class="fa fa-envelope"></i></button>
+												<button type="button" class="btn btn-info"><i class="fa fa-eye"></i></button>
+												<button type="button" class="btn btn-warning"><i class="fa fa-edit"></i></button>
+											</td>
+										</tr>
+										<tr>
+											<td class="visible-lg">10</td>
+											<td><img src="images/theme/avatarTwo.png" alt="" class="avatar"></td>
+											<td  class="visible-lg">Jane </td>
+											<td class="visible-lg">Doe</td>
+											<td class="visible-lg">johndeo@example.com</td>
+											<td>@johndeo</td>
+											<td>
+												<button type="button" class="btn btn-success"><i class="fa fa-envelope"></i></button>
+												<button type="button" class="btn btn-info"><i class="fa fa-eye"></i></button>
+												<button type="button" class="btn btn-warning"><i class="fa fa-edit"></i></button>
+											</td>
+										</tr>
+										<tr>
+											<td class="visible-lg">11</td>
+											<td><img src="images/theme/avatarThree.png" alt="" class="avatar"></td>
+											<td  class="visible-lg">Jump </td>
+											<td class="visible-lg">Deo</td>
+											<td class="visible-lg">johndeo@example.com</td>
+											<td>@johndeo</td>
+											<td>
+												<button type="button" class="btn btn-success"><i class="fa fa-envelope"></i></button>
+												<button type="button" class="btn btn-info"><i class="fa fa-eye"></i></button>
+												<button type="button" class="btn btn-warning"><i class="fa fa-edit"></i></button>
+											</td>
+										</tr>
+										<tr>
+											<td  class="visible-lg">12</td>
+											<td><img src="images/theme/avatarFour.png" alt="" class="avatar"></td>
+											<td  class="visible-lg">Jump </td>
+											<td class="visible-lg">Doe</td>
+											<td class="visible-lg">johndeo@example.com</td>
+											<td>@johndeo</td>
+											<td>
+												<button type="button" class="btn btn-success"><i class="fa fa-envelope"></i></button>
+												<button type="button" class="btn btn-info"><i class="fa fa-eye"></i></button>
+												<button type="button" class="btn btn-warning"><i class="fa fa-edit"></i></button>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>	<!-- / Users widget-->
+				<div class="row">
+					<div class="col-md-6">
+						<div class="panel panel-archon">
+							<div class="panel-heading">
+								<h3 class="panel-title">Default Table
+									<span class="pull-right">
+										<a  href="#" class="panel-minimize"><i class="fa fa-chevron-up"></i></a>
+										<a  href="#"  class="panel-settings"><i class="fa fa-cog"></i></a>
+										<a  href="#"  class="panel-close"><i class="fa fa-times"></i></a>
+									</span>
+								</h3>
+							</div>
+							<div class="panel-body">
+								<table class="table">
+									<thead>
+										<tr>
+											<th >#</th>
+											<th>UserID</th>
+											<th>Email</th>
+											<th>Status</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>John </td>
+											<td>johndeo@example.com</td>
+											<td><span class="status status-success">Approved</span></td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>Kyne </td>
+											<td>Kynerty@example.com</td>
+											<td><span class="status status-primary">Important</span></td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>dude </td>
+											<td>dudedeo@example.com</td>
+											<td><span class="status status-warning">Suspended</span></td>
+										</tr>
+										<tr>
+											<td>4</td>
+											<td >Jeju </td>
+											<td>jeju@example.com</td>
+											<td><span class="status status-danger">Blocked</span></td>
+										</tr>
+										<tr>
+											<td>5</td>
+											<td>Jenifer </td>
+											<td>jenifer@example.com</td>
+											<td><span class="status status-pending">Pending</span></td>
+										</tr>
+										<tr>
+											<td>6</td>
+											<td>chittu </td>
+											<td>chittu@example.com</td>
+											<td><span class="status status-warning">Suspended</span></td>
+											</tr>
+										<tr>
+											<td>7</td>
+											<td>Mouni </td>
+											<td>mouni@example.com</td>
+											<td><span class="status status-success">Approved</span></td>
+										</tr>
+										<tr>
+											<td>8</td>
+											<td>Hari </td>
+											<td>hari@example.com</td>
+											<td><span class="status status-success">Approved</span></td>
+										</tr>
+										<tr>
+											<td>9</td>
+											<td>Munna </td>
+											<td>munna@example.com</td>
+											<td><span class="status status-pending">Pending</span></td>
+										</tr>
+										<tr>
+											<td>10</td>
+											<td>Uma </td>
+											<td>uma@example.com</td>
+											<td><span class="status status-pending">Pending</span></td>
+										</tr>
+										<tr>
+											<td>11</td>
+											<td>Teeti</td>
+											<td>teeti@example.com</td>
+											<td><span class="status status-danger">Blocked</span></td>
+										</tr>
+										<tr>
+											<td>12</td>
+											<td>Vijju </td>
+											<td>vijjuanu@example.com</td>
+											<td><span class="status status-primary">Important</span></td>
+										</tr>
+										<tr>
+											<td>13</td>
+											<td>Anu </td>
+											<td>anu@example.com</td>
+											<td><span class="status status-primary">Important</span></td>
+										</tr>
+										<tr>
+											<td>14</td>
+											<td>Tinku </td>
+											<td>tinku@example.com</td>
+											<td><span class="status status-danger">Blocked</span></td>
+										</tr>
+										<tr>
+											<td>15</td>
+											<td>Veeru </td>
+											<td>veeru@example.com</td>
+											<td><span class="status status-pending">Pending</span></td>
+										</tr>
+										<tr>
+											<td>16</td>
+											<td>Venkat </td>
+											<td>venkat@example.com</td>
+											<td><span class="status status-warning">Suspended</span></td>
+										</tr>
+										<tr>
+											<td>17</td>
+											<td>Honey </td>
+											<td>honey@example.com</td>
+											<td><span class="status status-success">Approved</span></td>
+										</tr>
+										<tr>
+											<td>18</td>
+											<td>Hundy </td>
+											<td>hundy@example.com</td>
+											<td><span class="status status-success">Approved</span></td>
+										</tr>
+									</tbody>
+								</table>							
+							</div> <!-- /panel body -->
+						</div>
+					</div> <!-- /col-md-6 -->
+									<div class="col-md-6">
+										<div class="panel panel-archon">
+											<div class="panel-heading">
+												<h3 class="panel-title">Bordered Table
+													<span class="pull-right">
+														<a  href="#" class="panel-minimize"><i class="fa fa-chevron-up"></i></a>
+														<a  href="#"  class="panel-settings"><i class="fa fa-cog"></i></a>
+														<a  href="#"  class="panel-close"><i class="fa fa-times"></i></a>
+													</span>
+												</h3>
+											</div>
+											<div class="panel-body">
+												<table class="table table-bordered">
+													<thead>
+														<tr>
+															<th>#</th>
+															<th>Project Id</th>
+															<th>Progress Of The Project</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>1</td>
+															<td>15674 </td>
+															<td>
+																<div class="text-fill">
+																	<div class="progress progress-striped">
+																		<div class="progress-bar six-sec-ease-in-out" aria-valuetransitiongoal="75"></div>
+																	</div>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>2</td>
+															<td>16784 </td>
+															<td>
+																<div class="text-fill">
+																	<div class="progress progress-striped">
+																		<div class="progress-bar progress-bar-warning six-sec-ease-in-out" aria-valuetransitiongoal="62"></div>
+																	</div>
+																</div>
+															</td>
+															
+														</tr>
+														<tr>
+															<td>3</td>
+															<td>15478 </td>
+															<td>
+																<div class="text-fill">
+																	<div class="progress progress-striped">
+																		<div class="progress-bar progress-bar-danger six-sec-ease-in-out" aria-valuetransitiongoal="33"></div>
+																	</div>
+																</div>
+															</td>
+															
+														</tr>
+														<tr>
+															<td>4</td>
+															<td>13764 </td>
+															<td>
+																<div class="text-fill">
+																	<div class="progress progress-striped">
+																		<div class="progress-bar progress-bar-danger six-sec-ease-in-out" aria-valuetransitiongoal="29"></div>
+																	</div>
+																</div>
+															</td>
+															
+														</tr>
+														<tr>
+															<td>5</td>
+															<td>12903 </td>
+															<td>
+																<div class="text-fill">
+																	<div class="progress progress-striped">
+																		<div class="progress-bar six-sec-ease-in-out" aria-valuetransitiongoal="85"></div>
+																	</div>
+																</div>
+															</td>
+															
+														</tr>
+														<tr>
+															<td>6</td>
+															<td>13765 </td>
+															<td>
+																<div class="text-fill">
+																	<div class="progress progress-striped">
+																		<div class="progress-bar six-sec-ease-in-out" aria-valuetransitiongoal="64"></div>
+																	</div>
+																</div>
+															</td>
+															
+														</tr>
+														<tr>
+															<td>7</td>
+															<td>12698</td>
+															<td>
+																<div class="text-fill">
+																	<div class="progress progress-striped">
+																		<div class="progress-bar six-sec-ease-in-out" aria-valuetransitiongoal="77"></div>
+																	</div>
+																</div>
+															</td>
+															
+														</tr>
+														<tr>
+															<td>8</td>
+															<td>13693</td>
+															<td>
+																<div class="text-fill">
+																	<div class="progress progress-striped">
+																		<div class="progress-bar progress-bar-warning six-sec-ease-in-out" aria-valuetransitiongoal="45"></div>
+																	</div>
+																</div>
+															</td>
+															
+														</tr>
+														<tr>
+															<td>9</td>
+															<td>12783 </td>
+															<td>
+																<div class="text-fill">
+																	<div class="progress progress-striped">
+																		<div class="progress-bar progress-bar-success six-sec-ease-in-out" aria-valuetransitiongoal="90"></div>
+																	</div>
+																</div>
+															</td>
+															
+														</tr>
+														<tr>
+															<td>10</td>
+															<td>17900 </td>
+															<td>
+																<div class="text-fill">
+																	<div class="progress progress-striped">
+																		<div class="progress-bar progress-bar-warning six-sec-ease-in-out" aria-valuetransitiongoal="47"></div>
+																	</div>
+																</div>
+															</td>
+															
+														</tr>
+														<tr>
+															<td>11</td>
+															<td>14729 </td>
+															<td>
+																<div class="text-fill">
+																	<div class="progress progress-striped">
+																		<div class="progress-bar progress-bar-success six-sec-ease-in-out" aria-valuetransitiongoal="98"></div>
+																	</div>
+																</div>
+															</td>
+															
+														</tr>
+														<tr>
+															<td>12</td>
+															<td>12889 </td>
+															<td>
+																<div class="text-fill">
+																	<div class="progress progress-striped">
+																		<div class="progress-bar progress-bar-success six-sec-ease-in-out" aria-valuetransitiongoal="95"></div>
+																	</div>
+																</div>
+															</td>
+															
+														</tr>
+													</tbody>
+												</table>							
+											</div>
+										</div>
+									</div>				
+								</div>
+
+								<div class="row">
+									<div class="col-md-6">
+										<div class="panel panel-archon">
+											<div class="panel-heading">
+												<h3 class="panel-title">Striped Table
+													<span class="pull-right">
+														<a  href="#" class="panel-minimize"><i class="fa fa-chevron-up"></i></a>
+														<a  href="#"  class="panel-settings"><i class="fa fa-cog"></i></a>
+														<a  href="#"  class="panel-close"><i class="fa fa-times"></i></a>
+													</span>
+												</h3>
+											</div>
+											<div class="panel-body">
+												<table class="table table-striped">
+													<thead>
+														<tr>
+															<th>#</th>
+															<th>Roll No</th>
+															<th>Name</th>
+															<th>Email</th>
+															<th>Percentage</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>1</td>
+															<td>0505 </td>
+															<td>Deo</td>
+															<td>johndeo@example.com</td>
+															<td><span class="badge badge-success">95%</span></td>
+														</tr>
+														<tr>
+															<td>2</td>
+															<td>0508 </td>
+															<td>Jane</td>
+															<td>jane@example.com</td>
+															<td><span class="badge badge-success">92%</span></td>
+														</tr>
+														<tr>
+															<td>3</td>
+															<td>0534 </td>
+															<td>Tutti</td>
+															<td>tutti@example.com</td>
+															<td><span class="badge badge-warning">75%</span></td>
+														</tr>
+														<tr>
+															<td>4</td>
+															<td>0529 </td>
+															<td>Deepu</td>
+															<td>deepu@example.com</td>
+															<td><span class="badge badge-success">83%</span></td>
+														</tr>
+														<tr>
+															<td>5</td>
+															<td>0518 </td>
+															<td>Raju</td>
+															<td>raju@example.com</td>
+															<td><span class="badge badge-danger">38%</span></td>
+														</tr>
+														<tr>
+															<td>6</td>
+															<td>0519 </td>
+															<td>abhi</td>
+															<td>abhi@example.com</td>
+															<td><span class="badge badge-warning">65%</span></td>
+														</tr>
+														<tr>
+															<td>7</td>
+															<td>0523 </td>
+															<td>Gowthu</td>
+															<td>gowthu@example.com</td>
+															<td><span class="badge badge-warning">77%</span></td>
+														</tr>
+														<tr>
+															<td>8</td>
+															<td>0539 </td>
+															<td>Geethu</td>
+															<td>geethu@example.com</td>
+															<td><span class="badge badge-success">80%</span></td>
+														</tr>
+														<tr>
+															<td>9</td>
+															<td>0547 </td>
+															<td>Prem</td>
+															<td>prem@example.com</td>
+															<td><span class="badge badge-danger">28%</span></td>
+														</tr>
+														<tr>
+															<td>10</td>
+															<td>0552 </td>
+															<td>Ravi</td>
+															<td>ravi@example.com</td>
+															<td><span class="badge badge-success">82%</span></td>
+														</tr>
+														<tr>
+															<td>11</td>
+															<td>0567 </td>
+															<td>Duddu</td>
+															<td>duddu@example.com</td>
+															<td><span class="badge badge-warning">73%</span></td>
+														</tr>
+														<tr>
+															<td>12</td>
+															<td>0569 </td>
+															<td>east</td>
+															<td>east@example.com</td>
+															<td><span class="badge badge-success">90%</span></td>
+														</tr>
+													</tbody>
+												</table>							
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="panel panel-archon">
+											<div class="panel-heading">
+												<h3 class="panel-title">Hover Rows
+													<span class="pull-right">
+														<a  href="#" class="panel-minimize"><i class="fa fa-chevron-up"></i></a>
+														<a  href="#"  class="panel-settings"><i class="fa fa-cog"></i></a>
+														<a  href="#"  class="panel-close"><i class="fa fa-times"></i></a>
+													</span>
+												</h3>
+											</div>
+											<div class="panel-body">
+												<table class="table table-hover">
+													<thead>
+														<tr>
+															<th>#</th>
+															<th>Item ID</th>
+															<th>Name</th>
+															<th>Category</th>
+															<th>Status</th>
+
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>1</td>
+															<td>A5123</td>
+															<td>Watch</td>
+															<td>Electronics</td>
+															<td><span class="status status-success">Delivered</span></td>
+														</tr>
+														<tr>
+															<td>2</td>
+															<td>A5167</td>
+															<td>Necklace</td>
+															<td>Accessory</td>
+															<td><span class="status status-pending">Pending</span></td>
+														</tr>
+														<tr>
+															<td>3</td>
+															<td>A5678</td>
+															<td>Bedsheet</td>
+															<td>Clothing</td>
+															<td><span class="status status-warning">With Held</span></td>
+														</tr>
+														<tr>
+															<td>4</td>
+															<td>Laptop </td>
+															<td>A5546</td>
+															<td>Electronics</td>
+															<td><span class="status status-danger">Cancelled</span></td>
+														</tr>
+														<tr>
+															<td>5</td>
+															<td>Desktop</td>
+															<td>A5934</td>
+															<td>Electronics</td>
+															<td><span class="status status-primary">started</span></td>
+														</tr>
+														<tr>
+															<td>6</td>
+															<td>shirt</td>
+															<td>A5452</td>
+															<td>clothing</td>
+															<td><span class="status status-warning">With Held</span></td>
+														</tr>
+														<tr>
+															<td>7</td>
+															<td>Ring </td>
+															<td>A5474</td>
+															<td>Accessory</td>
+															<td><span class="status status-success">Delivered</span></td>
+														</tr>
+														<tr>
+															<td>8</td>
+															<td>Dress</td>
+															<td>A5934</td>
+															<td>clothing</td>
+															<td><span class="status status-pending">Pending</span></td>
+														</tr>
+														<tr>
+															<td>9</td>
+															<td>Shoes </td>
+															<td>A5834</td>
+															<td>Others</td>
+															<td><span class="status status-pending">Pending</span></td>
+														</tr>
+														<tr>
+															<td>10</td>
+															<td>Pens </td>
+															<td>A5724</td>
+															<td>stationary</td>
+															<td><span class="status status-danger">Cancelled</span></td>
+														</tr>
+														<tr>
+															<td>11</td>
+															<td>Pencils </td>
+															<td>A5725</td>
+															<td>Stationary</td>
+															<td><span class="status status-success">Started</span></td>
+														</tr>
+														<tr>
+															<td>12</td>
+															<td>Books </td>
+															<td>A5729</td>
+															<td>stationary</td>
+															<td><span class="status status-success">Started</span></td>
+														</tr>
+													</tbody>
+												</table>							
+											</div>
+										</div>
+									</div>				
+								</div>
+
+								<!-- Tables condensed and contextual -->
+								<div class="row">
+									<div class="col-md-6">
+										<div class="panel panel-archon">
+											<div class="panel-heading">
+												<h3 class="panel-title">Condensed Table
+													<span class="pull-right">
+														<a  href="#" class="panel-minimize"><i class="fa fa-chevron-up"></i></a>
+														<a  href="#"  class="panel-settings"><i class="fa fa-cog"></i></a>
+														<a  href="#"  class="panel-close"><i class="fa fa-times"></i></a>
+													</span>
+												</h3>
+											</div>
+											<div class="panel-body">
+												<table class="table table-condensed">
+													<thead>
+														<tr>
+															<th> </th>
+															<th>Email</th>
+															<th>Options</th>
+
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td><input type="checkbox"/></td>
+															<td>danny@example.com</td>
+															<td>
+																<button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
+																<button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>	
+																<button class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i></button>
+															</td>
+														</tr>
+														<tr>
+															<td><input type="checkbox"/></td>
+															<td>deo@example.com</td>
+															<td>
+																<button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
+																<button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>	
+																<button class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i></button>
+															</td>
+														</tr>
+														<tr>
+															<td><input type="checkbox"/></td>
+															<td>john@example.com</td>
+															<td>
+																<button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
+																<button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>	
+																<button class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i></button>
+															</td>
+														</tr>
+														<tr>
+															<td><input type="checkbox"/></td>
+															<td>gimmy@example.com</td>
+															<td>
+																<button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
+																<button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>	
+																<button class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i></button>
+															</td>
+														</tr>
+														<tr>
+															<td><input type="checkbox"/></td>
+															<td>jane@example.com</td>
+															<td>
+																<button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
+																<button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>	
+																<button class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i></button>
+															</td>
+														</tr>
+														<tr>
+															<td><input type="checkbox"/></td>
+															<td>tinku@example.com</td>
+															<td>
+																<button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
+																<button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>	
+																<button class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i></button>
+															</td>
+														</tr>
+														<tr>
+															<td><input type="checkbox"/></td>
+															<td>tikki@example.com</td>
+															<td>
+																<button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
+																<button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>	
+																<button class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i></button>
+															</td>
+														</tr>
+														<tr>
+															<td><input type="checkbox"/></td>
+															<td>venkat@example.com</td>
+															<td>
+																<button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
+																<button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>	
+																<button class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i></button>
+															</td>
+														</tr>
+														<tr>
+															<td><input type="checkbox"/></td>
+															<td>abhi@example.com</td>
+															<td>
+																<button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
+																<button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>	
+																<button class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i></button>
+															</td>
+														</tr>
+														<tr>
+															<td><input type="checkbox"/></td>
+															<td>vijju@example.com</td>
+															<td>
+																<button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
+																<button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>	
+																<button class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i></button>
+															</td>
+														</tr>
+														<tr>
+															<td><input type="checkbox"/></td>
+															<td>jens@example.com</td>
+															<td>
+																<button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
+																<button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>	
+																<button class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i></button>
+															</td>
+														</tr>
+														<tr>
+															<td><input type="checkbox"/></td>
+															<td>jeeju@example.com</td>
+															<td>
+																<button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
+																<button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>	
+																<button class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i></button>
+															</td>
+														</tr>
+														<tr>
+															<td><input type="checkbox"/></td>
+															<td>chittu@example.com</td>
+															<td>
+																<button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
+																<button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>	
+																<button class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i></button>
+															</td>
+														</tr>
+														<tr>
+															<td><input type="checkbox"/></td>
+															<td>bondu@example.com</td>
+															<td>
+																<button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
+																<button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>	
+																<button class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i></button>
+															</td>
+														</tr>
+													</tbody>
+												</table>							
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="panel panel-archon">
+											<div class="panel-heading">
+												<h3 class="panel-title">Contextual Rows
+													<span class="pull-right">
+														<a  href="#" class="panel-minimize"><i class="fa fa-chevron-up"></i></a>
+														<a  href="#"  class="panel-settings"><i class="fa fa-cog"></i></a>
+														<a  href="#"  class="panel-close"><i class="fa fa-times"></i></a>
+													</span>
+												</h3>
+											</div>
+											<div class="panel-body">
+												<table class="table">
+													<thead>
+														<tr>
+															<th >#</th>
+															<th >First Name</th>
+															<th>Last Name</th>
+															<th>Email</th>
+															<th>Username</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr class="warning">
+															<td><span class="text-warning">1</span></td>
+															<td><span class="text-warning">John </span></td>
+															<td><span class="text-warning">Deo</span></td>
+															<td><span class="text-warning">johndeo@example.com</span></td>
+															<td><span class="text-warning">@johndeo</span></td>
+														</tr>
+														<tr>
+															<td><span class="text-primary">2</span></td>
+															<td><span class="text-primary">Jane </span></td>
+															<td><span class="text-primary">Doe</span></td>
+															<td><span class="text-primary">johndeo@example.com</span></td>
+															<td><span class="text-primary">@johndeo</span></td>
+														</tr>
+														<tr class="success">
+															<td><span class="text-success">3</span></td>
+															<td><span class="text-success">Jump </span></td>
+															<td><span class="text-success">Deo</span></td>
+															<td><span class="text-success">johndeo@example.com</span></td>
+															<td><span class="text-success">@johndeo</span></td>
+														</tr>
+														<tr class="active">
+															<td >4</td>
+															<td >Jump </td>
+															<td>Doe</td>
+															<td>johndeo@example.com</td>
+															<td>@johndeo</td>
+														</tr>
+														<tr class="danger">
+															<td><span class="text-danger">5</span></td>
+															<td><span class="text-danger">John </span></td>
+															<td><span class="text-danger">Deo</span></td>
+															<td><span class="text-danger">johndeo@example.com</span></td>
+															<td><span class="text-danger">@johndeo</span></td>
+														</tr>
+														<tr class="warning">
+															<td><span class="text-warning">6</span></td>
+															<td><span class="text-warning">John </span></td>
+															<td><span class="text-warning">Deo</span></td>
+															<td><span class="text-warning">johndeo@example.com</span></td>
+															<td><span class="text-warning">@johndeo</span></td>
+														</tr>
+														<tr class="success">
+															<td><span class="text-success">7</span></td>
+															<td><span class="text-success">Jump </span></td>
+															<td><span class="text-success">Deo</span></td>
+															<td><span class="text-success">johndeo@example.com</span></td>
+															<td><span class="text-success">@johndeo</span></td>
+														</tr>
+														<tr>
+															<td><span class="text-primary">8</span></td>
+															<td><span class="text-primary">Jane </span></td>
+															<td><span class="text-primary">Doe</span></td>
+															<td><span class="text-primary">johndeo@example.com</span></td>
+															<td><span class="text-primary">@johndeo</span></td>
+														</tr>
+														<tr class="danger">
+															<td><span class="text-danger">9</span></td>
+															<td><span class="text-danger">John </span></td>
+															<td><span class="text-danger">Deo</span></td>
+															<td><span class="text-danger">johndeo@example.com</span></td>
+															<td><span class="text-danger">@johndeo</span></td>
+														</tr>
+														<tr class="warning">
+															<td><span class="text-warning">10</span></td>
+															<td><span class="text-warning">John </span></td>
+															<td><span class="text-warning">Deo</span></td>
+															<td><span class="text-warning">johndeo@example.com</span></td>
+															<td><span class="text-warning">@johndeo</span></td>
+														</tr>
+														<tr class="active">
+															<td>11</td>
+															<td >Jump </td>
+															<td>Deo</td>
+															<td>johndeo@example.com</td>
+															<td>@johndeo</td>
+														</tr>
+														<tr class="danger">
+															<td><span class="text-danger">12</span></td>
+															<td><span class="text-danger">John </span></td>
+															<td><span class="text-danger">Deo</span></td>
+															<td><span class="text-danger">johndeo@example.com</span></td>
+															<td><span class="text-danger">@johndeo</span></td>
+														</tr>
+													</tbody>
+												</table>							
+											</div>
+										</div>
+									</div>				
+								</div>
+
+							</div><!-- /Main Content  @7 -->
+						</div><!-- / Content @5 -->
+
+						<div class="row footer">
+							<div class="col-md-12 text-center">
+								© 2013 <a href="http://bootstrapguru.com">Bootstrap Guru</a>
+							</div>
+						</div>
+					</div> <!-- Frame -->
+
+
+					<!-- Load JS here for greater good =============================-->
+					<script src="js/jquery-1.8.3.min.js"></script>
+					<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+					<script src="js/jquery.ui.touch-punch.min.js"></script>
+					<script src="js/bootstrap.min.js"></script>
+					<script src="js/bootstrap-select.js"></script>
+					<script src="js/bootstrap-switch.js"></script>
+					<script src="js/flatui-checkbox.js"></script>
+					<script src="js/flatui-radio.js"></script>
+					<script src="js/jquery.tagsinput.js"></script>
+					<script src="js/jquery.placeholder.js"></script>
+					<script src="js/bootstrap-typeahead.js"></script>
+					<script src="js/application.js"></script>
+					<script src="js/moment.min.js"></script>
+					<script src="js/jquery.dataTables.min.js"></script>
+					<script src="js/bootstrap-datatables.js"></script>
+					<script src="js/jquery.sortable.js"></script>
+					<script type="text/javascript" src="js/jquery.gritter.js"></script>
+
+					<!-- Archon JS =============================-->
+					<script src="js/archon.js"></script>
+					<script src="js/bootstrap-progressbar.js"></script>
+					<script src="js/bootstrap-progressbar-custom.js"></script>
+				</body>
+				</html>

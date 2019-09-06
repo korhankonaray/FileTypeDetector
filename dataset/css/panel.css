@@ -1,0 +1,193 @@
+/*
+ * Dandelion Admin v2.0 - Panel Stylesheet
+ *
+ * This file is part of Dandelion Admin, an Admin template build for sale at ThemeForest.
+ * For questions, suggestions or support request, please mail me at maimairel@yahoo.com
+ *
+ * Development Started:
+ * March 25, 2012
+ * Last Update:
+ * December 07, 2012
+ *
+ */
+
+/* Panel
+================================================== */
+
+.da-panel {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.ui-dialog .ui-dialog-content.form-container {
+    padding: 0;
+}
+
+/* Panel Header
+================================================== */
+
+.da-panel .da-panel-header {
+    display: block;
+    position: relative;
+    border: 1px solid #cacaca;
+    background-image: url(../images/panel-header.png);
+    padding: 16px 0;
+    -webkit-border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 1);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 1);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 1);
+}
+
+.da-panel.collapsed .da-panel-header {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.da-panel .da-panel-header .da-panel-title {
+    font-size: 14px;
+    display: block;
+    line-height: 20px;
+    padding-left: 16px;
+}
+
+.da-panel .da-panel-header .da-panel-title [class^="icon-"], 
+.da-panel .da-panel-header .da-panel-title [class*=" icon-"], 
+.da-panel .da-panel-header .da-panel-title [class^="icol-"], 
+.da-panel .da-panel-header .da-panel-title [class*=" icol-"] {
+    line-height: 16px;
+    margin-right: 4px;
+    font-size: 16px;
+    vertical-align: text-top;
+}
+
+/* Panel Toggler
+================================================== */
+
+.da-panel .da-panel-header .da-panel-toggler {
+    border-left: 1px solid #cacaca;
+    right: 0; top: 0; bottom: 0;
+    width: 48px;
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    overflow: hidden;
+}
+
+.da-panel .da-panel-header .da-panel-toggler span {
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.da-panel .da-panel-header .da-panel-toggler span:after {
+    font-family: 'caret';
+    content: '\f0d8';
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    color: #555;
+    left: 0; top: 0;
+    width: 100%;
+    margin-top: 2px;
+    text-align: center;
+    position: absolute;
+    line-height: 48px;
+}
+
+.da-panel.collapsed .da-panel-header .da-panel-toggler span:after {
+    content: '\f0d7';
+}
+
+.da-panel.collapsed > .da-panel-inner-wrap {
+    display: none;
+}
+
+/* Panel Content
+================================================== */
+
+.da-panel .da-panel-content {
+    border: 1px solid #cacaca;
+    border-top: none;
+    padding: 16px;
+    position: relative;
+    background-color: #fff;
+}
+
+.da-panel .da-panel-content:last-child {
+    -webkit-border-radius: 0 0 3px 3px;
+    -moz-border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3px 3px;
+}
+
+.da-panel > .da-panel-content:first-child {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border-top: 1px solid #cacaca;
+}
+
+.da-panel .da-panel-header + .da-panel-content, 
+.da-panel .da-panel-inner-wrap > .da-panel-content:first-child
+{
+    border-top: 0;
+}
+
+.da-panel .da-panel-content.da-form-container, 
+.da-panel .da-panel-content .da-form-container
+{
+    padding: 0;
+}
+
+.da-panel .da-panel-content.da-table-container, 
+.da-panel .da-panel-content .da-table-container
+{
+    border: 0;
+    padding: 0;
+}
+
+.da-panel .da-panel-content.no-padding
+{
+    padding: 0;
+}
+
+.da-panel .da-panel-content.no-border
+{
+    border: 0;
+}
+
+.da-panel .da-table-container .da-table {
+    border-top: 0;
+}
+
+/* Panel Elements
+================================================== */
+
+.da-panel .ui-tabs .ui-tabs-nav {
+    background-color: #fff;
+    border: solid #ccc;
+    border-width: 0 1px;
+}
+
+.da-panel .ui-tabs .ui-tabs-nav, 
+.da-panel .ui-tabs .ui-tabs-nav li {
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+}
+
+.da-panel .ui-tabs .ui-tabs-nav li {
+    margin: 0;
+    border-top: 0;
+}
+
+.da-panel .ui-tabs .ui-tabs-nav li:first-child {
+    border-left-width: 0;
+}
+
+.da-panel .ui-accordion .ui-accordion-header:first-child {
+    border-top-width: 0;
+}

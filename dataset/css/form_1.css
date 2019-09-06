@@ -1,0 +1,563 @@
+/*
+ * Dandelion Admin v2.0 - Form Structure Stylesheet
+ *
+ * This file is part of Dandelion Admin, an Admin template build for sale at ThemeForest.
+ * For questions, suggestions or support request, please mail me at maimairel@yahoo.com
+ *
+ * Development Started:
+ * March 25, 2012
+ * Last Update:
+ * December 07, 2012
+ *
+ */
+
+/* Form Clearfix
+================================================== */
+
+.da-form .btn-row, 
+.da-form .da-form-row, 
+.da-form .da-form-item {
+    *zoom: 1;
+}
+
+.da-form .btn-row:before, 
+.da-form .btn-row:after, 
+.da-form .da-form-row:before, 
+.da-form .da-form-row:after, 
+.da-form .da-form-item:before, 
+.da-form .da-form-item:after {
+    display: table;
+    content: '';
+    line-height: 0;
+}
+
+.da-form .btn-row:after, 
+.da-form .da-form-row:after, 
+.da-form .da-form-item:after {
+    clear: both;
+}
+
+/* Form Row
+================================================== */
+
+.da-form .da-form-row {
+    padding: 20px 24px;
+    display: block;
+    border-top: 1px solid #d3d3d3;
+}
+
+.da-form legend:first-child + .da-form-row, 
+.da-form .da-form-row:first-child {
+    border-top: none;
+}
+
+/* Button Row
+================================================== */
+
+.da-form .btn-row {
+    background-color: #f2f0f0;
+    border-top: 1px solid #d3d3d3;
+    margin: 0;
+    padding: 16px;
+    text-align: right;
+    -webkit-border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+    border-radius: 0 0 4px 4px;
+    -webkit-box-shadow: inset 0 1px 0 #fff;
+    -moz-box-shadow: inset 0 1px 0 #fff;
+    box-shadow: inset 0 1px 0 #fff;
+}
+
+.da-form .btn-row .btn + .btn {
+    margin-left: 5px;
+}
+
+/* Form Column
+================================================== */
+
+.da-form .da-form-cols {
+    *zoom: 1;
+}
+
+.da-form .da-form-cols:before,
+.da-form .da-form-cols:after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+
+.da-form .da-form-cols:after {
+    clear: both;
+}
+
+.da-form.da-form-inline .da-form-cols [class*="col-"] .da-form-label, 
+.da-form .da-form-inline .da-form-cols [class*="col-"] .da-form-label, 
+.da-form .da-form-cols [class*="col-"] .da-form-label {
+    white-space: nowrap;
+    width: 100%;
+    float: none;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.da-form .da-form-cols [class*="col-"] {
+    float: left;
+    margin-left: 1.8181818181818181%;
+}
+
+.da-form .da-form-cols [class*="col-"]:first-child {
+    margin-left: 0;
+}
+
+.da-form .da-form-cols [class*="col-"] select, 
+.da-form .da-form-cols [class*="col-"] textarea, 
+.da-form .da-form-cols [class*="col-"] input[type="text"], 
+.da-form .da-form-cols [class*="col-"] input[type="password"], 
+.da-form .da-form-cols [class*="col-"] input[type="datetime"], 
+.da-form .da-form-cols [class*="col-"] input[type="datetime-local"], 
+.da-form .da-form-cols [class*="col-"] input[type="date"], 
+.da-form .da-form-cols [class*="col-"] input[type="month"], 
+.da-form .da-form-cols [class*="col-"] input[type="time"], 
+.da-form .da-form-cols [class*="col-"] input[type="week"], 
+.da-form .da-form-cols [class*="col-"] input[type="number"], 
+.da-form .da-form-cols [class*="col-"] input[type="email"], 
+.da-form .da-form-cols [class*="col-"] input[type="url"], 
+.da-form .da-form-cols [class*="col-"] input[type="search"], 
+.da-form .da-form-cols [class*="col-"] input[type="tel"], 
+.da-form .da-form-cols [class*="col-"] input[type="color"] {
+    width: 100%;
+}
+
+.da-form .da-form-cols [class*="col-"] .btn {
+    margin-top: 28px;
+}
+
+.da-form .da-form-cols .col-8-8 {
+    width: 100%;
+}
+
+.da-form .da-form-cols .col-7-8 {
+    width: 87.27272727272727%;
+}
+
+.da-form .da-form-cols .col-6-8 {
+    width: 74.54545454545455%;
+}
+
+.da-form .da-form-cols .col-5-8 {
+    width: 61.81818181818181%;
+}
+
+.da-form .da-form-cols .col-4-8 {
+    width: 49.090909090909086%;
+}
+
+.da-form .da-form-cols .col-3-8 {
+    width: 36.36363636363636%;
+}
+
+.da-form .da-form-cols .col-2-8 {
+    width: 23.636363636363633%;
+}
+
+.da-form .da-form-cols .col-1-8 {
+    width: 10.909090909090908%;
+}
+
+/* Form List
+================================================== */
+
+.da-form .da-form-list, 
+.da-form .da-form-list li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.da-form .da-form-list li {
+    margin-bottom: 4px;
+}
+
+.da-form .da-form-list li:last-child {
+    margin-bottom: 0;
+}
+
+.da-form .da-form-list.inline li {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    margin: 0 5px 0 0;
+    vertical-align: middle;
+}
+
+.da-form .da-form-list li > input, 
+.da-form .da-form-list li > label {
+    padding: 0;
+    margin: 0 1px 0 0;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: middle;
+}
+
+/* Form Labels
+================================================== */
+
+.da-form .da-form-label {
+    cursor: pointer;
+    display: block;
+}
+
+.da-form .da-form-row.da-column-row > .da-form-label {
+    margin-top: 28px;
+}
+
+.da-form .da-form-label .required {
+    color: #ff0000;
+}
+
+/* Form Fieldset
+================================================== */
+
+.da-form fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.da-form fieldset:first-child legend {
+    border-top: 0;
+}
+
+.da-form fieldset legend {
+    margin: 0;
+    border: solid #ddd;
+    border-width: 1px 0;
+    background: #fafafa repeat-x left bottom;
+    background-image: -ms-linear-gradient(top, #ffffff, #f2f2f2);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f2f2f2));
+    background-image: -webkit-linear-gradient(top, #ffffff, #f2f2f2);
+    background-image: -o-linear-gradient(top, #ffffff, #f2f2f2);
+    background-image: -moz-linear-gradient(top, #ffffff, #f2f2f2);
+    background-image: linear-gradient(top, #ffffff, #f2f2f2);
+    font-size: 12px;
+    font-weight: bold;
+    color: #555;
+    line-height: 20px;
+    padding: 8px;
+    padding-left: 20px;
+    width: 100%;
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.da-form fieldset:first-child {
+    border-top: 0;
+}
+
+/* Inline Form Message
+================================================== */
+
+.da-form .da-form-item .errorMessage, 
+.da-form .da-form-item label.error {
+    display: block;
+    color: #d44d24;
+    font-size: 11px;
+    margin-top: 1px;
+}
+
+/* Inline Form Note
+================================================== */
+
+.da-form .da-form-item .form-help {
+    display: block;
+    color: #999;
+    padding-top: 4px;
+    font-size: 11px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.da-form .da-form-item a.form-help {
+    color: #73991f;
+}
+
+/* Inline Form Layout
+================================================== */
+
+.da-form.da-form-inline .da-form-row .da-form-label, 
+.da-form .da-form-inline .da-form-row .da-form-label {
+    float: left;
+    width: 120px;
+    padding: 5px 0;
+}
+
+.da-form.da-form-inline .da-form-row .da-form-item, 
+.da-form .da-form-inline .da-form-row .da-form-item {
+    margin-left: 136px;
+}
+
+/* Block Form Layout
+================================================== */
+
+.da-form .da-form-label, 
+.da-form .da-form-block .da-form-row .da-form-label, 
+.da-form.da-form-block .da-form-row .da-form-label {
+    padding: 0 6px 6px 0;
+}
+
+/* Inputs
+================================================== */
+
+select, 
+textarea, 
+input[type="text"], 
+input[type="password"], 
+input[type="datetime"], 
+input[type="datetime-local"], 
+input[type="date"], 
+input[type="month"], 
+input[type="time"], 
+input[type="week"], 
+input[type="number"], 
+input[type="email"], 
+input[type="url"], 
+input[type="search"], 
+input[type="tel"], 
+input[type="color"] {
+    background-color: #fcfcfc;
+    border: 1px solid #d1d1d1;
+    outline: none;
+    line-height: 18px;
+    min-height: 28px;
+    margin: 0;
+    padding: 4px;
+    width: 210px;
+    color: #444;
+    display: inline-block;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.04);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.04);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.04);
+    -webkit-transition: background-color .15s linear;
+    -moz-transition: background-color .15s linear;
+    transition: background-color .15s linear;
+}
+
+select:focus, 
+textarea:focus, 
+input[type="text"]:focus, 
+input[type="password"]:focus, 
+input[type="datetime"]:focus, 
+input[type="datetime-local"]:focus, 
+input[type="date"]:focus, 
+input[type="month"]:focus, 
+input[type="time"]:focus, 
+input[type="week"]:focus, 
+input[type="number"]:focus, 
+input[type="email"]:focus, 
+input[type="url"]:focus, 
+input[type="search"]:focus, 
+input[type="tel"]:focus, 
+input[type="color"]:focus {
+    border-color: #bbc1c9;
+    background-color: #fff;
+}
+
+select.error, 
+textarea.error, 
+input[type="text"].error, 
+input[type="password"].error, 
+input[type="datetime"].error, 
+input[type="datetime-local"].error, 
+input[type="date"].error, 
+input[type="month"].error, 
+input[type="time"].error, 
+input[type="week"].error, 
+input[type="number"].error, 
+input[type="email"].error, 
+input[type="url"].error, 
+input[type="search"].error, 
+input[type="tel"].error, 
+input[type="color"].error {
+    border-color: #e48c85;
+}
+
+select:disabled, 
+textarea:disabled, 
+input[type="text"]:disabled, 
+input[type="password"]:disabled, 
+input[type="datetime"]:disabled, 
+input[type="datetime-local"]:disabled, 
+input[type="date"]:disabled, 
+input[type="month"]:disabled, 
+input[type="time"]:disabled, 
+input[type="week"]:disabled, 
+input[type="number"]:disabled, 
+input[type="email"]:disabled, 
+input[type="url"]:disabled, 
+input[type="search"]:disabled, 
+input[type="tel"]:disabled, 
+input[type="color"]:disabled {
+    background: #f0f0f0;
+}
+
+textarea {
+    height: 10em;
+    resize: none;
+}
+
+/* External Elements
+================================================== */
+
+.da-form .da-form-row .ui-slider {
+    margin-top: 11px;
+}
+
+.da-form .da-form-row .ui-slider + .ui-slider {
+    margin-top: 24px;
+}
+
+.da-form .da-form-row .ui-progressbar {
+    margin-top: 6px;
+}
+
+.da-form .da-form-row .ui-progressbar + .ui-progressbar {
+    margin-top: 20px;
+}
+
+.select2-container-multi .select2-choices .select2-search-field input {
+    min-height: 0;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -o-box-sizing: content-box;
+    -ms-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+/* General Message Styling
+================================================== */
+
+.da-message {
+    font-size: 12px;
+    border: 1px solid #d2d2d2;
+    padding: 15px 8px 15px 45px;
+    position: relative;
+    cursor: pointer;
+    background-color: #f8f8f8;
+    background-position: 12px 12px;
+    background-repeat: no-repeat;
+}
+
+.da-message + .da-message {
+    margin-top: 10px;
+}
+
+.da-message p, 
+.da-message ul, 
+.da-message ol {
+    margin: 0;
+}
+
+.da-message ul li, 
+.da-message ol li {
+    list-style-position: inside;
+    list-style-type: inherit;
+    margin: 0;
+}
+
+.ui-dialog .ui-dialog-content.form-container .da-message, 
+.da-panel .da-panel-content.da-form-container .da-message {
+    border-width: 0 0 1px 0;
+}
+
+.ui-dialog .ui-dialog-content.form-container .da-message:last-child, 
+.da-panel .da-panel-content.da-form-container .da-message:last-child {
+    border-bottom: 0;
+}
+
+/* Error Message Styling
+================================================== */
+
+.da-message.error {
+    background-color: #ffcbca;
+    background-image: url(../images/message-error.png);
+    border-color: #eb979b;
+    color: #9b4449;
+}
+
+/* Success Message Styling
+================================================== */
+
+.da-message.success {
+    background-color: #e1f1c0;
+    background-image: url(../images/message-success.png);
+    border-color: #b5d56d;
+    color: #62a426;
+}
+
+/* Warning Message Styling
+================================================== */
+
+.da-message.warning {
+    background-color: #fef0b1;
+    background-image: url(../images/message-warning.png);
+    border-color: #ddca76;
+    color: #a98b15;
+}
+
+/* Info Message Styling
+================================================== */
+
+.da-message.info {
+    background-color: #bce5f7;
+    background-image: url(../images/message-info.png);
+    border-color: #a6d3e8;
+    color: #11689E;
+}
+
+/* Media Queries
+================================================== */
+    
+@media only screen and (max-width: 767px) {
+    .da-form .da-form-inline .da-form-row .da-form-label, 
+    .da-form.da-form-inline .da-form-row .da-form-label {
+        float: none;
+        width: auto;
+        padding: 0 6px 6px 0;
+    }
+
+    .da-form .da-form-inline .da-form-row .da-form-item, 
+    .da-form.da-form-inline .da-form-row .da-form-item {
+        margin: 0;
+    }
+
+    .da-form .da-form-cols [class*="col-"] {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 9px;
+    }
+
+    .da-form .da-form-cols [class*="col-"] .btn, 
+    .da-form .da-form-row.da-column-row > .da-form-label {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .da-form .da-form-row {
+        padding: 16px;
+    }
+}

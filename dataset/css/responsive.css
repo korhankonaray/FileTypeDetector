@@ -1,0 +1,1150 @@
+/*-------------------
+Responsive css start
+---------------------*/
+@media only screen and (max-width:1200px) {
+    input,
+    textarea,
+    button,
+    select,
+    a {
+      -webkit-tap-highlight-color: rgba(0,0,0,0);
+    }
+	.swing-nav .nav ul li a{
+		padding: 0 20px;
+	}
+	.news-offers-main-wrap{
+		margin-left: 0;
+	}
+	.news-offers-wrapper .news-offers{
+		margin:0 10px;
+		width: -moz-calc(50% - 20px);
+	    width: -webkit-calc(50% - 20px);
+	    width: calc(50% - 20px);
+	}
+	.gallery-wrapper .grid{
+		margin:0;
+	}
+	.gallery-wrapper .grid-item{
+		padding:5px;
+	}
+	.news-offers-wrapper .news-offers{
+		margin:0 5px;
+	}
+	.special-offer-items{
+		margin-left:0;
+	}
+	.special-offer {
+	    width: -moz-calc(50% - 10px);
+	    width: -webkit-calc(50% - 10px);
+	    width: calc(50% - 10px);
+	    margin:0 5px;
+	}
+	.team-wrapper .owl-nav {
+	    position: static;
+	    left: 0px;
+	    top: 0;
+	}
+	.team-wrapper .owl-nav .owl-prev, 
+	.team-wrapper .owl-nav .owl-next{
+		position: absolute;
+		top:50%;
+		-webkit-transform: translateY(-50%);
+		transform: translateY(-50%);
+		background: #fff;
+	}
+	.team-wrapper .owl-nav .owl-prev{
+		left: 0;
+	}
+	.team-wrapper .owl-nav .owl-next{
+		right: 0;
+	}
+	.about-class.about-wrapper .s-about-wrapper {
+	    margin: 0 0px;
+	}
+	.comments-area .comment-body .comment-author span.says,
+	.comments-area .comment-body .comment-author b.fn{
+		font-size: 14px;
+	}
+	.comments-area .comment-body .comment-metadata{
+		font-size: 12px;
+	}
+	.comments-area .comment-body .comment-content{
+		font-size: 14px;
+	}
+	.comments-area .comment-body .reply a{
+		font-size: 12px;
+	}
+    .sclass,
+    .about-class.about-wrapper.sclass,
+    .gallery-wrapper.sclass{
+        padding: 60px 0;
+    }
+    .rooms-lists-wrapper.sclass, .testimonial-wrapper.sclass, .team-wrapper.sclass{
+        padding: 50px 0 65px;
+    }
+    .news-offers-wrapper.sclass{
+        padding: 60px 0;
+    }
+    .partners-wrapper.sclass{
+        padding:  40px 0;
+    }
+    .contact-wrapper.sclass{
+        padding: 60px 0 70px;
+    }
+    .footer-content.footer-text{
+        margin-bottom: 20px;
+            
+    }
+}
+@media only screen and (max-width:1140px) {
+	.s-search-room{
+		position: static;
+	}
+	.banner_class .content{
+		bottom:auto;
+		max-width:768px;
+        width: 100%;
+	}
+	.banner_class .content .title h4 {
+	    font-size: 40px;
+	}
+	.banner_class .hotel-booking-search ul li{
+		margin-bottom:10px;
+	}
+	.banner_class .hotel-booking-search .hb-form-table,
+	.banner_class .hotel-booking-search .hb-submit{
+		padding:0 20px;
+	}
+	.banner_class .hotel-booking-search .hb-form-table, 
+	.banner_class .hotel-booking-search .hb-submit, 
+	.banner_class .hotel-booking-search ul li{
+		display: block;
+	}
+	.banner_class .hotel-booking-search ul li .hb-form-field-input{
+		display: block;
+	}
+	.hotel-booking-search input, 
+	.hotel-booking-search select, 
+	.hotel-booking-search textarea, 
+	.hotel-booking-search button{
+		width: 100%;
+	}
+	.special-offer {
+	    width: -moz-calc(100% - 0);
+	    width: -webkit-calc(100% - 0);
+	    width: calc(100% - 0);
+	    max-width: 600px;
+	    width: 100%;
+	    margin: 10px auto 0;
+	    float: none;
+	}
+	.special-offer:nth-of-type(1){
+		margin-top: 0;
+	}
+    .contact-wrapper.siteorigin-panels-stretch{
+        margin-bottom: -125px;
+    }
+    
+    .banner-wrapper .s-banner-wrapper .owl-item .item{
+        height: 100vh;
+        position: relative;
+    }
+    .banner-wrapper .s-banner-wrapper .owl-item .item img{
+        transform-origin: 0 0;
+        backface-visibility: hidden;
+        object-fit: cover;
+        height: 100%;
+        min-width: 100%;
+        max-width: inherit;
+        position: absolute;
+        width: 100%;
+        margin: 0 auto;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .banner_class .content{
+        z-index: 9;
+    }
+    .banner_class .item:before{
+        z-index: 8;
+    }
+    .s-search-room{
+        position: absolute;
+        padding-bottom: 10px;
+    }
+    .banner_class .s-search-room .widget > div form{
+        display: block;
+    }
+    .banner_class .hotel-booking-search .hb-form-table{
+        display: inline-block;
+        width: calc(100% - 250px);
+        float: left;
+    }
+    .banner_class .hotel-booking-search ul li{
+        width: 48%;
+        display:  inline-block;
+        float: left;
+        margin-right:  2%;
+    }
+    .banner_class .hotel-booking-search .hb-submit{
+        display: inline-block;
+    }
+}
+@media only screen and (max-width:992px) {
+	.swing-nav{
+		text-align: center;
+	}
+	[id="toggle"]{
+		width: 35px;
+        height: 45px;
+        position: relative;
+        display: block;
+        margin: 10px auto;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .5s ease-in-out;
+        -moz-transition: .5s ease-in-out;
+        -o-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+        cursor: pointer;
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	}
+    [id="toggle"]:focus,
+    [id="toggle"]:active{
+        -webkit-box-shadow: none;
+            box-shadow: none;
+        outline: none;
+    }
+    [id="toggle"] > div{
+        display: block;
+        position: absolute;
+        height: 4px;
+        width: 100%;
+        background: #d3531a;
+        border-radius: 3px;
+        opacity: 1;
+        left: 0;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .25s ease-in-out;
+        -moz-transition: .25s ease-in-out;
+        -o-transition: .25s ease-in-out;
+        transition: .25s ease-in-out;
+    }
+    [id="toggle"] > div:nth-of-type(1){
+        top: 0px;
+    }
+    [id="toggle"] > div:nth-of-type(2){
+        top: 8px;
+    }
+    [id="toggle"] > div:nth-of-type(3){
+        top: 19px;
+    }
+    [id="toggle"] > div:nth-of-type(1) {
+      top: 0px;
+      -webkit-transform-origin: left center;
+      -moz-transform-origin: left center;
+      -o-transform-origin: left center;
+      transform-origin: left center;
+    }
+    
+    [id="toggle"] > div:nth-of-type(2) {
+      top: 8px;
+      -webkit-transform-origin: left center;
+      -moz-transform-origin: left center;
+      -o-transform-origin: left center;
+      transform-origin: left center;
+    }
+    
+    [id="toggle"] > div:nth-of-type(3) {
+      top: 19px;
+      -webkit-transform-origin: left center;
+      -moz-transform-origin: left center;
+      -o-transform-origin: left center;
+      transform-origin: left center;
+    }
+    
+    [id="toggle"].active > div:nth-of-type(1) {
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+      top: -2px;
+      left: 0px;
+    }
+    
+    [id="toggle"].active > div:nth-of-type(2) {
+      width: 0%;
+      opacity: 0;
+    }
+    
+    [id="toggle"].active > div:nth-of-type(3) {
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      top: 19px;
+      left: 0px;
+    }
+    .swing-nav .nav{
+        position: absolute;
+        width: 100%;
+        background: #FFF;
+    }
+	.nav ul.menu{
+		display: block;
+		padding:0;
+        max-height: 0;
+        overflow-y: auto;
+        overflow-x: hidden;
+        width: 100%;
+        visibility: hidden;
+    	opacity: 0;
+    	-webkit-transition: all ease 0.5s;
+    	   -moz-transition: all ease 0.5s;
+    	    -ms-transition: all ease 0.5s;
+    	     -o-transition: all ease 0.5s;
+    	        transition: all ease 0.5s;
+	}
+	.nav ul.menu.active{
+	    padding: 10px 0;
+        max-height: 300px;
+        visibility: visible;
+        opacity: 1;
+	}
+	.swing-nav .nav ul li{
+		display: block;
+		float: none;
+		text-align: left;
+	}
+	.swing-nav .nav ul li a {
+	    padding: 5px 20px;
+	    line-height: 2;
+	}
+	.swing-nav .nav ul li:before{
+		content:none;
+	}
+	.swing-nav .nav ul li.menu-item-has-children > .sub-menu{
+		position: absolute;
+		left: 0;
+		top: 100%;
+		width:250px;
+		background: #fff;
+		z-index: 9;
+		border:1px solid #eee;
+		border-bottom: 0;
+		visibility: hidden;
+		opacity: 0;
+	}
+	.swing-nav .nav ul li:last-child.menu-item-has-children > .sub-menu{
+		left:auto;
+		right: 0;
+	}
+	.swing-nav .nav ul li.menu-item-has-children:hover > .sub-menu{
+		visibility: visible;
+		opacity: 1;
+	}
+	.swing-nav .nav ul li.menu-item-has-children > .sub-menu li{
+		float: none;
+	}
+	.swing-nav .nav ul li.menu-item-has-children > .sub-menu li:before{
+		content: none;
+	}
+	.swing-nav .nav ul li.menu-item-has-children > .sub-menu {
+	    position: static;
+	    width: 100%;
+	    visibility: visible;
+	    opacity:1;
+	    border:0;
+	    padding:0px 0 0px 20px;
+	    margin: 0;
+	}
+	.swing-nav .nav ul li.menu-item-has-children > .sub-menu li a{
+		border:0;
+	}
+	.swing-nav .nav ul li.menu-item-has-children > .sub-menu li > a{
+		padding-left:20px;
+		position: relative;
+	}
+	.swing-nav .nav ul li.menu-item-has-children > .sub-menu li a:before{
+		content: "";
+		position:absolute;
+		width: 6px;
+		height: 2px;
+		background: #aaa;
+		top:50%;
+		-webkit-transform: translateY(-50%);
+		transform: translateY(-50%);
+		left: 0;
+		color:#999;
+		font-size:12px;
+	}
+	.side-header .logo-wrap ,
+	.over-slider-header .logo-wrap{
+	    width: 100%;
+	    float: none;
+	}
+	.side-header .s-navigation-wrapper .s-container,
+	.over-slider-header .s-container{
+		display: block;
+	}
+	.side-header .swing-nav ,
+	.over-slider-header  .swing-nav{
+	    width: -moz-calc(100% - 0);
+	    width: -webkit-calc(100% - 0);
+	    width: calc(100% - 0);
+	    width: 100%;
+	    float: none;
+	}
+	.over-slider-header{
+		position: static;
+	}
+	.over-slider-header .swing-nav .nav ul li a{
+		color:#222;
+	}
+	.news-offers-wrapper .news-offers {
+	    margin: 10px auto 0;
+	    max-width:600px;
+	    width: 100%;
+	    float: none;
+	}
+	.news-offers-wrapper .news-offers:nth-of-type(1){
+		margin-top: 0;
+	}
+	.features {
+	    width: -moz-calc(50% - 40px);
+	    width: -webkit-calc(50% - 40px);
+	    width: calc(50% - 40px);
+	}
+	.features:nth-of-type(3n+1) {
+	    clear: none;
+	}
+	.features:nth-of-type(2n+1) {
+		clear:left;
+	}
+	.list-layout .rooms-features-wrapper{
+		width:60%;
+	}
+	.list-layout .image-wrapper{
+		width: 40%;
+	}
+	.right-sidebar #primary{
+		width: 100%;
+		padding-right: 0;
+	}
+	.right-sidebar #secondary{
+		width: 100%;
+		padding-left: 0;
+	}
+	.breadcrumb{
+		padding: 70px 0;
+		margin-bottom: 60px;
+	}
+    [id="primary"], [id="secondary"]{
+        margin-bottom: 60px;
+    }
+    .swing-nav .nav ul li:focus,
+    .swing-nav .nav ul li:active{
+        outline: none !important;
+        background-color: transparent !important;
+        background: transparent !important;
+        box-shadow: none !important;
+    }
+    .logo-nave-wrap{
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+        padding: 0 20px 0 10px;
+    }
+    .logo-nave-wrap .logo-wrap img{
+        max-width: 150px;
+    }
+    .logo-nave-wrap [id="toggle"]{
+        height: 30px;
+    }
+    .logo-nave-wrap .swing-nav .nav{
+        left: 0;
+        border: none;
+        top: 100%;
+    }
+    .logo-nave-wrap .swing-nav .s-container{
+        padding: 0 20px 0 0px;
+    }
+}
+
+@media only screen and (max-width:840px) {
+	[id="primary"],
+	[id="secondary"]{
+		float: none;
+		width: 100%;
+		padding:0;
+		clear:both;
+	}
+	.widget-area:before,
+	.widget-area:after{
+		content: "";
+		display: table;
+		table-layout: fixed;
+	}
+	.widget-area:after{
+		clear: both;
+	}
+	.grid-layout .rooms-loops {
+	    width:47%;
+	}
+	.grid-layout .rooms-loops:nth-of-type(3n+1){
+		clear:none;
+	}
+	.grid-layout .rooms-loops:nth-of-type(2n+1){
+		clear: left;
+	}
+	.comments-area .comment-list .comment.depth-1.parent .children{
+		padding-left: 5px;
+	}
+    .feature-items{
+        display: -webkit-box;
+    	display: -moz-box;
+    	display: -ms-flexbox;
+    	display: -webkit-flex;
+    	display: flex;
+    	-ms-flex-align: start;
+    	-webkit-align-items: start;
+    	-webkit-box-align: flex-start;
+    	align-items: flex-start;
+    	-webkit-flex-flow: row wrap;
+    	justify-content: flex-start;
+    	width: 100%;
+    	margin: 0;
+    }
+    .features{
+        text-align: center;
+        margin: 10px 0;
+        -webkit-flex-basis: 49%;
+	        flex-basis: 49%;
+    	margin-right: 2%;
+    	margin-bottom: 2rem;
+    	vertical-align: middle;
+    	display: -webkit-box;
+    	display: -moz-box;
+    	display: -ms-flexbox;
+    	display: -webkit-flex;
+    	display: flex;
+    	-ms-flex-align: center;
+    	-webkit-align-items: center;
+    	-webkit-box-align: center;
+    	align-items: center;
+    	-webkit-flex-flow: row wrap;
+        padding: 0 25px;
+    }
+    .feature-items.clear:before,
+    .feature-items.clear:after{
+        display:  none !important;
+    }
+    .features:nth-of-type(2n){
+        margin-right: 0;
+    }
+    .features .features-icon{
+        position: relative;
+        text-align: center;
+        margin: 0 auto 10px;      
+    }
+    .feature-items .features{
+        margin-bottom: 5px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+	.news-offers-wrapper .events-desc a{
+		color: #fff;
+	}
+	.header-top-content .left-content + .right-content{
+		margin-top:10px;
+	}
+	.header-top-content .left-content, 
+	.header-top-content .right-content{
+		width:100%;
+		display: block;
+		margin-right: 0;
+		text-align: center;
+	}
+	.about-class .home-about-features-images{
+	    width: 100%;
+	    max-width: 400px;
+	    float:none;
+	    margin:10px auto 0;
+	    padding: 0 0px;
+	}
+	.about-class .home-about-features-images:nth-of-type(1){
+		margin-top: 0;
+	}
+	.about-class .home-about-features-images .overlay {
+	    left: 0;
+	    right: 0;
+	}
+	.service-wrapper .content-wrapper{
+		margin:0 auto;
+	}
+	.team-items-wrapper {
+	    width: 100%;
+	    float:none;
+	    padding-right:0;
+	}
+	.team-items-main-wrap {
+	    width: -moz-calc(100% - 0);
+	    width: -webkit-calc(100% - 0);
+	    width: calc(100% - 0);
+	    width: 100%;
+	    float: none;
+	    margin-top: 20px;
+	}
+	.s-content-tag-wrap {
+	    float: none;
+	    padding: 0 30px;
+	    width: 100%;
+	    margin-top:30px;
+	}
+	.s-content-tag-wrap:nth-of-type(1){
+		margin-top: 0;
+	}
+	.teams .team-image .team-social-links {
+	    opacity: 1;
+	    visibility: visible;
+	    bottom: 0;
+	}
+	.testimonial-wrapper .owl-nav .owl-prev, .testimonial-wrapper .owl-nav .owl-next,
+	.rooms .owl-nav .owl-prev, .rooms .owl-nav .owl-next{
+		opacity: 1;
+		visibility: visible;
+	}
+	.news-offers-wrapper .news-offers .overlay {
+	    background: rgba(235,112,126,0.6);
+	}
+	.news-offers-wrapper .news-offers .events-title a, 
+	.news-offers-wrapper .news-offers .events-desc, 
+	.news-offers-wrapper .news-offers .post-attributes span.post-date, 
+	.news-offers-wrapper .news-offers .post-attributes span.post-author a{
+		color:#fff;
+	}
+	.list-layout .image-wrapper, .list-layout .rooms-features-wrapper{
+		width: 100%;
+		float: none;
+		padding:0;
+	}
+	.list-layout .rooms-features-wrapper{
+		padding:30px;
+	}
+	.list-layout .image-wrapper img{
+		display: block;
+		margin: 0 auto;
+	}
+	.grid-layout .rooms-loops {
+	    width:100%;
+	    max-width:370px;
+	    margin:0 auto 30px;
+	    float: none;
+	}
+	.grid-layout .rooms-content{
+		margin-left: 0;
+	}
+	.contact-page .form-section-1, .contact-page .form-section-2 {
+	    width: 100%;
+	    margin-right: 0;
+	    padding: 0;
+	}
+	.contact-page .form-section-2{
+		margin-top: 20px;
+	}
+	.comment-respond .form-submit{
+		margin-bottom: 40px;
+	}
+	.widget_shopping_cart .widget_shopping_cart_content{
+		width: 100%;
+	}
+	.right-sidebar #secondary{
+		padding-top: 30px;
+	}
+	.woocommerce-account .entry-content .woocommerce h2{
+		max-width: 100%;
+	}
+	.woocommerce-account .entry-content .woocommerce form.checkout_coupon,
+	.woocommerce-account .entry-content .woocommerce form.login,
+	.woocommerce-account .entry-content .woocommerce form.register,
+	.woocommerce-account .entry-content .woocommerce form.woocommerce-ResetPassword{
+		max-width: 100%;
+	}
+    .hb-form-table.col-2,
+    .entry-content .hb-form-field, .entry-content .hotel-booking-search form button{
+        width: 100%;
+        max-width: 100%;
+    }
+    #hotel-booking-cart table tr.hb_checkout_item td, #hotel-booking-payment table tr.hb_checkout_item td, #hotel-booking-cart td, #hotel-booking-payment td, #hotel-booking-cart table th, #hotel-booking-payment table th{
+        padding-left: 5px !important;
+        min-width: 100px;
+    }
+    #hotel-booking-cart table th, #hotel-booking-payment table th{
+        padding: 10px 5px;
+    }
+    #hotel-booking-cart table tr.hb_checkout_item td,
+    #hotel-booking-payment table tr.hb_checkout_item td,
+    #hotel-booking-cart td, #hotel-booking-payment td,
+    #hotel-booking-cart table th,
+    #hotel-booking-payment table th{
+        min-width: 120px;
+        width: 100%;
+    }
+    #hotel-booking-cart .hb_remove_cart_item, #hotel-booking-payment .hb_remove_cart_item{
+        margin-left: -2px;
+    }
+    .contact-wrapper.siteorigin-panels-stretch{
+        margin-bottom: -40px;
+    }
+    body.error404 .error-404{
+        margin-bottom: 60px;
+    }
+    body.error404 .breadcrumb{
+        margin-bottom: 60px;
+    }
+    .rooms-loops{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .rooms-loops .rooms-title h3{
+        text-align: center;
+    }
+    .services{
+        max-width: 50%;
+        margin: 10px auto 0;
+    }
+    p{
+        margin-bottom: 0.875rem;
+    }
+    .features .features-content{
+        margin: 0 auto;
+    }
+    .features .features-content .s-feature-content{
+        margin-bottom: 20px;
+    }
+    .widget_swing_lite_facilities_simple .features{
+        margin-bottom: -10px;
+        margin-top: 20px;
+    }
+    .s-container{
+        padding: 0 30px;
+    }
+    .list-layout .room-features:before,
+    .grid-layout .room-features:before,
+    .hb_related_other_room.has_slider .room-features:before,
+    .feature-post-attributes:before{
+        right: 0;
+        margin: 0 auto;
+    }
+    .unique.unique-features{
+        text-align: center;
+    }
+    [id="primary"] .additional-content,
+    [id="primary"] .rooms-content{
+        text-align: center;
+    }
+    .rooms-features-wrapper .s-rooms-price{
+        text-align: center;
+    }
+    .hb_single_room_tab_details #reviews ol .comment_container .comment-text{
+        text-align: left;
+    }
+    #review_form_wrapper .comment-respond{
+        text-align: left;
+    }
+    #hotel-booking-results .hb-search-results > .hb-room .hb-room-thumbnail,
+    #hotel-booking-results .hb-search-results > .hb-room .hb-room-thumbnail a.hb-room-gallery,
+    #hotel-booking-results .hb-search-results > .hb-room .hb-room-thumbnail a.hb-room-gallery img{
+        max-width: 100%;
+        width: 100%;
+    }
+    .blog .feature-post-attributes{
+        text-align: center;
+    }
+    .abt-align-custom .textwidget h2{
+        text-align: center !important;
+    }
+    .abt-align-custom .textwidget p{
+        text-align: center !important;
+    }
+    .hb-search-results .hb_button.hb_view_cart{
+        padding: 10px 15px;
+        border-radius: 0;
+        font-size: 14px;
+        color: #FFF;
+        text-transform: uppercase;
+        border: solid 1px #d46e4e;
+    }
+    #hotel-booking-cart table.hb_table thead tr th:nth-of-type(3),
+    #hotel-booking-cart table.hb_table tbody tr td:nth-of-type(3){
+        display: none;
+    }
+    #hotel-booking-payment table th.hb_capacity,
+    #hotel-booking-payment table th.hb_night{
+        display: none;
+    }
+    #hotel-booking-payment table tr.hb_checkout_item.package td:nth-of-type(2),
+    #hotel-booking-payment table tr.hb_checkout_item td.hb_capacity,
+    #hotel-booking-payment table tr.hb_checkout_item td.hb_night{
+        display: none;
+    }
+    #hotel-booking-payment table tr.hb_checkout_item.package td:nth-of-type(1){
+        display: none !important;
+    }
+    #hotel-booking-payment table tr.hb_checkout_item.package td:nth-of-type(3){
+        display: inline-block;
+    }
+    .no-marg-extra{
+        margin-bottom: -30px;
+    }
+    .no-marg-extra .panel-grid-cell{
+        margin-bottom: 0px !important;
+    }
+    [id="primary"], [id="secondary"]{
+        margin-bottom: 70px;
+    }
+    .dedicated-staff-wrapper{
+        text-align: center;
+    }
+    .gallery-wrapper.sclass,
+    .news-offers-wrapper.sclass{
+        padding-bottom: 80px;
+    }
+    .hb_single_room table.hb_room_pricing_plans tr th{
+        font-size: 12px;
+    }
+    .hb_single_room table.hb_room_pricing_plans tr td{
+        font-size: 12px;
+    }
+    #hotel-booking-cart{
+        padding-bottom: 0;
+    }
+    body.woocommerce-cart .breadcrumb{
+        margin-bottom: 70px;
+    }
+    body.woocommerce-cart .site-main{
+        margin-bottom:  -35px;
+    }
+    body.post-type-archive-product .site-main{
+        margin-bottom:  -40px;
+    }
+    .hb_single_room .title{
+        margin-top: 20px;
+    }
+    .wp-hotel-booking-search-rooms #primary{
+        margin-bottom: 0px;
+    }
+    .wp-hotel-booking-search-rooms #primary article{
+        margin-bottom: -30px;
+    }
+    .special-offer-wrapper.sclass{
+        padding: 60px 0 80px;
+    }
+    .header-top-content .s-container{
+        padding: 18px 10px 15px;
+    }
+    .woocommerce-account #primary{
+        margin-bottom: 40px;
+    }
+    .page-template-default #primary .contact-wrapper{
+        margin-bottom: -90px;
+    }
+    .no-marg-activity{
+        margin-bottom: -40px;
+    }
+    .page-id-610 .content-wrapper{
+        margin-bottom: 20px;
+    }
+    .comments-area .comment-body .comment-author{
+    	width: 100%;
+    }
+    .comments-area .comment-body .comment-metadata{
+    	width: 100%;
+    	padding-left: 68px;
+    	text-align: left;
+    	margin-bottom: 15px;
+    }
+}
+@media only screen and (max-width:680px) {
+    .s-search-room{
+        position: static;
+        padding-bottom: 25px;
+    }
+    .banner_class .s-search-room .widget > div form{
+        display: block;
+    }
+    .banner_class .hotel-booking-search .hb-form-table{
+        display: block;
+        width: 100%;
+        float: left;
+    }
+    .banner_class .hotel-booking-search ul li{
+        width: 50%;
+        display:  inline-block;
+        float: left;
+        margin-right: 0;
+    }
+    .banner_class .hotel-booking-search ul li:nth-child(2n-1){
+        padding-right: 10px;
+    }
+    .banner_class .hotel-booking-search ul li:nth-child(2n){
+        padding-left: 10px;
+    }
+    .banner_class .hotel-booking-search .hb-submit{
+        display: block;
+    }
+    .banner_class .content{
+        bottom: auto;
+    }
+    .feature-wrapper .features{
+        margin-bottom: 10px;
+    }
+    .hb_single_room .summary .title{
+        margin-top: 30px;
+    }
+    .hb_single_room .hb_single_room_details .hb_single_room_tabs_content{
+        padding-bottom: 0;
+        margin-bottom: -40px;
+    }
+}
+
+@media only screen and (max-width:640px) {
+	/*.banner_class .content .text,
+	.banner_class .content .title{
+		display: none;
+	}*/
+	.banner_class .content{
+		bottom:auto;
+		top: 50%;
+		-webkit-transform: translate(-50% , -50%);
+    	transform: translate(-50% , -50%);
+        width: 100%;
+        padding: 0 10%;
+	}
+	.special-offer-wrap {
+	    display:block;
+	}
+	.special-offer-wrap > div{
+		display: block;
+		width: 100%;
+	}
+	.special-offer{
+		max-width:300px;
+	}
+	.special-offer-content:before{
+		content: none;
+	}
+	.special-offer-content .read-more{
+		position: static;
+		margin-top: 20px;
+	}
+	.special-offer-content .read-more a{
+		max-width: 100%;
+	}
+	.features{
+	    width: -moz-calc(100% - 0px);
+	    width: -webkit-calc(100% - 0px);
+	    width: calc(100% - 0px);
+	    width: 100%;
+	    float: none;
+	    margin-left: 0;
+	}
+	.features:nth-of-type(3n+1),
+	.features:nth-of-type(2n+1) {
+	    clear: none;
+	}
+	.feature-items{
+		margin-left: 0;
+	}
+	.news-offers-wrapper .news-offers{
+		padding:20px;
+	}
+	.news-offers-wrapper .events-desc{
+		font-size: 24px;
+	}
+	.gallery-wrapper .grid-sizer, .gallery-wrapper .grid-item{
+		width: 50%;
+	}
+	.s-contact-form .form-section-1, .s-contact-form .form-section-2 {
+	    display:block;
+	    margin-right:0;
+	    width:100%;
+	    padding: 0;
+	}
+	.woocommerce-page.columns-3 ul.products li.product, .woocommerce.columns-3 ul.products li.product{
+		flex-basis: 49%;
+		margin-right: 2%;
+	}
+	.woocommerce-page.columns-3 ul.products li.product:nth-child(2n),
+	.woocommerce.columns-3 ul.products li.product:nth-child(2n){
+		margin-right: 0;
+	}
+	.woocommerce-page.columns-3 ul.products li.product:nth-child(3n),
+	.woocommerce.columns-3 ul.products li.product:nth-child(3n){
+		margin-right: auto;
+	}
+    .features{
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+        -webkit-flex-basis: 100%;
+	        flex-basis: 100%;
+    	margin-right: 0%;
+    	margin-bottom: 2rem;
+    	vertical-align: middle;
+    	display: -webkit-box;
+    	display: -moz-box;
+    	display: -ms-flexbox;
+    	display: -webkit-flex;
+    	display: flex;
+    	-ms-flex-align: center;
+    	-webkit-align-items: center;
+    	-webkit-box-align: center;
+    	align-items: center;
+    	-webkit-flex-flow: row wrap;
+        padding: 0 25px;
+    }
+    .features:nth-of-type(2n){
+        margin-right: 0;
+    }
+    .banner_class .content .link a{
+        padding: 15px 20px;
+    }
+    .breadcrumb .breadcrumb-title .header-page-title{
+        font-size: 36px;
+    }
+	.post-navigation .nav-links .nav-next,
+	.post-navigation .nav-links .nav-previous{
+		width: 100% !important;
+		margin-top: 10px;
+        float: left;
+        text-align: left;
+	}
+	.post-navigation .nav-links .nav-next a,
+	.post-navigation .nav-links .nav-previous a{
+	   width: 100%;
+	}
+    .room-listing-main-content-wrapper .list-layout .s-container{
+        padding:  0;
+    }
+
+}
+@media only screen and (max-width:480px) {
+	.gallery-wrapper .grid-sizer, 
+	.gallery-wrapper .grid-item{
+		width: 100%;
+	}
+	.comments-area .comment-body .comment-author{
+		width: 100%;
+		display: block;
+	}
+	.comments-area .comment-body .comment-author span.says,
+	.comments-area .comment-body .comment-author b.fn{
+		vertical-align: top;
+	}
+	.comments-area .comment-body .comment-metadata{
+		display: block;
+		width: 100%;
+		text-align: left;
+	    padding-left: 67px;
+	    margin-top: -30px;
+	    margin-bottom: 20px;
+	}
+	.woocommerce ul.products[class*=columns-] li.product,
+	.woocommerce-page ul.products[class*=columns-] li.product{
+		width: 100%;
+	}
+	.woocommerce-page.columns-3 ul.products li.product, .woocommerce.columns-3 ul.products li.product{
+		flex-basis: 100%;
+		margin-right: 0%;
+	}
+	.woocommerce-page.columns-3 ul.products li.product:nth-child(2n),
+	.woocommerce.columns-3 ul.products li.product:nth-child(2n){
+		margin-right: 0;
+	}
+    .woocommerce-cart #content .woocommerce table.cart td.actions .coupon .input-text,
+        .woocommerce-page table.cart td.actions .coupon input{
+        display: block;
+        width: 100% !important;
+        float:left !important;
+        text-align:  center;
+    }
+    .error-404 form input.search-field, .not-found form input.search-field{
+        width: 100%;
+        max-width: 100%;
+    }
+    .error-404 form input.search-submit, .not-found form input.search-submit{
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        margin-top: 10px;
+    }
+    .services .rooms-thumbnail img{
+        width: 100%;
+    }
+    .services{
+        max-width: 100%;
+        margin: 10px auto;
+    }
+    .banner_class .hotel-booking-search ul li{
+        width: 100%;
+        display:  block;
+        float: left;
+        margin-right: 0;
+    }
+    .banner_class .hotel-booking-search ul li:nth-child(2n-1){
+        padding-right: 0px;
+    }
+    .banner_class .hotel-booking-search ul li:nth-child(2n){
+        padding-left: 0px;
+    }
+    #hotel-booking-cart table tr th.hb_quantity{
+        width: 40px;
+        word-break: break-word;
+    }
+    #hotel-booking-cart table tr th.hb_gross_total,
+    #hotel-booking-cart table tr.hb_checkout_item td.hb_gross_total{
+        width:90px;
+    }
+    .section-feature{
+        padding-bottom: 45px;
+    }
+    .special-offer-wrapper.sclass{
+        padding: 60px 0 75px;
+    }
+    .special-offer{
+        max-width: 100%;
+    }
+    .special-offer-image img{
+        width: 100%;
+    }
+    .woocommerce .woocommerce-result-count{
+        width: 100%;
+        text-align: center;
+    }
+    .woocommerce .woocommerce-ordering{
+        width: 100%;
+        text-align: center;
+    }
+    .woocommerce-account #primary{
+        margin-bottom: 40px;
+    }
+}

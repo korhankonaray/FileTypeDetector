@@ -1,0 +1,142 @@
+/*
+ * Dandelion Admin v2.0 - Wizard Plugin Stylesheet
+ *
+ * This file is part of Dandelion Admin, an Admin template build for sale at ThemeForest.
+ * For questions, suggestions or support request, please mail me at maimairel@yahoo.com
+ *
+ * Development Started:
+ * March 25, 2012
+ * Last Update:
+ * December 07, 2012
+ *
+ */
+
+ /* Generak
+================================================== */
+
+.dwizard-nav {
+    padding: 23px 16px 30px;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.dwizard-nav ul, 
+.dwizard-nav ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dwizard-nav ul {
+    background-color: #d9d9d9;
+    position: relative;
+    height: 100%;
+}
+
+.dwizard-nav ul:after, 
+.dwizard-nav ul:before {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+
+.dwizard-nav ul:after {
+    clear: both;
+}
+
+.dwizard-nav ul li {
+    display: block;
+    float: left;
+    font-size: 0;
+    z-index: 1;
+    position: relative;
+}
+
+.dwizard-nav ul li:after, 
+.dwizard-nav ul li:before {
+    content: '';
+    background-color: #fff;
+    height: 13px;
+    left: 0; top: 0;
+    right: 32px;
+    position: absolute;
+}
+
+ .dwizard-nav ul li:after {
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), 0 2px 0 rgba(255, 255, 255, 0.25);
+    -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), 0 2px 0 rgba(255, 255, 255, 0.25);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), 0 2px 0 rgba(255, 255, 255, 0.25);
+ }
+
+.dwizard-nav ul li:before {
+    top: auto; bottom: 0;
+}
+
+.dwizard-nav ul li .wzd-link {
+    display: block;
+    text-align: center;
+    line-height: 32px;
+    width: 32px;
+    height: 32px;
+    float: right;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA+1JREFUeNrEV1lIlFEU/v+Zq8yoY4M6juKKjhuClrtjpGFhDxFUEkbkS0j1UgQ9CEIRPQThQ41IRU9CJpRYD0EuSElqqURmFlOu5EzuOuo0+9J3ZUZUXP6Z0enAN/+d+y/nO+eee+45rB3CcBCdTmddWFjoGBkZ+fgFEhgYyLa1tf2k9+RyucxqtfLy8vLSY2Nj5UFBQUW+vr58Lt9ldyOwtLQ03dfXp4DOd6mpqRYoE4jFYvpxA2B2POYH8EdHR02dnZ2G/v5+UlpaejQjI+OGQCCQukXAYDDoBwcHa4eHh5uKiorYsLAwLabngTnAuPl5kGI0Gk0ghsGApKOjw97S0mIvLy8/m5iYeJ3H4wk5E1heXp5ubGy8mpaWps7KytJgahww7WRJaGjohv8zMzNiXOLr6+ttLMtGwSNPsCxhuxKYnZ0dHBgYuBkTE/NHJpON0OXnspaRkZFbzqtUKmlzc3N4V1eXoKqq6jGWJH1bAtRyrPWF/Px8FdgOYcrGcJT4+Pht7yFwhd3d3Qnt7e3CysrK1z4+Pmue4DkHRqPRBKaX4+LifkH5T1eUU4Fl2wLBq0fw/sjJyVlpbW29BJtNGwhQJ4yNjT0IDg7+FhUVNcG4ITsRoMjMzLSUlJT8WllZGZ+amrq/gQD2+B+1Wv28uLh4jHFTdiNAUVBQYMnNzf1dXV39zGazqdcIQHktIYQGnN1dAkKhkBMqKiq02dnZeuySh6sETCaTtre392VhYaGW8UC4EqCYn5+fVCgUL/Galuj1+rcTExPTjIdCP8xVkKTMyDGw3fSGINX2KJXKv94k4Nh1CD1dN0H6VNbV1Vm9TQAJz7C4uKgkDQ0NPXCHp/oZPz8/V1+x1tTU9BE+n29h9kDcILC64whcZ98LAq4ugUNsBMzZ/+QBqtfGIiEca2pqavckCbkpvmVlZXISEBCQDPe9x4TFywT4/v7+KQQnXwEIPP0PBOgGOEx/TuK4FKGeM3rT+uTkZIJK6RTBnwDUbOcnJycfedELBHXHRarbWRGpQeAQaoJZb1ifkJAglkgkXzGOII7JCKlUegUk7u2zF+jWIyEhIVepzs01od5sNucNDQ19p2lyv1yflJSUgrjroblrq6p4GCSOOI5n2167Pjo6WoLC5wPGsp36gs9os86gblPtEQnqdjY8PDwCzckrjDO5dEZTmD49NzfX68iQdg+U8xBwWbi+BnZvTNaJHrgLbyi0Wq3ORRKrVotEIgGsvobxLeeau9ycUm8At/HYC/SLS+uP0i2UOivkA0gy5zC8s5XVrhJwCm0m2oBm4BPdKRaLpX81tAk56Kiw84ETwHF62HD56D8BBgBkK8CYeJ8pxwAAAABJRU5ErkJggg==');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 32px 32px;
+}
+
+.dwizard-nav ul li .wzd-link .wzd-icon, 
+.dwizard-nav ul li.wzd-done .wzd-link .wzd-active-icon {
+    display: inline-block;
+}
+
+.dwizard-nav ul li .wzd-link .wzd-active-icon, 
+.dwizard-nav ul li.wzd-done .wzd-link .wzd-icon {
+    display: none;
+}
+
+.dwizard-nav ul li .wzd-link [class^="icon-"] {
+    font-size: 16px;
+    color: #fff;
+}
+
+.dwizard-nav ul li .wzd-label {
+    display: block;
+    position: absolute;
+    width: 90%; top: 100%;
+    left: 10%;
+    text-align: right;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    line-height: 20px;
+    font-size: 11px;
+    z-index: 100;
+}
+
+.dwizard-nav ul li.progress {
+    position: absolute;
+    height: 100%;
+    z-index: 0;
+    background: rgb(166,208,55); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(166,208,55,1) 0%, rgba(142,198,43,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(166,208,55,1)), color-stop(100%,rgba(142,198,43,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(166,208,55,1) 0%,rgba(142,198,43,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(166,208,55,1) 0%,rgba(142,198,43,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(166,208,55,1) 0%,rgba(142,198,43,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(166,208,55,1) 0%,rgba(142,198,43,1) 100%); /* W3C */
+    -webkit-transition: width .5s linear;
+    -moz-transition: width .5s linear;
+    transition: width .5s linear;
+}
+
+.dwizard-nav ul li.progress:after, 
+.dwizard-nav ul li.progress:before {
+    display: none;
+}

@@ -1,0 +1,382 @@
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+ *
+ * MoonCake v1.2.1 - Layout Stylesheet
+ *
+ * This file is part of MoonCake, an Admin template build for sale at ThemeForest.
+ * For questions, suggestions or support request, please mail me at maimairel@yahoo.com
+ *
+ * Development Started: 
+ * July 28, 2012
+ * Last Update:
+ * October xx, 2012
+ *
+ */
+
+/* z-index stacking order
+
+Header: 10;
+Sidebar Separator: 7;
+Sidebar: 6;
+
+screen < 767px
+	Navbar-search: 11;
+	Navbar-toggle: 12;
+ 
+/* Body
+================================================== */
+
+body
+{
+    background: #fafafa url(../images/layout/bg/retina_wood.png);
+    color: #444;
+    padding: 0;
+}
+
+#wrapper
+{
+    max-width: 1536px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 5px 5px 0 5px;
+}
+
+#wrapper.no-header #header
+{
+    display: none;
+}
+
+#wrapper.no-header #content-wrap
+{
+    padding: 10px 8px;
+    margin-top: 0;
+}
+
+#wrapper.no-sidebar #sidebar, 
+#wrapper.no-sidebar #sidebar-separator
+{
+    display: none;
+}
+
+#wrapper.no-sidebar #main
+{
+    margin-left: 0 !important;
+}
+
+#wrapper.no-sidebar #content-inner
+{
+    background: none !important;
+}
+
+/* Content Wrapper
+================================================== */
+
+#wrapper #content-wrap
+{
+    background: url(../images/layout/book-cover.png) #f6f6f6;
+    padding: 69px 8px 10px 8px;
+    margin-top: -69px;
+    border: 1px solid #444;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.35), 0 0 6px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.35), 0 0 6px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.35), 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+#wrapper #content, 
+#wrapper #content-outer, 
+#wrapper #content-inner
+{
+    border-top: 0 !important;
+    -webkit-border-radius: 0 0 3px 3px;
+    -moz-border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3px 3px;
+}
+
+#wrapper #content-wrap #content
+{
+    background-color: #fff;
+    position: relative;
+}
+
+#wrapper #content-outer
+{
+    position: relative;
+    background: #fefefe url(../images/layout/grids.png);
+}
+
+#wrapper #content-inner
+{
+    position: relative;
+    background-image: url(../images/layout/content-bg.png);
+    background-position: -25px top;
+    background-repeat: repeat-y;
+}
+
+#wrapper #content #sidebar-separator
+{
+    width: 40px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 206px;
+    z-index: 7;
+    background: url(../images/layout/book-fold.png) repeat-y left top;
+}
+
+/* Main
+================================================== */
+
+#wrapper #main
+{
+    margin-left: 226px;
+    margin-bottom: 0;
+    padding-bottom: 40px;
+}
+
+/* Main Header
+================================================== */
+
+#wrapper #main #main-header, 
+#wrapper #main #main-header h1
+{
+    background: url(../images/layout/dotted_border.png) repeat-x left bottom;
+}
+
+#wrapper #main #main-header
+{
+    margin-top: 0;
+    padding-bottom: 4px;
+    border-bottom: 0;
+}
+
+#wrapper #main #main-header h1
+{
+    font-size: 24px;
+    color: #444;
+    margin: 0;
+    padding: 20px 40px;
+    text-shadow: -1px -1px #f0f0f0;
+}
+
+#wrapper #main #main-header h1 span
+{
+    color: #777;
+    font-size: 11px;
+    font-weight: normal;
+    padding-left: 6px;
+    margin-left: 6px;
+    text-shadow: none;
+    border-left: 1px dotted #aaa;
+    line-height: 1;
+}
+
+#wrapper #main #main-header .breadcrumb
+{
+    background: url(../images/layout/dotted_border.png) repeat-x left bottom;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border: 0;
+    margin: 0;
+    padding: 8px 40px;
+    font-size: 11px;
+    line-height: 16px;
+}
+
+#wrapper #main #main-header .breadcrumb [class^="icon-"], 
+#wrapper #main #main-header .breadcrumb [class^="icol-"], 
+#wrapper #main #main-header .breadcrumb [class^="icos-"]
+{
+    color: #444;
+    font-size: 16px;
+    margin-right: 5px;
+    vertical-align: text-top;
+}
+
+/* Main Content
+================================================== */
+
+#wrapper #main #main-content
+{
+    float: left;
+    width: 100%;
+    padding: 0 40px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Footer
+================================================== */
+
+#footer
+{
+    padding: 15px;
+    color: #444;
+    font-size: 11px;
+    line-height: 2;
+    *zoom: 1;
+}
+
+#footer:after, 
+#footer:before
+{
+    display: table;
+    content: "";
+    line-height: 0;
+}
+
+#footer:after
+{
+    clear: both;
+}
+
+#footer p
+{
+    margin-bottom: 0;
+}
+
+#footer .footer-left
+{
+    float: left;
+}
+
+#footer .footer-right
+{
+    float: right;
+    text-align: right;
+}
+
+/* Media Queries
+================================================== */
+
+@media (min-width: 1281px)
+{
+    #wrapper
+    {
+        margin: 0 auto;
+        padding: 20px 20px 0 20px;
+    }
+
+    #wrapper #sidebar
+    {
+        width: 286px;
+    }
+
+    #wrapper #main
+    {
+        margin-left: 286px;
+    }
+
+    #wrapper #content-wrap #content, 
+	#wrapper #content-outer
+    {
+        padding: 0 1px 1px;
+        border: 1px solid #bbb;
+    }
+
+    #wrapper #content-inner
+    {
+        border: 1px solid #ccc;
+        border-top: 0;
+        background-image: url(../images/layout/content-bg-gt1200.png);
+        background-position: left top;
+    }
+}
+
+@media (max-width: 979px)
+{
+    #wrapper
+    {
+        margin: 0;
+        padding: 0;
+    }
+
+    #wrapper #main
+    {
+        margin-left: 45px;
+    }
+
+    #wrapper #content-wrap
+    {
+        padding: 69px 0 0;
+        border: 0;
+    }
+
+    #wrapper #content, 
+	#wrapper #content-wrap, 
+	#wrapper #content-outer, 
+	#wrapper #content-inner
+    {
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+    }
+
+    #wrapper #sidebar #navigation > ul
+    {
+        min-height: 0 !important;
+    }
+
+    #wrapper #main #main-header .breadcrumb, 
+	#wrapper #main #main-header h1, 
+	#wrapper #main #main-content
+    {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #wrapper #main #main-header h1 span
+    {
+        display: block;
+        padding: 0;
+        border: 0;
+        line-height: 1.5;
+        margin: 0;
+    }
+}
+
+@media (max-width: 767px)
+{
+    #footer .footer-left, 
+	#footer .footer-right
+    {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px)
+{
+    #wrapper #content #main
+    {
+        margin-left: 0;
+        clear: both;
+    }
+
+    #wrapper #content #content-inner
+    {
+        background: none;
+    }
+
+    #wrapper #main #main-header
+    {
+        margin-bottom: 30px;
+    }
+
+    #wrapper #main #main-header .breadcrumb, 
+	#wrapper #main #main-header h1, 
+	#wrapper #main #main-content
+    {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

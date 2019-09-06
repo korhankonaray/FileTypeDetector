@@ -1,0 +1,1946 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Bootstrap Stylesheet -->
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" media="all">
+
+<!-- Main Layout Stylesheet -->
+<link rel="stylesheet" href="assets/css/layout.css" media="screen">
+<link rel="stylesheet" href="assets/css/widget.css" media="screen">
+<link rel="stylesheet" href="assets/css/form.css" media="screen">
+<link rel="stylesheet" href="assets/css/lt-ie9.css" media="screen">
+<link rel="stylesheet" href="assets/css/print.css" media="print">
+
+<!-- Google Prettify -->
+<link rel="stylesheet" href="plugins/prettify/themes/theme-balupton.css">
+
+<!-- Documentation Stylesheet -->
+<link rel="stylesheet" href="assets/css/docs.css" media="screen">
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<title>Dandelion Admin :: Responsive Admin Template - Documentation</title>
+
+</head>
+
+<body data-spy="scroll" data-target="#docs-nav-wrap">
+	<div id="wrapper" class="no-header no-sidebar">
+        <div id="content-wrap">
+        	<div id="content">
+            	<div id="content-outer">
+                	<div id="content-inner">
+
+                        <section id="main" class="clearfix">                            
+                            <div id="main-content">
+
+                                <div class="row-fluid">
+                                    <div id="docs-nav-wrap" class="span2">
+                                        <ul id="docs-nav" class="nav nav-pills nav-stacked">
+                                            <li><a href="#introduction">Introduction</a></li>
+                                            <li><a href="#features">Full Feature Overview</a></li>
+                                            <li><a href="#bootstrap">Bootstrap</a></li>
+                                            <li><a href="#file-and-folder">File and Folder Structure</a></li>
+                                            <li><a href="#base-html">Base HTML Structure</a></li>
+                                            <!-- <li><a href="#panels">Panels</a></li>
+                                            <li><a href="#forms">Forms</a></li> -->
+                                            <li><a href="#icons">Icons</a></li>
+                                            <li><a href="#jui">jQuery-UI</a></li>
+                                            <li><a href="#custom-plugins">Custom Plugins</a></li>
+                                            <li><a href="#plugins">Third Party Plugins</a></li>
+                                            <li><a href="#faq">FAQ</a></li>
+                                            <li><a href="#changelog">Changelog</a></li>
+                                            <li><a href="#credits">Credits</a></li>
+                                        </ul>
+                                    </div>
+                                    <div id="docs-content" class="span10">
+                                        <div class="hero-unit">
+                                            <h1>Dandelion Admin <small>Responsive Admin Template</small></h1>
+                                            <p>Version: 2.0 - December 07, 2012</p>
+                                            <p>Hi there, thank you very much for purchasing this theme.<br>
+                                                If you have any questions or issues that are beyond the scope of this documentation, please feel free to contact me via the comment section or mail me at 
+                                                <a href="mailto:maimairel@yahoo.com">maimairel@yahoo.com</a><br><br>
+                                                Bug reports and suggestions are welcome too!
+                                            </p>
+                                        </div>
+                                        <section id="introduction" class="widget">
+                                            <div class="widget-content">
+                                                <h3>Introduction</h3>
+
+                                                <p><strong>Dandelion Admin</strong> is a responsive, full featured admin template build exclusively for sale at ThemeForest. This template focuses on having a simple, clear design, while providing the most commonly used elements on web apps.</p>
+
+                                                <h4>Support Request</h4>
+                                                <p>Browser support is targeted at IE8+, Mozilla Firefox, Google Chrome, Apple Safari, Opera and all Android and iOS mobile browsers, for browsers other than this, support is not available.</p>
+                                                <p>Support requests can usually be requested via the comments section at ThemeForest, or you can directly mail me at <a href="mailto:maimairel@yahoo.com">maimairel@yahoo.com</a></p>
+
+                                                <h4>Documentation Scope</h4>
+                                                <p>Features, files and directory structure, basic usage and explanation of each important element in this template with an exception of all third-party libraries and Bootstrap. These have their own thorough documentation available on their corresponding home pages. Links to those sites will be provided in this documentation.</p>
+                                                <p>This documentation is also written in a style that assumes you already know the basics of CSS, JavaScript and HTML, so only the usage and concept of this template's elements that's going to be covered here.</p>
+
+                                                <h4>Core Library Versions</h4>
+                                                <table class="table table-striped tabled-condensed table-bordered">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Library</th>
+                                                            <th>Version</th>
+                                                            <th>Home Page</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Bootstrap</td>
+                                                            <td>2.2.1</td>
+                                                            <td><a href="http://twitter.github.com/bootstrap" target="_blank">http://twitter.github.com/bootstrap</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>jQuery</td>
+                                                            <td>1.8.3</td>
+                                                            <td><a href="http://www.jquery.com" target="_blank">http://www.jquery.com</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>jQuery-UI</td>
+                                                            <td>1.9.2</td>
+                                                            <td><a href="http://www.jqueryui.com" target="_blank">http://www.jqueryui.com</a></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+
+                                                <h5>Note</h5>
+                                                <p>If you want to to get a deeper understanding of how this template plugins and element works, it's recommended to view and understand the JavaScript files inside <strong>/assets/js/demo</strong>.</p>
+                                            </body>
+                                        </section>
+
+                                        <section id="features" class="widget">
+                                            <div class="widget-content">
+                                                <h3>Full Feature Overview</h3>
+                                                <ul id="feature-overview">
+                                                    <li>Build Partially on Bootstrap</li>
+                                                    <li>Fully Responsive Design</li>
+                                                    <li>HTML5 &amp; CSS3</li>
+                                                    <li>Four Custom Plugins
+                                                        <ul>
+                                                            <li>Circular stat</li>
+                                                            <li>Wizard with Animated progress bar</li>
+                                                            <li>FileInput</li>
+                                                            <li>PickList</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>16 External Plugins
+                                                        <ul>
+                                                            <li>AutoSize</li>
+                                                            <li>ColorPicker</li>
+                                                            <li>DataTables</li>
+                                                            <li>elFinder</li>
+                                                            <li>elRTE</li>
+                                                            <li>Flot</li>
+                                                            <li>FullCalendar</li>
+                                                            <li>iButton</li>
+                                                            <li>jGrowl</li>
+                                                            <li>PhotoSwipe</li>
+                                                            <li>PLUpload</li>
+                                                            <li>Google Prettify</li>
+                                                            <li>PrettyPhoto</li>
+                                                            <li>Select2</li>
+                                                            <li>Validation Plugin</li>
+                                                            <li>Zocial CSS3 Social Buttons</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>Images Compressed using PunyPNG</li>
+                                                    <li>Very flexible and extendable code</li>
+                                                    <li>Collapsible Main Navigation Menu</li>
+                                                    <li>Fully Styled jQuery-UI 1.9.0 Widgets
+                                                        <ul>
+                                                            <li>Progressbar (four color presets, animated using CSS3 )</li>
+                                                            <li>Sliders (four color presets)</li>
+                                                            <li>Datepicker with timepicker addon</li>
+                                                            <li>Dialogs</li>
+                                                            <li>Buttonsets</li>
+                                                            <li>Tabs</li>
+                                                            <li>Accordions</li>
+                                                            <li>Spinner</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>Three Table Styles
+                                                        <ul>
+                                                            <li>Static Tables</li>
+                                                            <li>Fully styled dynamic DataTables</li>
+                                                            <li>Detail View Tables</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>Three Form Layouts
+                                                        <ul>
+                                                            <li>Inline Forms</li>
+                                                            <li>Block Forms</li>
+                                                            <li>Columned Forms</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>Form Messages
+                                                        <ul>
+                                                            <li>Error</li>
+                                                            <li>Warning</li>
+                                                            <li>Info</li>
+                                                            <li>Success</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>Background and Header Pattern Changer</li>
+                                                    <li>CSS3 Animated Error Page</li>
+                                                    <li>CSS3 Styled Image Gallery</li>
+                                                    <li>Rewritten Documentation on v2.0</li>
+                                                    <li>400 Glyphicons WebFont Icon</li>
+                                                    <li>200+ Led Color Icons Converted to Sprite Image</li>
+                                                </ul>
+                                            </body>
+                                        </section>
+
+                                        <section id="bootstrap" class="widget">
+                                            <div class="widget-content">
+                                                <h3>Bootstrap</h3>
+                                                <p>This template is build partially on Bootstrap and it utilizes the latest custom build Bootstrap version, which is currently version 2.2.1.<br> To customize Bootstrap yourself, you should build Bootstrap with the following components, </p>
+                                                <div class="row-fluid">
+                                                    <div class="span6">
+                                                        <h4>Components</h4>
+                                                        <div class="row-fluid">
+                                                            <div class="span6">
+                                                                <ul>
+                                                                    <li>Scaffolding
+                                                                        <ul>
+                                                                            <li>Normalize and reset</li>
+                                                                            <li>Body type and links</li>
+                                                                            <li>Grid System</li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li>Base CSS
+                                                                        <ul>
+                                                                            <li>Headings, body, etc</li>
+                                                                            <li>Core and pre</li>
+                                                                            <li>Labels and badges</li>
+                                                                            <li>Buttons</li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li>Components
+                                                                        <ul>
+                                                                            <li>Button groups and dropdowns</li>
+                                                                            <li>Pagination</li>
+                                                                            <li>Pager</li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </div>
+                                                                <div class="span6">
+                                                                    <li>JS Components
+                                                                        <ul>
+                                                                            <li>Transitions</li>
+                                                                            <li>Dropdowns</li>
+                                                                            <li>Tooltips</li>
+                                                                            <li>Popovers</li>
+                                                                            <li>Collapse</li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li>Miscellaneous
+                                                                        <ul>
+                                                                            <li>Close icon</li>
+                                                                            <li>Utilities</li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li>Responsive
+                                                                        <ul>
+                                                                            <li>Narrow tablets and below (<767px)</li>
+                                                                            <li>Tables to desktops (767-979px)</li>
+                                                                            <li>Large desktops (>1200px)</li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="span3">
+                                                        <h4>jQuery Plugins</h4>
+                                                        <ul>
+                                                            <li>Transitions</li>
+                                                            <li>Dropdowns</li>
+                                                            <li>Tooltips</li>
+                                                            <li>Popovers</li>
+                                                            <li>Collapse</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="span3">
+                                                        <h4>Variables</h4>
+                                                        <ul>
+                                                            <li>@textColor: #333333</li>
+                                                            <li>@linkColor: #a9ca60</li>
+                                                            <li>@baseFontSize: 12px</li>
+                                                            <li>@baseLineHeight: 18px</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+
+                                        <section id="file-and-folder" class="widget">
+                                            <div class="widget-content">
+                                                <h3>File and Folder Structure</h3>
+                                                <p>Before going into details, let's look at how this template's files and folders are structured.</p>
+                                                <div id="file-folder" class="clearfix">
+                                                    <div class="thumbnail">
+                                                        <img src="images/tree.png" alt="">
+                                                    </div>
+                                                    <div class="description">
+                                                        <table class="table table-striped table-bordered table-condensed">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Folder Name</th>
+                                                                    <th>What it Contains</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>assets</td>
+                                                                    <td>Most of the main CSS, JavaScript and images</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>assets/css</td>
+                                                                    <td>Main CSS stylesheets</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>assets/css/fonts</td>
+                                                                    <td>All @font-face stylesheets, for now it's just the Icon font stylesheet</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>assets/images</td>
+                                                                    <td>Main images and icons</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>assets/js</td>
+                                                                    <td>All JavaScript files</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>assets/js/core</td>
+                                                                    <td>Core JavaScript files</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>assets/js/demo</td>
+                                                                    <td>JavaScript demo files</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>assets/js/libs</td>
+                                                                    <td>JavaScript library files</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>assets/js/plugins</td>
+                                                                    <td>Custom JavaScript plugin files</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>assets/jui</td>
+                                                                    <td>jQuery-UI JavaScript, CSS, and image files</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>bootstrap</td>
+                                                                    <td>Bootstrap's CSS and JavaScript files</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>gallery</td>
+                                                                    <td>Demo images from Gallery</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>plugins</td>
+                                                                    <td>Sixteen external plugin JavaScript and CSS files</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+                                                <h4>Main CSS Stylesheets</h4>
+                                                <p>Most of this template elements are styled by the CSS files located in <strong>assets/css</strong>, there are in total 18 files in this folder, each having different style definitions for each element.</p>
+                                                <p>These CSS files are included indirectly by default on every main page by including <strong>assets/css/dandelion.css</strong>.</p>
+                                                <p>Below is the content of <strong>assets/css/dandelion.css</strong>, their file names are self-explanatory of what they are used for.</p>
+
+<pre class="prettyprint linenums theme-balupton">
+@import url(&quot;shared.css&quot;);
+@import url(&quot;core.css&quot;);
+@import url(&quot;panel.css&quot;);
+@import url(&quot;form.css&quot;);
+@import url(&quot;button.css&quot;);
+@import url(&quot;table.css&quot;);
+@import url(&quot;elements.css&quot;);
+@import url(&quot;gallery.css&quot;);
+@import url(&quot;icons.css&quot;);
+@import url(&quot;statistic.css&quot;);
+@import url(&quot;panel-toolbar.css&quot;);
+@import url(&quot;error.css&quot;);
+@import url(&quot;lt-ie9.css&quot;);
+
+/* Customizer stylesheet, remove if not needed */
+@import url(&quot;customizer.css&quot;);
+</pre>
+                                                <p>Beside the <strong>dandelion.css</strong> file, there is one more file in the <strong>assets/css/</strong> folder: <strong>login.css</strong>; this one is used for the login page.</p>
+                                                <p>
+                                                    The CSS files are separated in order to increase readability, and ease maintenance.<br>
+                                                    In case you want to merge these files into a single file to minimize HTTP requests, there's already a merged version of all those CSS files into two single files:
+                                                    <ul>
+                                                        <li>assets/css/dandelion.min.css</li>
+                                                        <li>assets/css/login.min.css</li>
+                                                    </ul>
+                                                    These files are actually merged versions of all these CSS files, made for convenience. It's recommended to use these files when in production mode.
+                                                </p>
+                                            </div>
+                                        </section>
+
+                                        <section id="base-html" class="widget">
+                                            <div class="widget-content">
+                                                <h3>Building the base HTML</h3>
+
+                                                <p>In order to understand how this template works, the basic HTML structure will be covered and explained here. By reading this section, you should be able to build an empty, usable HTML page as the base of your web app.</p>
+
+                                                <p>Building the base HTML structure is pretty straightforward, we'll now go through a complete process on creating a complete page that includes the minimal required JavaScript and CSS files.</p>
+
+                                                <h4>HTML5 Doctype and Meta Tags</h4>
+                                                <div class="code-container">
+<pre class="prettyprint linenums theme-balupton">
+&lt;!DOCTYPE html&gt;
+&lt;!--[if lt IE 7]&gt; &lt;html class=&quot;lt-ie9 lt-ie8 lt-ie7&quot; lang=&quot;en&quot;&gt; &lt;![endif]--&gt;
+&lt;!--[if IE 7]&gt;    &lt;html class=&quot;lt-ie9 lt-ie8&quot; lang=&quot;en&quot;&gt; &lt;![endif]--&gt;
+&lt;!--[if IE 8]&gt;    &lt;html class=&quot;lt-ie9&quot; lang=&quot;en&quot;&gt; &lt;![endif]--&gt;
+&lt;!--[if gt IE 8]&gt;&lt;!--&gt;&lt;html lang=&quot;en&quot;&gt;&lt;!--&lt;![endif]--&gt;
+
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+&lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+&lt;meta name=&quot;author&quot; content=&quot;&quot;&gt;
+</pre>
+                                                </div>
+
+                                                <p>In order to fulfill Bootstrap Framework's main requirement and for the sake of keeping up to date with the current and upcoming standards, we define a HTML5 doctype for our pages on the first line on the code above.</p>
+                                                <p>After that, we'll define the opening HTML tag by using IE conditional comments to target IE versions lower than IE9, followed by meta tag attributes where the first one we could just ignore, and the second one that is required for mobile browsers to display the responsive layout correctly. The next two meta tags are optional, you can fill them yourself with your own attributes.</p>
+
+                                                <h4>Bootstrap, Theme, Icon, Main Stylesheets and HTML5 shim</h4>
+<pre class="prettyprint linenums theme-balupton">
+&lt;!-- Bootstrap Stylesheet --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;bootstrap/css/bootstrap.min.css&quot; media=&quot;screen&quot;&gt;
+
+&lt;!-- Plugin Stylesheet --&gt;
+
+&lt;!-- Theme Stylesheet --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/dandelion.theme.css&quot; media=&quot;screen&quot;&gt;
+&lt;!-- Icon Stylesheet --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/fonts/glyphicons/style.css&quot; media=&quot;screen&quot;&gt;
+&lt;!--  Main Stylesheet --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/dandelion.css&quot; media=&quot;screen&quot;&gt;
+&lt;!-- Demo Stylesheet --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/demo.css&quot; media=&quot;screen&quot;&gt;
+
+&lt;title&gt;Dandelion Admin - Dashboard&lt;/title&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+</pre>
+                                            <p>Here we include the required stylesheets followed by the HTML5 shim, so IE8 and older will be able to support HTML5 tags</p>
+                                            <p>The first stylesheet is the main Bootstrap stylesheet, which MUST be included on each or your page, followed by the theme stylesheet which contains the header and body background image styles. This stylesheet can be customized using the customizer. Thereafter we'll see the icon stylesheet which contains Glyphicons webfont icon definitions. Main layout stylesheet comes after that which defines the element and layout styles. This stylesheet can be customized by removing <code>@imports</code> to stylesheet you don't need.</p>
+                                            <p>For more explanation about the main stylesheet, you can look at the <a href="#file-folder">previous section</a>.</p>
+                                            <p>Then we see the title tag followed by the closing head and opening body tag</p>
+
+                                            <p><strong>Note:</strong> Above we also see a comment about the plugin stylesheets, it's recommended that you insert your plugin stylesheets here before the main stylesheet to ease overriding their styles. Overriding instead of replacing is meant to keep compatibility with newer versions of the plugin.</p>
+
+                                            <h4>Main Wrapper and The Header</h4>
+<pre class="prettyprint linenums theme-balupton">
+    &lt;!-- Main Wrapper. Set this to 'fixed' for fixed layout and 'fluid' for fluid layout' --&gt;
+    &lt;div id=&quot;da-wrapper&quot;&gt;
+        &lt;!-- Header --&gt;
+        &lt;div id=&quot;da-header&quot;&gt;
+            &lt;div id=&quot;da-header-top&quot;&gt;
+                &lt;!-- Container --&gt;
+                &lt;div class=&quot;da-container clearfix&quot;&gt;
+                    &lt;!-- Logo Container. All images put here will be vertically centere --&gt;
+                    &lt;div id=&quot;da-logo-wrap&quot;&gt;
+                        &lt;div id=&quot;da-logo&quot;&gt;
+                            &lt;div id=&quot;da-logo-img&quot;&gt;
+                                &lt;a href=&quot;dashboard.html&quot;&gt;
+                                    &lt;img src=&quot;assets/images/logo.png&quot; alt=&quot;Dandelion Admin&quot;&gt;
+                                &lt;/a&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    
+                    &lt;!-- Header Toolbar Menu --&gt;
+                    &lt;div id=&quot;da-header-toolbar&quot; class=&quot;clearfix&quot;&gt;
+                        &lt;div id=&quot;da-user-profile-wrap&quot;&gt;
+                            &lt;div id=&quot;da-user-profile&quot; data-toggle=&quot;dropdown&quot; class=&quot;clearfix&quot;&gt;
+                                &lt;div id=&quot;da-user-avatar&quot;&gt;
+                                    &lt;img src=&quot;assets/images/pp.jpg&quot; alt=&quot;&quot;&gt;
+                                &lt;/div&gt;
+                                &lt;div id=&quot;da-user-info&quot;&gt;
+                                    John Doe
+                                    &lt;span class=&quot;da-user-title&quot;&gt;Creative Director&lt;/span&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;ul class=&quot;dropdown-menu&quot;&gt;
+                                &lt;li&gt;&lt;a href=&quot;dashboard.html&quot;&gt;Dashboard&lt;/a&gt;&lt;/li&gt;
+                                &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Profile&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Settings&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Change Password&lt;/a&gt;&lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/div&gt;
+                        &lt;div id=&quot;da-header-button-container&quot;&gt;
+                            &lt;ul&gt;
+                                &lt;li class=&quot;da-header-button-wrap&quot;&gt;
+                                    &lt;div class=&quot;da-header-button&quot; data-toggle=&quot;dropdown&quot;&gt;
+                                        &lt;span class=&quot;btn-count&quot;&gt;32&lt;/span&gt;
+                                        &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-circle-exclamation-mark&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+                                    &lt;/div&gt;
+                                    &lt;ul class=&quot;dropdown-menu pull-right&quot;&gt;
+                                        &lt;li&gt;
+                                            &lt;span class=&quot;da-dropdown-sub-title&quot;&gt;Notifications&lt;/span&gt;
+                                            &lt;ul class=&quot;da-dropdown-sub&quot;&gt;
+                                                &lt;li class=&quot;unread&quot;&gt;
+                                                    &lt;a href=&quot;#&quot;&gt;
+                                                        &lt;span class=&quot;thumbnail&quot;&gt;&lt;img src=&quot;assets/images/pp.jpg&quot; alt=&quot;&quot;&gt;&lt;/span&gt;
+                                                        &lt;span class=&quot;info&quot;&gt;
+                                                            &lt;span class=&quot;name&quot;&gt;John Doe&lt;/span&gt;
+                                                            &lt;span class=&quot;message&quot;&gt;
+                                                                Lorem ipsum dolor sit amet consectetur adipiscing elit, et al commore
+                                                            &lt;/span&gt;
+                                                            &lt;span class=&quot;time&quot;&gt;
+                                                                January 21, 2012
+                                                            &lt;/span&gt;
+                                                        &lt;/span&gt;
+                                                    &lt;/a&gt;
+                                                &lt;/li&gt;
+                                            &lt;/ul&gt;
+                                            &lt;a class=&quot;da-dropdown-sub-footer&quot; href=&quot;#&quot;&gt;
+                                                View all notifications
+                                            &lt;/a&gt;
+                                        &lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;da-header-button-wrap&quot;&gt;
+                                    &lt;div class=&quot;da-header-button&quot; data-toggle=&quot;dropdown&quot;&gt;
+                                        &lt;span class=&quot;btn-count&quot;&gt;5&lt;/span&gt;
+                                        &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-envelope&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+                                    &lt;/div&gt;
+                                    &lt;ul class=&quot;dropdown-menu pull-right&quot;&gt;
+                                        &lt;li&gt;
+                                            &lt;span class=&quot;da-dropdown-sub-title&quot;&gt;Messages&lt;/span&gt;
+                                            &lt;ul class=&quot;da-dropdown-sub&quot;&gt;
+                                                &lt;li class=&quot;unread&quot;&gt;
+                                                    &lt;a href=&quot;#&quot;&gt;
+                                                        &lt;span class=&quot;thumbnail&quot;&gt;&lt;img src=&quot;assets/images/pp.jpg&quot; alt=&quot;&quot;&gt;&lt;/span&gt;
+                                                        &lt;span class=&quot;info&quot;&gt;
+                                                            &lt;span class=&quot;name&quot;&gt;John Doe&lt;/span&gt;
+                                                            &lt;span class=&quot;message&quot;&gt;
+                                                                Lorem ipsum dolor sit amet consectetur adipiscing elit, et al commore
+                                                            &lt;/span&gt;
+                                                            &lt;span class=&quot;time&quot;&gt;
+                                                                January 21, 2012
+                                                            &lt;/span&gt;
+                                                        &lt;/span&gt;
+                                                    &lt;/a&gt;
+                                                &lt;/li&gt;
+                                            &lt;/ul&gt;
+                                            &lt;a class=&quot;da-dropdown-sub-footer&quot; href=&quot;#&quot;&gt;
+                                                View all messages
+                                            &lt;/a&gt;
+                                        &lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;da-header-button-wrap&quot;&gt;
+                                    &lt;div class=&quot;da-header-button&quot;&gt;
+                                        &lt;a href=&quot;index.html&quot;&gt;&lt;i class=&quot;icon-power&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+                                    &lt;/div&gt;
+                                &lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div id=&quot;da-header-bottom&quot;&gt;
+                &lt;!-- Container --&gt;
+                &lt;div class=&quot;da-container clearfix&quot;&gt;
+                    &lt;div id=&quot;da-search&quot;&gt;
+                        &lt;form&gt;
+                            &lt;input type=&quot;text&quot; class=&quot;search-query&quot; placeholder=&quot;Search...&quot;&gt;
+                        &lt;/form&gt;
+                    &lt;/div&gt;
+                    &lt;!-- Breadcrumbs --&gt;
+                    &lt;div id=&quot;da-breadcrumb&quot;&gt;
+                        &lt;ul&gt;
+                            &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;dashboard.html&quot;&gt;&lt;i class=&quot;icon-home&quot;&gt;&lt;/i&gt; Dashboard&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;
+                    
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+</pre>
+
+                                                <p>Here we start with opening up the main wrapper tag, followed by the header. This is the point where we need to decide whether our template will have a fixed or fluid width by default. Reading the comment on the code above should explain how to configure the layout mode, give the <strong>#da-wrapper</strong> div a class name: <code>.fixed</code> for fixed layout, or <code>.fluid</code> for fluid layout. Leaving the class attribute blank, will cause the layout use the <code>.fluid</code> mode.</p>
+                                                <p>The first element inside the main wrapper is the header, which on this template is divided into two parts; the top and bottom header. The top header is the <code>&lt;div&gt;</code> tag with the id attribute <strong>da-header-top</strong>. If we look at the template, then the top header contains the logo, user profile, user menu, message, notification and logout button.</p>
+                                                <p>The message and notification buttons here act as a toggle button for their dropdown menu. The dropdown menu associated with these buttons can be used to put anything styled like facebook message and notifications.</p>
+                                                <p>Right below the top header, we'll see the bottom header, which can be seen on the template as the white part where the search input and breadcrumb is located. The search form is wrapped in a <code>&lt;div&gt;&lt;/div&gt;</code> tag with the id <strong>#da-search</strong>, and the breadcrumbs is contained in an <code>&lt;ul&gt;&lt;/ul&gt;</code> tag. You can put any link here to act as breadcrumbs.</p>
+
+                                                <h4>The Sidebar</h4>
+<pre class="prettyprint linenums theme-balupton">
+        &lt;!-- Content --&gt;
+        &lt;div id=&quot;da-content&quot;&gt;
+            &lt;!-- Container --&gt;
+            &lt;div class=&quot;da-container clearfix&quot;&gt;
+                &lt;!-- Sidebar Separator do not remove --&gt;
+                &lt;div id=&quot;da-sidebar-separator&quot;&gt;&lt;/div&gt;
+                &lt;!-- Sidebar --&gt;
+                &lt;div id=&quot;da-sidebar&quot;&gt;
+                    &lt;!-- Navigation Toggle for &lt; 480px --&gt;
+                    &lt;div id=&quot;da-sidebar-toggle&quot;&gt;&lt;/div&gt;
+                    &lt;!-- Main Navigation --&gt;
+                    &lt;div id=&quot;da-main-nav&quot; class=&quot;btn-container&quot;&gt;
+                        &lt;ul&gt;
+                            &lt;li class=&quot;active&quot;&gt;
+                                &lt;a href=&quot;dashboard.html&quot;&gt;
+                                    &lt;!-- Icon Container --&gt;
+                                    &lt;span class=&quot;da-nav-icon&quot;&gt;
+                                        &lt;i class=&quot;icon-home&quot;&gt;&lt;/i&gt;
+                                    &lt;/span&gt;
+                                    Dashboard
+                                &lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li&gt;
+                                &lt;a href=&quot;statistics.html&quot;&gt;
+                                    &lt;!-- Nav Notification --&gt;
+                                    &lt;span class=&quot;da-nav-count&quot;&gt;32&lt;/span&gt;
+                                    &lt;!-- Icon Container --&gt;
+                                    &lt;span class=&quot;da-nav-icon&quot;&gt;
+                                        &lt;i class=&quot;icon-stats&quot;&gt;&lt;/i&gt;
+                                    &lt;/span&gt;
+                                    Statistics
+                                &lt;/a&gt;
+                            &lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;
+                    
+                &lt;/div&gt;
+</pre>
+                                                <p>Here we have the sidebar, which on this template will be our main navigation container. This sidebar contains some markup that's important to style the template, so it's important to follow the above markup when creating your page. Each navigation menu is pretty straightforward, just a list of <code>&lt;ul&gt;&lt;/ul&gt;</code> tags that can have a second level. This template makes it possible so that the second level me would be automatically collapsible. If you need to mark a navigation menu as active, just give the <code>.active</code> class on the first level <code>&lt;li&gt;&lt;/li&gt;</code> tag.</p>
+
+                                                <h4>Main Content Section</h4>
+<pre class="prettyprint linenums theme-balupton">
+                &lt;!-- Main Content Wrapper --&gt;
+                &lt;div id=&quot;da-content-wrap&quot; class=&quot;clearfix&quot;&gt;
+                    &lt;!-- Content Area --&gt;
+                    &lt;div id=&quot;da-content-area&quot;&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+</pre>
+                                                <p>Here comes the main content part of our HTML markup as the most important part of this template. This one is just a basic, empty content markup that later will contain our pages content.</p>
+
+                                                <h4>Footer</h4>
+<pre class="prettyprint linenums theme-balupton">
+        &lt;!-- Footer --&gt;
+        &lt;div id=&quot;da-footer&quot;&gt;
+            &lt;div class=&quot;da-container clearfix&quot;&gt;
+                &lt;p&gt;Copyright 2012. Dandelion Admin. All Rights Reserved.
+            &lt;/div&gt;
+        &lt;/div&gt;
+</pre>
+                                                <p>This is just a usual, boring footer. Just customize it to your liking, maybe you can make it less boring :)</p>
+
+                                                <h4>The JavaScript Files</h4>
+<pre class="prettyprint linenums theme-balupton">
+    &lt;!-- JS Libs --&gt;
+    &lt;script src=&quot;assets/js/libs/jquery-1.8.3.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;assets/js/libs/jquery.placeholder.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;assets/js/libs/jquery.mousewheel.min.js&quot;&gt;&lt;/script&gt;
+
+    &lt;!-- JS Bootstrap --&gt;
+    &lt;script src=&quot;bootstrap/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+    
+    &lt;!-- jQuery-UI JavaScript Files --&gt;
+
+    &lt;!-- JS Plugins --&gt;
+
+    &lt;!-- JS Demo --&gt;
+
+    &lt;!-- JS Template --&gt;
+    &lt;script src=&quot;assets/js/core/dandelion.core.js&quot;&gt;&lt;/script&gt;
+
+    &lt;!-- JS Customizer --&gt;
+    &lt;script src=&quot;assets/js/core/dandelion.customizer.js&quot;&gt;&lt;/script&gt;
+    
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+                                                <p>Here is where we include the required JavaScript files for our page. The scripts are placed at the bottom of the page for better page performance.</p>
+                                                <p>The scripts above are the minimum required scripts to get this template to work properly, except for the <strong>jquery.placeholder.js</strong>, <strong>jquery.mousewheel.js</strong> and <strong>dandelion.customizer.js</strong>, </p>
+                                            </div>
+                                        </section>
+
+                                        <section id="icons" class="widget">
+                                            <div class="widget-content">
+                                                <h3>Icons</h3>
+
+                                                <p>This template comes with two icon sets, </p>
+                                                <ul>
+                                                    <li>Glyphicons Icon Web Font</li>
+                                                    <li>Led Color Icons (16x16) converted into a sprite image</li>
+                                                </ul>
+
+                                                <p>Additionally, you can use the jQuery-UI icon set, but there's no official support for this icon set.</p>
+
+                                                <h4>Glyphicons Icon Web Font</h4>
+                                                <p>To use this icon, just specify an inline HTML element, and give this Icon set class name. This Icon set class names are prefixed by <code>icon-</code></p>
+<pre class="prettyprint theme-balupton">
+&lt;i class=&quot;icon-home&quot;&gt;&lt;/i&gt;
+</pre>
+<h4>Led Color Icons (16x16)</h4>
+<p>To use this icon, just specify an inline HTML element, and give this Icon set class name. This Icon set class names are prefixed by <code>icol-</code></p>
+<pre class="prettyprint theme-balupton">
+&lt;i class=&quot;icol-cross&quot;&gt;&lt;/i&gt;
+</pre>
+
+                                                <div class="alert alert-warning">
+                                                    <h4>Glyphicons Licence</h4>
+                                                    Usage of the Glyphicons web font shipped with this template is limited to only within this template which is for sale on ThemeForest. If you need to use the icons elsewhere, or on an another project, please support the author by purchasing the icons from <a href="http://www.glyphicons.com" target="_blank">http://www.glyphicons.com</a>
+                                                </div>
+                                            </div>
+                                        </section>
+
+                                        <section id="jui" class="widget">
+                                            <div class="widget-content">
+                                                <h3>jQuery-UI</h3>
+
+                                                <p>jQuery-UI is a library that provides abstractions for low-level interaction and animation, advanced effects and high-level, themeable widgets, built on top of the jQuery JavaScript Library, that you can use to build highly interactive web applications.</p>
+                                                <p>jQuery-UI that's shipped with this template is a custom build jQuery-UI v1.9.0 that has every core elements and part of the widgets without the effects package. The widgets which are included are <em>Accordion</em>, <em>Autocomplete</em>, <em>Button</em>, <em>Datepicker</em>, <em>Dialog</em>, <em>Menu</em>, <em>Progressbar</em>, <em>Slider</em>, <em>Spinner</em> and <em>Tabs</em>.</p>
+
+                                                <p>For jQuery-UI usage, you can visit their official website for documentation, </p>
+                                                <ul>
+                                                    <li><a target="_blank" href="http://jqueryui.com/demos/accordion">Accordion</a></li>
+                                                    <li><a target="_blank" href="http://jqueryui.com/demos/autocomplete">Autocomplete</a></li>
+                                                    <li><a target="_blank" href="http://jqueryui.com/demos/button">Button</a></li>
+                                                    <li><a target="_blank" href="http://jqueryui.com/demos/datepicker">Datepicker</a></li>
+                                                    <li><a target="_blank" href="http://jqueryui.com/demos/dialog">Dialog</a></li>
+                                                    <li><a target="_blank" href="http://jqueryui.com/demos/menu">Menu</a></li>
+                                                    <li><a target="_blank" href="http://jqueryui.com/demos/progressbar">Progressbar</a></li>
+                                                    <li><a target="_blank" href="http://jqueryui.com/demos/slider">Slider</a></li>
+                                                    <li><a target="_blank" href="http://jqueryui.com/demos/spinner">Spinner</a></li>
+                                                    <li><a target="_blank" href="http://jqueryui.com/demos/tabs">Tabs</a></li>
+                                                </ul>
+                                            </div>
+                                        </section>
+
+                                        <section id="custom-plugins" class="widget">
+                                            <div class="widget-content">
+                                                <h3>Custom Plugins</h3>
+
+                                                <p>This template comes shipped with four custom plugins, each of them are made to work perfectly with this template. Those plugins are <em>CircularStat</em>, <em>FileInput</em>, <em>PickList</em> and <em>Wizard</em>.</p>
+
+                                                <h4>Circular Stat</h4>
+                                                <div class="thumbnail" style="display: inline-block;"><img src="images/circular.png"></div>
+
+                                                <p>Circular stat is a retina display ready HTML5 Canvas based plugin that works on IE by using Explorer Canvas. This plugin is used to display statistical values as a circular chart and is able to be updated/animated dynamically using its API.</p>
+                                                <p>Circular stat has an API that allows us to change its attributes to match your requirements; you can change whether to show the data as percentage or fraction, format the data with your own function, change the filled color and animation duration, etc. For a demo of this plugin's API, you can view it on the Statistics page.</p>
+                                                <p>To use this plugin you only need to include <strong>/assets/js/plugins/circularstat/dandelion.circularstat.js</strong>, and the core statistic CSS files. To initiate the plugin you can use HTML5 data API by specifying <code>data-provide="circular"</code>, or just call this plugin in the document ready event.</p>
+                                                <p><strong>Note:</strong> The circular stat size is determined by setting the element's width and height, where the maximum value would be used as the radius. You can see on the code below, that the element's width and height is set to 136px.</p>
+                                                <h5>Usage Example</h5>
+<pre class="prettyprint linenums theme-balupton">
+&lt;script src=&quot;assets/js/libs/jquery-1.8.3.min.js&quot;&gt;&lt;/script&gt;
+&lt;!--[if lt IE 9]&gt;
+&lt;script src=&quot;assets/js/libs/excanvas.min.js&quot;&gt;&lt;/script&gt;
+&lt;![endif]--&gt;
+&lt;script src=&quot;assets/js/plugins/circularstat/dandelion.circularstat.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;span data-provide=&quot;circular&quot; 
+    data-fill-color=&quot;#a6d037&quot; 
+    data-initial-value=&quot;55&quot; 
+    data-max-value=&quot;98&quot; 
+    data-label=&quot;Seeds Collected&quot; 
+    style=&quot;width: 136px; height: 136px;&quot;&gt;
+&lt;/span&gt;
+</pre>
+
+                                                <h5>API Usage Example</h5>
+<pre class="prettyprint linenums theme-balupton">
+&lt;script src=&quot;assets/js/libs/jquery-1.8.3.min.js&quot;&gt;&lt;/script&gt;
+&lt;!--[if lt IE 9]&gt;
+&lt;script src=&quot;assets/js/libs/excanvas.min.js&quot;&gt;&lt;/script&gt;
+&lt;![endif]--&gt;
+&lt;script src=&quot;assets/js/plugins/circularstat/dandelion.circularstat.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+    $(document).ready(function() {
+        var cs = $('#circle').data('circular-stat');
+
+        // Change Maximum Value
+        cs.option( 'maxValue', 750 );
+        // Change Fill Color
+        cs.option( 'fillColor', '#0088cc' );
+    });
+&lt;/script&gt;
+
+&lt;span id=&quot;circle&quot; data-provide=&quot;circular&quot; 
+    data-fill-color=&quot;#a6d037&quot; 
+    data-initial-value=&quot;55&quot; 
+    data-max-value=&quot;98&quot; 
+    data-label=&quot;Seeds Collected&quot; 
+    style=&quot;width: 136px; height: 136px;&quot;&gt;
+&lt;/span&gt;
+</pre>
+
+                                                <h5>Plugin Options</h5>
+                                                <table class="table table-striped table-bordered">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="text-nowrap">Option Name</th>
+                                                            <th>Default</th>
+                                                            <th>Description</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>initialValue</td>
+                                                            <td>0</td>
+                                                            <td>This is the initial value of the circle. After the plugin initialilzes, the circle will be animated to this value.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>maxValue</td>
+                                                            <td>100</td>
+                                                            <td>This is the maximum value the circle can have</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>label</td>
+                                                            <td>''</td>
+                                                            <td>This is the text to be displayed as label of the circle</p>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>labelClassName</td>
+                                                            <td>'text-label'</td>
+                                                            <td>This is the classname(s) to be added to the label element</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>percent</td>
+                                                            <td>false</td>
+                                                            <td>This option determines whether to format the circle's value as a percentage or fraction.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>decimals</td>
+                                                            <td>0</td>
+                                                            <td>This option determines the value's number of digits after the comma</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>digitClassName</td>
+                                                            <td>'digit-label'</td>
+                                                            <td>This is the classname(s) to be added to the digit element</p>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>format</td>
+                                                            <td>null</td>
+                                                            <td>Callback function to format the value using your own method. If this option is set, the percent and decimals option will be ignored.<br>Signature: <code>function( valueInPercentage, realValue, maxValue )</code></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>duration</td>
+                                                            <td>1000</td>
+                                                            <td>This option determines the animation duration</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>fillColor</td>
+                                                            <td>'#e15656'</td>
+                                                            <td>This option determines the fill color of the circle</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>wrapperClassName</td>
+                                                            <td>'circular-stat'</td>
+                                                            <td>This option determines the classname(s) to be added to the element</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>outerThickness</td>
+                                                            <td>8 (px)</td>
+                                                            <td>This option determines the outerthickness of the circle (the engraved look)</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>fillThickness</td>
+                                                            <td>10 (px)</td>
+                                                            <td>This option determines the thickness of the circle fill</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+
+                                                <h4>Pick List</h4>
+
+                                                <div class="thumbnail" style="display: inline-block;"><img src="images/picklist.png"></div>
+                                                <p>Pick list is a plugin for converting usual select inputs to those inputs where you can move items from the left to right column. This plugin was originally a modified version of <a href="http://code.google.com/p/jquery-ui-picklist/">jquery-ui-picklist</a>. Since v2.0 of this template, this plugin has lots of enhancements, filtering functionality and responsive layout.</p>
+
+                                                <h5>Usage Example</h5>
+
+                                                <p>To use the plugin, just include the necessary JavaScript and CSS files, and create your select field. After that initialize the plugin in the document ready event, and you're done.</p>
+<pre class="prettyprint linenums theme-balupton">
+&lt;link rel=&quot;stylesheet&quot; href=&quot;assets/js/plugins/picklist/picklist.css&quot; media=&quot;screen&quot;&gt;
+
+&lt;script src=&quot;assets/js/libs/jquery-1.8.3.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;assets/js/plugins/picklist/picklist.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+    $(document).ready(function() {
+        $('#pickList').pickList();
+    });
+&lt;/script&gt;
+
+&lt;select id=&quot;pickList&quot; name=&quot;picklist[]&quot;&gt;
+    &lt;option&gt;Apple&lt;/option&gt;
+    &lt;option selected=&quot;selected&quot;&gt;Banana&lt;/option&gt;
+    &lt;option selected=&quot;selected&quot;&gt;Kiwi&lt;/option&gt;
+    &lt;option&gt;Orange&lt;/option&gt;
+    &lt;option&gt;Pear&lt;/option&gt;
+    &lt;option&gt;Grape&lt;/option&gt;
+    &lt;option&gt;Mango&lt;/option&gt;
+    &lt;option&gt;Peach&lt;/option&gt;
+    &lt;option&gt;Dragon Fruit&lt;/option&gt;
+    &lt;option&gt;Durian&lt;/option&gt;
+    &lt;option&gt;Avocado&lt;/option&gt;
+    &lt;option&gt;Cherry&lt;/option&gt;
+&lt;/select&gt;
+</pre>
+
+                                                <h5>Plugin Options</h5>
+                                                <p>This plugin has too many options to be displayed here, but they are mainly just class names that are used for styling the plugin. It's not recommended to change them unless you know what you do. The options listed below are the ones that you can use to tweak the plugin functionality.</p>
+                                                <table class="table table-striped table-bordered">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="text-nowrap">Option Name</th>
+                                                            <th>Default</th>
+                                                            <th>Description</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>enableCounters</td>
+                                                            <td>true</td>
+                                                            <td>Whether to show the numbers of visible/invisible options above each filter column.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>enableFilters</td>
+                                                            <td>true</td>
+                                                            <td>Whether to show and bind the filtering events. If set to false, the filter inputs above each column will be hidden.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>sortList</td>
+                                                            <td>true</td>
+                                                            <td>Whether to sort the list each time it's refreshed. If not sorted, the options will be ordered in the way you move and create the items before initialization.</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+
+                                                <h4>Wizard</h4>
+
+                                                <div class="thumbnail" style="display: inline-block;"><img src="images/wizard.png"></div>
+
+                                                <p>This plugin converts a set of form fields into a navigable wizard form with progress bar styled navigation. It can work together with jquery validation and form plugin seamlessly. The examples in this template show how this plugin can be implemented to work with those plugins. AJAX submission through this plugin is done via configuring the form plugin with its options which can be found in jQuery Form plugin's official website and documentation <a href="http://malsup.com/jquery/form/" target="_blank">here</a>.</p>
+
+                                                <h5>Usage Example</h5>
+
+                                                <p>To use the plugin, just include the necessary JavaScript and CSS file, create and divide your forms into any elements with the specified wizard element class name that you can specify in this plugin options. After that initialize the plugin in the document ready event, and you're done.</p>
+                                                <p><strong>Notice:</strong> You'll see <code>data-icon</code> attribute on each fieldset legend element. This attribute is used to specify the icon that will be displayed on the wizard navigation.</p>
+<pre class="prettyprint linenums theme-balupton">
+&lt;link rel=&quot;stylesheet&quot; href=&quot;assets/js/plugins/wizard/dandelion.wizard.css&quot;&gt;
+
+&lt;script src=&quot;assets/js/libs/jquery-1.8.3.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;assets/js/plugins/wizard/dandelion.wizard.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;assets/js/libs/jquery.form.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+    $(document).ready(function() {
+        $('#wizard-form').wizard();
+    });
+&lt;/script&gt;
+
+&lt;form id=&quot;wizard-form&quot; class=&quot;form-horizontal&quot; data-forward-only=&quot;false&quot;&gt;
+    &lt;fieldset class=&quot;da-form-inline&quot;&gt;
+        &lt;legend data-icon=&quot;icon-edit&quot;&gt;Account&lt;/legend&gt;
+        &lt;div class=&quot;da-form-row&quot;&gt;
+            &lt;label class=&quot;da-form-label&quot;&gt;Username &lt;span class=&quot;required&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
+            &lt;div class=&quot;da-form-item large&quot;&gt;
+                &lt;input type=&quot;text&quot; name=&quot;wizard[username]&quot; class=&quot;required span12&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;da-form-row&quot;&gt;
+            &lt;label class=&quot;da-form-label&quot;&gt;Email &lt;span class=&quot;required&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
+            &lt;div class=&quot;da-form-item large&quot;&gt;
+                &lt;input type=&quot;text&quot; name=&quot;wizard[email]&quot; class=&quot;required email span12&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;da-form-row&quot;&gt;
+            &lt;label class=&quot;da-form-label&quot;&gt;Password &lt;span class=&quot;required&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
+            &lt;div class=&quot;da-form-item large&quot;&gt;
+                &lt;input type=&quot;password&quot; name=&quot;wizard[password]&quot; class=&quot;required span12&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/fieldset&gt;
+
+    ...
+
+    &lt;fieldset class=&quot;da-form-inline&quot;&gt;
+        &lt;legend data-icon=&quot;icon-user&quot;&gt;Member&lt;/legend&gt;
+        &lt;div class=&quot;da-form-row&quot;&gt;
+            &lt;label class=&quot;da-form-label&quot;&gt;Fullname &lt;span class=&quot;required&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
+            &lt;div class=&quot;da-form-item large&quot;&gt;
+                &lt;input type=&quot;text&quot; name=&quot;wizard[fullname]&quot; class=&quot;required span12&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;da-form-row&quot;&gt;
+            &lt;label class=&quot;da-form-label&quot;&gt;Address &lt;span class=&quot;required&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
+            &lt;div class=&quot;da-form-item large&quot;&gt;
+                &lt;textarea name=&quot;wizard[address]&quot; class=&quot;required span12&quot;&gt;&lt;/textarea&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;da-form-row&quot;&gt;
+            &lt;label class=&quot;da-form-label&quot;&gt;Gender &lt;span class=&quot;required&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
+            &lt;div class=&quot;da-form-item large&quot;&gt;
+                &lt;ul class=&quot;da-form-list&quot;&gt;
+                    &lt;li&gt;&lt;input type=&quot;radio&quot; name=&quot;wizard[gender]&quot; class=&quot;required&quot;&gt; &lt;label&gt;Male&lt;/label&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;input type=&quot;radio&quot; name=&quot;wizard[gender]&quot;&gt; &lt;label&gt;Female&lt;/label&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;label for=&quot;wizard[gender]&quot; class=&quot;error&quot; generated=&quot;true&quot; style=&quot;display:none&quot;&gt;&lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;
+</pre>
+
+                                                <h5>Plugin Options</h5>
+
+                                                <table class="table table-striped table-bordered">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="text-nowrap">Option Name</th>
+                                                            <th>Default</th>
+                                                            <th>Description</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>element</td>
+                                                            <td>'fieldset'</td>
+                                                            <td>The selector used to find elements inside the form</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>labelElement</td>
+                                                            <td>'legend'</td>
+                                                            <td>The selector used to find elements whose text is used as the navigation label</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>buttonContainerClass</td>
+                                                            <td>'btn-row'</td>
+                                                            <td>The classname(s) for the button container that will be generated dynamically</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>nextButtonClass</td>
+                                                            <td>'btn btn-danger pull-left'</td>
+                                                            <td>The classname(s) to be given to the 'next' button</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>prevButtonClass</td>
+                                                            <td>'btn pull-left'</td>
+                                                            <td>The classname(s) to be given to the 'prev' button</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>submitButtonClass</td>
+                                                            <td>'btn btn-primary'</td>
+                                                            <td>The classname(s) to be given to the 'submit' button</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>activeIconClass</td>
+                                                            <td>'icol-accept'</td>
+                                                            <td>The classname(s) for the navigation icon of a completed step</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>nextButtonLabel</td>
+                                                            <td>'Next'</td>
+                                                            <td>The text to be shown on the 'next' button</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>prevButtonLabel</td>
+                                                            <td>'Prev'</td>
+                                                            <td>The text to be shown on the 'prev' button</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>submitButtonLabel</td>
+                                                            <td>'Submit'</td>
+                                                            <td>The text to be shown on the 'submit' button</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>submitButtonName</td>
+                                                            <td>'dnd-wizard'</td>
+                                                            <td>The <code>name</code> attribute of the submit button</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>forwardOnly</td>
+                                                            <td>false</td>
+                                                            <td>This option determines whether navigating back to a previous step is allowed on this wizard form.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>onLeaveStep</td>
+                                                            <td>null</td>
+                                                            <td>Callback function that's called before leaving a step. Can be used mainly for validation, return false if you want to cancel leaving a step.<br>Signature: <code>function( currentStep )</code></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>onShowStep</td>
+                                                            <td>null</td>
+                                                            <td>Callback function after showing a step.<br>Signature: <code>function( wizard )</code></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>onBeforeSubmit</td>
+                                                            <td>null</td>
+                                                            <td>Callback function to call before submitting the form. return false if you want to cancel form submission.<br>Signature: <code>function( wizard )</code></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>ajaxSubmit</td>
+                                                            <td>false</td>
+                                                            <td>This option determines whether the form is going to be submitted via AJAX or a normal HTTP request</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>ajaxFormOptions</td>
+                                                            <td>{}</td>
+                                                            <td>The options to pass to jQuery form plugin when using AJAX form submission</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+
+                                                <h4>File Input</h4>
+
+                                                <p>Lastly, this is a simple plugin to style file inputs. This plugin is very simple to use and works on all browsers.</p>
+
+                                                <h5>Usage Example</h5>
+
+                                                <p>To use the plugin, just include the JavaScript file, create your file input field and call the plugin constructor on the element.</p>
+<pre class="prettyprint linenums theme-balupton">
+&lt;script src=&quot;assets/js/libs/jquery-1.8.3.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;assets/js/plugins/jquery.fileinput.js&quot;&gt;&lt;/script&gt;
+
+&lt;input type=&quot;file&quot; class=&quot;custom-fileinput&quot;&gt;
+
+&lt;script&gt;
+    $(document).ready(function() {
+        $('.custom-fileinput').fileInput();
+    });
+&lt;/script&gt;
+</pre>
+
+                                                <h5>Plugin Options</h5>
+                                                <table class="table table-striped table-bordered">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="text-nowrap">Option Name</th>
+                                                            <th>Default</th>
+                                                            <th>Description</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>placeholder</td>
+                                                            <td>'No file selected...'</td>
+                                                            <td>The text to show in the undeditable-input field to give users feedback before selecting a file</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>buttontext</td>
+                                                            <td>'Browse...'</td>
+                                                            <td>The text to show on the browse button</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </section>
+
+                                        <section id="plugins" class="widget">
+                                            <div class="widget-content">
+                                                <h3>Third Party Plugins</h3>
+
+                                                <p>This section will cover every third party plugins. They are all styled nicely to work together with this template.</p>
+                                                <p>Each plugin explanation will contain a usage example that will provide you a the base markup along with the minimal required JavaScript and CSS file, where their file paths will follow this template's directory structure.</p>
+
+                                                <p>In total there are 16 great plugins shipped with this template. There will be more and more plugins added in the future, but for now let's go through each plugin and see what they are used for and how to use them, </p>
+
+                                                <h4>AutoSize</h4>
+                                                <p>jQuery AutoSize is a plugin to enable automatic height for textarea elements.</p>
+                                                <p>Autogrowing textarea has been popular for quite a long time right now, a concrete example would be facebook's textarea for posting contents on your wall. This plugin makes it possible to have that kind of textarea on your web app.</p>
+                                                <h5>Usage Example</h5>
+<pre class="prettyprint linenums theme-balupton">
+&lt;script src=&quot;assets/js/libs/jquery-1.8.3.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;plugins/autosize/jquery.autosize-min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    $(document).ready(function() {
+        if( $.fn.autosize ) {
+            $('textarea').autosize();
+        }
+    });
+&lt;/script&gt;
+
+&lt;textarea&gt;&lt;/textarea&gt;
+</pre>
+                                                <p>Home Page: <a href="http://www.jacklmoore.com/autosize" target="_blank">http://www.jacklmoore.com/autosize</a></p>
+                                                <p>Documentation: <a href="http://www.jacklmoore.com/autosize" target="_blank">http://www.jacklmoore.com/autosize</a></p>
+                                                <p>Plugin Location: <strong>/plugins/autosize</strong></p>
+
+                                                <h4>ColorPicker</h4>
+                                                <p>jQuery ColorPicker is a simple component to select color in the same way you select color in Adobe Photoshop.</p>
+                                                <h5>Usage Example</h5>
+<pre class="prettyprint linenums theme-balupton">
+&lt;link rel=&quot;stylesheet&quot; href=&quot;plugins/colorpicker/colorpicker.css&quot; media=&quot;screen&quot;&gt;
+
+&lt;script src=&quot;assets/js/libs/jquery-1.8.3.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;plugins/colorpicker/colorpicker.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    $(document).ready(function() {
+        if( $.fn.ColorPicker ) {
+            $('.colorpicker').ColorPicker();
+        }
+    });
+&lt;/script&gt;
+
+&lt;input type=&quot;text&quot; class&quot;colorpicker&quot;&gt;
+</pre>
+                                                <p>Home Page: <a href="http://www.eyecon.ro/colorpicker/" target="_blank">http://www.eyecon.ro/colorpicker/</a></p>
+                                                <p>Documentation: <a href="http://www.eyecon.ro/colorpicker/" target="_blank">http://www.eyecon.ro/colorpicker/</a></p>
+                                                <p>Plugin Location: <strong>/plugins/colorpicker</strong></p>
+
+                                                <h4>DataTables</h4>
+
+                                                <p>DataTables is a plug-in for the jQuery JavaScript library. It is a highly flexible tool, based upon the foundations of progressive enhancement, which will add advanced interaction controls to any HTML table.</p>
+                                                <p>For this plugin to work together with Bootstrap, you need to include an extension script for this plugin. This script is already included in this template; all you need is just to include it on your page to get it to work.</p>
+                                                
+                                                <h5>Usage Example</h5>
+<pre class="prettyprint linenums theme-balupton">
+&lt;script src=&quot;assets/js/libs/jquery-1.8.3.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;plugins/datatables/jquery.dataTables.min.js&quot;&gt;&lt;/script&gt;
+&lt;!-- Bootstrap Extension Script --&gt;
+&lt;script src=&quot;plugins/datatables/dataTables.bootstrap.js&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+    $(document).ready(function() {
+        if( $.fn.dataTable ) {
+            $('#dTable').dataTable();
+        }
+    });
+&lt;/script&gt;
+
+&lt;table id=&quot;dTable&quot; class=&quot;table table-striped&quot;&gt;
+    &lt;!-- Your Table Contents --&gt;
+&lt;/table&gt;
+</pre>
+
+                                                <p>Home Page: <a href="http://datatables.net/" target="_blank">http://datatables.net/</a></p>
+                                                <p>Documentation: <a href="http://datatables.net/" target="_blank">http://datatables.net/</a></p>
+                                                <p>Plugin Location: <strong>/plugins/datatables</strong></p>
+
+                                                <h4>elFinder</h4>
+                                                <p>elFinder is an open-source file manager for web, written in JavaScript using jQuery UI. Creation is inspired by simplicity and convenience of Finder program used in Mac OS X operating system.</p>
+                                                <p>This plugin needs you to configure your backend PHP connector script; this PHP script is located in <strong>plugins/elfinder/php</strong>. Working with this PHP connector requires you to have some PHP and server side scripting knowledge. Connectors for other languages can be found in elFinder's home page.</p>
+                                                <p>To use this plugin, make sure you have included <strong>/assets/css/plugins/elfinder.css</strong> on your page.</p>
+
+                                                <h5>Usage Example</h5>
+<pre class="prettyprint linenums theme-balupton">
+&lt;link rel=&quot;stylesheet&quot; href=&quot;plugins/elfinder/css/elfinder.min.css&quot; media=&quot;screen&quot;&gt;
+
+&lt;script src=&quot;assets/js/libs/jquery-1.8.3.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;plugins/elfinder/js/elfinder.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+    $(document).ready(function() {
+        if( $.fn.elfinder ) {
+            $('#elfinder').elfinder({
+                // elFinder options
+            });
+        }
+    });
+&lt;/script&gt;
+
+&lt;div id=&quot;elfinder&quot;&gt;&lt;/div&gt;
+</pre>
+
+                                                <p>Home Page: <a href="http://elfinder.org/" target="_blank">http://elfinder.org/</a></p>
+                                                <p>Documentation: <a href="https://github.com/Studio-42/elFinder/wiki" target="_blank">https://github.com/Studio-42/elFinder/wiki</a></p>
+                                                <p>Plugin Location: <strong>/plugins/elfinder</strong></p>
+
+                                                <h4>elRTE</h4>
+                                                <p>elRTE is an open-source WYSIWYG HTML-editor written in JavaScript using jQuery UI. It features rich text editing, options for changing its appearance, style and many more. You can use it in any commercial or non-commercial projects.</p>
+
+                                                <h5>Usage Example</h5>
+<pre class="prettyprint linenums theme-balupton">
+&lt;link rel=&quot;stylesheet&quot; href=&quot;plugins/elrte/css/elrte.css&quot;&gt;
+
+&lt;script src=&quot;assets/js/libs/jquery-1.8.3.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;assets/jui/js/jquery-ui-1.9.2.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;plugins/elrte/js/elrte.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+    var opts = {
+        cssClass : 'el-rte',
+        height   : 300,
+        toolbar  : 'normal',
+        cssfiles : ['plugins/elrte/css/elrte-inner.css']
+    };
+    $('#elrte').elrte(opts); 
+&lt;/script&gt;
+
+&lt;div id=&quot;elrte&quot;&gt;&lt;/div&gt;
+</pre>
+
+                                                <p>Home Page: <a href="http://elrte.org/" target="_blank">http://elrte.org/</a></p>
+                                                <p>Documentation: <a href="http://elrte.org/" target="_blank">http://elrte.org/</a></p>
+                                                <p>Plugin Location: <strong>/plugins/elrte</strong></p>
+
+                                                <h4>Flot</h4>
+                                                <p>Flot is a pure JavaScript plotting library for jQuery, with a focus on simple usage, attractive looks and interactive features.<br>
+                                                    Flot works with Internet Explorer 6+, Chrome, Firefox 2+, Safari 3+ and Opera 9.5+</p>
+                                                <p>Below is just a very simple example, you can actually create almost everything you need by using the provided plugins, or you can even create your own.</p>
+                                                <p>Generally, all browsers that support the HTML5 canvas tag are supported. For support for Internet Explorer < 9, you can use Excanvas, a canvas emulator. This canvas emulator is included on your page between IE conditional comments like on the example below.</p>
+
+                                                <h5>Usage Example</h5>
+<pre class="prettyprint linenums theme-balupton">
+&lt;script src=&quot;assets/js/libs/jquery-1.8.3.min.js&quot;&gt;&lt;/script&gt;
+&lt;!--[if lt IE 9]&gt;
+&lt;script src=&quot;assets/js/libs/excanvas.min.js&quot;&gt;&lt;/script&gt;
+&lt;![endif]--&gt;
+&lt;script src=&quot;plugins/flot/jquery.flot.js&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+    $(document).ready(function() {
+        var options = {
+            series: {
+                lines: { show: true },
+                points: { show: true }
+            }
+        };
+
+        // Generate your data here
+
+        $.plot($( '#placeholder' ), data, options);
+    });
+&lt;/script&gt;
+
+&lt;div id=&quot;placeholder&quot; style=&quot;height: 300px;&quot;&gt;&lt;/div&gt;
+</pre>
+
+                                                <p>Home Page: <a href="http://flotcharts.org/" target="_blank">http://flotcharts.org/</a></p>
+                                                <p>Documentation: <a href="https://github.com/flot/flot/blob/master/API.md" target="_blank">https://github.com/flot/flot/blob/master/API.md</a></p>
+                                                <p>Plugin Location: <strong>/plugins/flot</strong></p>
+
+                                                <h4>FullCalendar</h4>
+                                                <p>FullCalendar is a jQuery plugin that provides a full-sized, drag &amp; drop calendar like the one below. It uses AJAX to fetch events on-the-fly for each month and is easily configured to use your own feed format. It is visually customizable and exposes hooks for user-triggered events.</p>
+                                                <p>FullCalendar is great for displaying events, but it isn't a complete solution for event content-management. Beyond dragging an event to a different time/day, you cannot change an event's name or other associated data. It is up to you to add this functionality through FullCalendar's event hooks.</p>
+                                                <p>This plugin has its own container when put in a widget in this template; just put the calendar inside a div with the class <code>.calendar</code> as a widget content.</p>
+
+                                                <h5>Usage Example</h5>
+<pre class="prettyprint linenums theme-balupton">
+&lt;link rel=&quot;stylesheet&quot; href=&quot;plugins/fullcalendar/fullcalendar.css&quot; media=&quot;screen&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;plugins/fullcalendar/fullcalendar.print.css&quot; media=&quot;print&quot;&gt;
+
+&lt;script src=&quot;assets/js/libs/jquery-1.8.3.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;plugins/fullcalendar/fullcalendar.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+    $(document).ready(function() {
+        if( $.fn.fullCalendar ) {
+            var date = new Date();
+            var d = date.getDate();
+            var m = date.getMonth();
+            var y = date.getFullYear();
+            
+            $( '#fullcalendar' ).fullCalendar({
+                header: {
+                    left: 'prev next today',
+                    center: 'title',
+                    right: 'month agendaWeek agendaDay'
+                }, 
+                editable: true, 
+                events: [
+                    {
+                        title: 'All Day Event',
+                        start: new Date(Date.UTC(y, m, 1))
+                    },
+
+                    ...
+
+                    {
+                        title: 'Click for Google',
+                        start: new Date(Date.UTC(y, m, 28)), 
+                        end: new Date(Date.UTC(y, m, 29)), 
+                        url: 'http://google.com/'
+                    }
+                ], 
+                
+                buttonText: {
+                    prev: '&lt;i class=&quot;icon-caret-left&quot;&gt;&lt;/i&gt;', 
+                    next: '&lt;i class=&quot;icon-caret-right&quot;&gt;&lt;/i&gt;', 
+                    prevYear: '&lt;i class=&quot;icon-caret-left&quot;&gt;&lt;/i&gt;&lt;i class=&quot;icon-caret-left&quot;&gt;&lt;/i&gt;', 
+                    nextYear: '&lt;i class=&quot;icon-caret-right&quot;&gt;&lt;/i&gt;&lt;i class=&quot;icon-caret-right&quot;&gt;&lt;/i&gt;'
+                }
+            });
+            
+        }
+    });
+&lt;/script&gt;
+
+&lt;div id=&quot;fullcalendar&quot;&gt;&lt;/div&gt;
+</pre>
+
+                                                <p>Home Page: <a href="http://arshaw.com/fullcalendar/" target="_blank">http://arshaw.com/fullcalendar/</a></p>
+                                                <p>Documentation: <a href="http://arshaw.com/fullcalendar/docs/" target="_blank">http://arshaw.com/fullcalendar/docs/</a></p>
+                                                <p>Plugin Location: <strong>/plugins/fullcalendar</strong></p>
+
+                                                <h4>iButton</h4>
+                                                <p>The iButton jQuery plug-in emulates the checkbox functionality found on the iPhone. This plug-in was inspired by several other plugins such as Thomas Reynolds' iPhone style checkboxes. However, this plugin attempt to combine the best features of all of the various iPhone checkbox style plugins and then add the functionality that we felt was still missing.</p>
+                                                <p><strong>Note:</strong> The plugin shipped within this template is a modified version of the original plugin, so it may work without any images, and is styled using pure CSS3. Additionally this plugin now supports HTML5 data-attributes, so you can create an iButton by just specifying <code>data-provide="ibutton"</code>. This also provides you the ability to use those data-attributes to set the plugin options. The example code below only includes the required scripts and HTML markup and shows how those data-attributes functionality can help you create iButtons without writing any JavaScript code.</p>
+
+                                                <h5>Usage Example</h5>
+<pre class="prettyprint linenums theme-balupton">
+&lt;link rel=&quot;stylesheet&quot; href=&quot;plugins/ibutton/jquery.ibutton.css&quot; media=&quot;screen&quot;&gt;
+
+&lt;script src=&quot;assets/js/libs/jquery-1.8.3.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;plugins/ibutton/jquery.ibutton.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+    $(document).ready(function() {
+        $.fn.iButton &amp;&amp; $('.i-button').iButton();
+    });
+&lt;/script&gt;
+
+&lt;div class=&quot;da-form-row&quot;&gt;
+    &lt;label class=&quot;da-form-label&quot;&gt;iOS Style Checkbox&lt;/label&gt;
+    &lt;div class=&quot;da-form-item&quot;&gt;
+        &lt;ul class=&quot;da-form-list&quot;&gt;
+            &lt;li&gt;&lt;input type=&quot;checkbox&quot; id=&quot;s11&quot; class=&quot;i-button&quot; name=&quot;ios-checkbox&quot;&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;da-form-row&quot;&gt;
+    &lt;label class=&quot;da-form-label&quot;&gt;iOS Style Radio Buttons&lt;/label&gt;
+    &lt;div class=&quot;da-form-item&quot;&gt;
+        &lt;ul class=&quot;da-form-list&quot;&gt;
+            &lt;li&gt;&lt;input type=&quot;radio&quot; id=&quot;s112&quot; class=&quot;i-button&quot; name=&quot;ios-radio[]&quot;&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;input type=&quot;radio&quot; id=&quot;s212&quot; class=&quot;i-button&quot; name=&quot;ios-radio[]&quot;&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;input type=&quot;radio&quot; id=&quot;s312&quot; class=&quot;i-button&quot; name=&quot;ios-radio[]&quot;&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;input type=&quot;radio&quot; id=&quot;s412&quot; class=&quot;i-button&quot; name=&quot;ios-radio[]&quot; checked=&quot;checked&quot;&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+                                                <p>Home Page: <a href="http://www.givainc.com/labs/ibutton_jquery_plugin.htm" target="_blank">http://www.givainc.com/labs/ibutton_jquery_plugin.htm</a></p>
+                                                <p>Documentation: <a href="http://www.givainc.com/labs/ibutton_jquery_plugin.htm" target="_blank">http://www.givainc.com/labs/ibutton_jquery_plugin.htm</a></p>
+                                                <p>Plugin Location: <strong>/plugins/ibutton</strong></p>
+
+                                                <h4>jGrowl</h4>
+
+                                                <p>jGrowl is a jQuery plugin that raises unobtrusive messages within the browser, similar to the way that OS X's Growl Framework works.</p>
+
+                                                <h5>Usage Example</h5>
+<pre class="prettyprint linenums theme-balupton">
+&lt;link rel=&quot;stylesheet&quot; href=&quot;plugins/jgrowl/jquery.jgrowl.css&quot;&gt;
+
+&lt;script src=&quot;assets/js/libs/jquery-1.8.3.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;plugins/jgrowl/jquery.jgrowl.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+     $.jGrowl(&quot;Hello World!&quot;, {position: &quot;bottom-right&quot;});
+&lt;/script&gt;
+</pre>
+                                                <p>Home Page: <a href="http://stanlemon.net/pages/jgrowl" target="_blank">http://stanlemon.net/pages/jgrowl</a></p>
+                                                <p>Documentation: <a href="http://stanlemon.net/pages/jgrowl" target="_blank">http://stanlemon.net/pages/jgrowl</a></p>
+                                                <p>Plugin Location: <strong>/plugins/jgrowl</strong></p>
+
+                                                <h4>PhotoSwipe</h4>
+
+                                                <p>PhotoSwipe is a FREE HTML/CSS/JavaScript based image gallery specifically targeting mobile devices mainly targetted for developers and designers requiring an interactive image gallery on their mobile website with the look and feel of a native app. PhotoSwipe provides your visitors with a familiar and intuitive interface allowing them to interact with images on your mobile website.</p>
+
+                                                <h5>Usage Example</h5>
+<pre class="prettyprint linenums theme-balupton">
+&lt;link rel=&quot;stylesheet&quot; href=&quot;plugins/photoswipe/css/photoswipe.css&quot; media=&quot;screen&quot; /&gt;
+
+&lt;script src=&quot;assets/js/libs/jquery-1.8.3.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;plugins/photoswipe/js/code.photoswipe.jquery-3.0.4.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+    $(document).ready(function() {
+        $('.gallery a').photoSwipe();
+    });
+&lt;/script&gt;
+
+&lt;ul class=&quot;gallery&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;your-image-url&quot;&gt;&lt;img src=&quot;your-thumb-url&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+                                                <p>Home Page: <a href="http://www.photoswipe.com/" target="_blank">http://www.photoswipe.com/</a></p>
+                                                <p>Documentation: <a href="http://www.photoswipe.com/" target="_blank">http://www.photoswipe.com/</a></p>
+                                                <p>Plugin Location: <strong>/plugins/photoswipe</strong></p>
+
+                                                <h4>PLUpload</h4>
+
+                                                <p>PLUpload allows you to upload files using HTML5 Gears, Silverlight, Flash, BrowserPlus or normal forms, providing some unique features such as upload progress, image resizing and chunked uploads.</p>
+
+                                                <h5>Usage Example</h5>
+<pre class="prettyprint linenums theme-balupton">
+&lt;link rel=&quot;stylesheet&quot; href=&quot;plugins/plupload/jquery.plupload.queue.css&quot;&gt;
+
+&lt;script src=&quot;assets/js/libs/jquery-1.8.3.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;plugins/plupload/plupload.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;plugins/plupload/plupload.flash.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;plugins/plupload/plupload.html4.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;plugins/plupload/plupload.html5.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;plugins/plupload/jquery.plupload.queue/jquery.plupload.queue.js&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+    $(document).ready(function() {
+        $(&quot;#uploader&quot;).pluploadQueue({
+            // General settings
+            runtimes : 'html4, html5', 
+            url : '../upload.php',
+            max_file_size : '1000mb',
+            max_file_count: 20, // user can add no more then 20 files at a time
+            chunk_size : '1mb',
+            unique_names : true,
+            multiple_queues : true,
+            // Resize images on clientside if we can
+            resize : {width : 320, height : 240, quality : 90},
+            // Rename files by clicking on their titles
+            rename: true,
+            // Sort files
+            sortable: true,
+            // Specify what files to browse for
+            filters : [
+                {title : &quot;Image files&quot;, extensions : &quot;jpg,gif,png&quot;},
+                {title : &quot;Zip files&quot;, extensions : &quot;zip,avi&quot;}
+            ]
+        });
+    });
+&lt;/script&gt;
+
+&lt;div id=&quot;uploader&quot;&gt;
+    &lt;p&gt;You browser doesn't have Flash, Silverlight, Gears, BrowserPlus or HTML5 support.&lt;/p&gt;
+&lt;/div&gt;
+</pre>
+                                                <p>Home Page: <a href="http://www.plupload.com/" target="_blank">http://www.plupload.com/</a></p>
+                                                <p>Documentation: <a href="http://www.plupload.com/documentation.php" target="_blank">http://www.plupload.com/documentation.php</a></p>
+                                                <p>Plugin Location: <strong>/plugins/plupload</strong></p>
+
+                                                <h4>prettyPhoto</h4>
+
+                                                <p>prettyPhoto is a jQuery lightbox clone. Not only does it support images, it also support for videos, flash, YouTube, iframes and ajax. It’s a full blown media lightbox.</p>
+
+                                                <h5>Usage Example</h5>
+<pre class="prettyprint linenums theme-balupton">
+&lt;link rel=&quot;stylesheet&quot; href=&quot;plugins/prettyphoto/css/prettyPhoto.css&quot; media=&quot;screen&quot;&gt;
+
+&lt;script src=&quot;assets/js/libs/jquery-1.8.3.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;plugins/prettyphoto/js/jquery.prettyPhoto.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+    $(document).ready(function() {
+        if( $.fn.prettyPhoto ) {
+            $('a[rel^=&quot;prettyPhoto&quot;]').prettyPhoto();
+        }
+    });
+&lt;/script&gt;
+</pre>
+                                                <p>Home Page: <a href="http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/" target="_blank">http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/</a></p>
+                                                <p>Documentation: <a href="http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/" target="_blank">http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/</a></p>
+                                                <p>Plugin Location: <strong>/plugins/prettyphoto</strong></p>
+
+                                                <h4>Google Prettify</h4>
+
+                                                <p>Google Prettify is a JavaScript module and CSS file that allows syntax highlighting of source code snippets in an HTML page. The code examples in this documentation all are styled using this script. This script allows you to make your own themes, and it's very easy to use.</p>
+                                                <p>The code example and the whole documentation uses a theme named Balupton, which is actually a part of another syntax highlighting plugin that utilizes Google Prettify. I choose the original Google Prettify because of its simplicity and ease of use.</p>
+
+                                                <h5>Usage Example</h5>
+<pre class="prettyprint linenums theme-balupton">
+&lt;link rel=&quot;stylesheet&quot; href=&quot;plugins/prettify/themes/theme-balupton.css&quot;&gt;
+
+&lt;script src=&quot;assets/js/libs/jquery-1.8.3.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;plugins/prettify/prettify.js&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+    $(document).ready(function() {
+        if( window.prettify ) {
+            prettify();
+        } 
+    });
+&lt;/script&gt;
+</pre>
+                                                <p>Home Page: <a href="https://code.google.com/p/google-code-prettify/" target="_blank">https://code.google.com/p/google-code-prettify/</a></p>
+                                                <p>Documentation: <a href="http://google-code-prettify.googlecode.com/svn/trunk/README.html" target="_blank">http://google-code-prettify.googlecode.com/svn/trunk/README.html</a></p>
+                                                <p>Plugin Location: <strong>/plugins/prettify</strong></p>
+
+                                                <h4>Select2</h4>
+
+                                                <p>Select2 is a jQuery based replacement for select boxes. It supports searching, remote data sets, and infinite scrolling of results. Look and feel of Select2 is based on the excellent Chosen library.</p>
+
+                                                <h5>Usage Example</h5>
+<pre class="prettyprint linenums theme-balupton">
+&lt;link rel=&quot;stylesheet&quot; href=&quot;plugins/select2/select2.css&quot; media=&quot;screen&quot;&gt;
+
+&lt;script src=&quot;assets/js/libs/jquery-1.8.3.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;plugins/select2/select2.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+    $(document).ready(function() {
+        if( $.fn.select2 ) {
+            $('#e1').select2();
+        }
+    });
+&lt;/script&gt;
+
+&lt;select id=&quot;e1&quot;&gt;
+    &lt;option value=&quot;AL&quot;&gt;Alabama&lt;/option&gt;
+    ...
+    &lt;option value=&quot;WY&quot;&gt;Wyoming&lt;/option&gt;
+&lt;/select&gt;
+</pre>
+                                                <p>Home Page: <a href="http://ivaynberg.github.com/select2/" target="_blank">http://ivaynberg.github.com/select2/</a></p>
+                                                <p>Documentation: <a href="http://ivaynberg.github.com/select2/" target="_blank">http://ivaynberg.github.com/select2/</a></p>
+                                                <p>Plugin Location: <strong>/plugins/select2</strong></p>
+
+
+                                                <h4>jQuery Validate Plugin</h4>
+
+                                                <p>This jQuery plugin makes simple client side form validation trivial, while offering lots of option for customization. That makes a good choice if you’re building something new from scratch, but also when you’re trying to integrate it into an existing application with lots of existing markup. The plugin comes bundled with a useful set of validation methods, including URL and email validation, while providing an API to write your own methods. All bundled methods come with default error messages in English and translations into 36 locales.</p>
+
+                                                <h5>Usage Example</h5>
+                                                <p>There is no usage example for this plugin as the plugin itself is very flexible, so you need to customize the plugin to suit your needs. Below I'll just provide you the required steps to make this plugin work with your forms, </p>
+                                                <ol>
+                                                    <li>As usual, include jQuery, and the jQuery validation plugin</li>
+                                                    <li>Create your form along with all inputs you need</li>
+                                                    <li>This is an important step; add for each input you want to validate a <code>name</code> attribute as this is required for this plugin to work correctly. If you want to define your validation rules inline, add the following predefined classes to your inputs.</li>
+                                                    <li>Then call validate on your form!</li>
+                                                </ol>
+
+                                                <p>Home Page: <a href="http://bassistance.de/jquery-plugins/jquery-plugin-validation/" target="_blank">http://bassistance.de/jquery-plugins/jquery-plugin-validation/</a></p>
+                                                <p>Documentation: <a href="http://docs.jquery.com/Plugins/Validation" target="_blank">http://docs.jquery.com/Plugins/Validation</a></p>
+                                                <p>Plugin Location: <strong>/plugins/validate</strong></p>
+
+
+                                                <h4>Zocial CSS3 Vector Social Buttons</h4>
+
+                                                <p>Zocial is a CSS3 vector social buttons pack that is scalable to any size due to its font-face social icons integrated into the CSS. This pack comes with 43 CSS buttons and surely, more will be added to this pack in the future.</p>
+                                                <p>This plugin is used on the login screen for both the Creative and Simple style.</p>
+
+                                                <h5>Usage Example</h5>
+<pre class="prettyprint linenums theme-balupton">
+&lt;link rel=&quot;stylesheet&quot; href=&quot;plugins/zocial/zocial.css&quot; media=&quot;screen&quot;&gt;
+
+&lt;button class=&quot;zocial facebook&quot;&gt;Sign in with Facebook&lt;/button&gt;
+</pre>
+
+                                                <p>Home Page: <a href="http://zocial.smcllns.com/" target="_blank">http://zocial.smcllns.com/</a></p>
+                                                <p>Documentation: <a href="http://zocial.smcllns.com/" target="_blank">http://zocial.smcllns.com/</a></p>
+                                                <p>Plugin Location: <strong>/plugins/zocial</strong></p>
+                                            </div>
+                                        </section>
+
+                                        <section id="faq" class="widget">
+                                            <div class="widget-content">
+                                                <h3>FAQ</h3>
+                                                <p>This FAQ section is still empty. This section will grow in time as buyers ask questions.</p>
+                                            </div>
+                                        </section>
+
+                                        <section id="changelog" class="widget">
+                                            <div class="widget-content">
+                                                <h3>Changelog</h3>
+                                                <h5>Version 2.0 - 12/07/2012</h5>
+                                                <ul>
+                                                    <li>Updated to jQuery 1.8.3</li>
+                                                    <li>Updated to jQuery-UI 1.9.2</li>
+                                                    <li>Updated to Fullcalendar 1.5.4</li>
+                                                    <li>Updated to DataTables 1.9.4</li>
+                                                    <li>Updated to jQuery validation 1.10.0</li>
+                                                    <li>Added checkable Tables</li>
+                                                    <li>Added Glyphicons Font Icons</li>
+                                                    <li>Added Led Sprite Icons</li>
+                                                    <li>Added fluid &amp; responsive login box</li>
+                                                    <li>Added Form Wizard Page</li>
+                                                    <li>Added Zocial plugin</li>
+                                                    <li>Added Bootstrap v2.2.0
+                                                        <ul>
+                                                            <li>Scaffolding
+                                                                <ul>
+                                                                    <li>Normalize and reset</li>
+                                                                    <li>Body type and links</li>
+                                                                    <li>Grid System</li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>Base CSS
+                                                                <ul>
+                                                                    <li>Headings, body, etc</li>
+                                                                    <li>Core and pre</li>
+                                                                    <li>Labels and badges</li>
+                                                                    <li>Buttons</li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>Components
+                                                                <ul>
+                                                                    <li>Button groups and dropdowns</li>
+                                                                    <li>Pagination</li>
+                                                                    <li>Pager</li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>JS Components
+                                                                <ul>
+                                                                    <li>Transitions</li>
+                                                                    <li>Dropdowns</li>
+                                                                    <li>Tooltips</li>
+                                                                    <li>Popovers</li>
+                                                                    <li>Collapse</li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>Miscellaneous
+                                                                <ul>
+                                                                    <li>Close icon</li>
+                                                                    <li>Utilities</li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>Responsive
+                                                                <ul>
+                                                                    <li>Narrow tablets and below (&lt;767px)</li>
+                                                                    <li>Tables to desktops (767-979px)</li>
+                                                                    <li>Large desktops (&gt;1200px)</li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>jQuery Plugins
+                                                                <ul>
+                                                                    <li>Transitions</li>
+                                                                    <li>Dropdowns</li>
+                                                                    <li>Tooltips</li>
+                                                                    <li>Popovers</li>
+                                                                    <li>Collapse</li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>Variables
+                                                                <ul>
+                                                                    <li>@textColor: #333333</li>
+                                                                    <li>@linkColor: #a9ca60</li>
+                                                                    <li>@baseFontSize: 12px</li>
+                                                                    <li>@baseLineHeight: 18px</li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>Removed Scrollable Panels</li>
+                                                    <li>Removed b/w Icons</li>
+                                                    <li>Removed PrettyCheckboxes</li>
+                                                    <li>Removed jQuery Metadata plugin</li>
+                                                    <li>Removed widgets page</li>
+                                                    <li>Moved CSS, images, js, jui folders to /assets</li>
+                                                    <li>Moved custom plugins to assets/js/custom-plugins</li>
+                                                    <li>Moved all JS files inclusion to bottom of page</li>
+                                                    <li>Replaced Grid system with Bootstrap Grids</li>
+                                                    <li>Replaced Chosen with Select2</li>
+                                                    <li>Replaced Syntaxhighlighter with Google Prettify</li>
+                                                    <li>Replaced .da-button-toolbar with Bootstrap .btn-toolbar</li>
+                                                    <li>Replaced fileinput plugin with custom fileinput plugin</li>
+                                                    <li>Replaced jQuery tipsy with Bootstrap tooltip</li>
+                                                    <li>Replaced placeholder plugin with a better one</li>
+                                                    <li>Replaced header dropdown with Bootstrap dropdown</li>
+                                                    <li>Replaced .da-button with Bootstrap .btn</li>
+                                                    <li>Replaced jQuery Elastic with AutoSize</li>
+                                                    <li>Optimized Collapsible Panels</li>
+                                                    <li>Optimized Responsive Layout</li>
+                                                    <li>Optimized Gallery Layout</li>
+                                                    <li>Optimized UI Elements page</li>
+                                                    <li>Optimized Form structure CSS</li>
+                                                    <li>Optimized jQuery-UI CSS</li>
+                                                    <li>Rewrite Base CSS</li>
+                                                    <li>Rewrite Responsive CSS</li>
+                                                    <li>Rewrite HTML markup</li>
+                                                    <li>Rewrite PickList plugin</li>
+                                                    <li>Rewrite Circular plugin</li>
+                                                    <li>Rewrite Wizard plugin</li>
+                                                    <li>Fixed tons of minor bugs</li>
+                                                </ul>
+
+                                                <h5>Version 1.2 - 10/25/2012</h5>
+                                                <ul>
+                                                    <li>Added decimal point option on circular plugin</li>
+                                                    <li>improved elRTE stylesheet to not override jquery-ui styles</li>
+                                                    <li>Added submitButtonName option on Wizard Plugin</li>
+                                                    <li>Added reset functionality on Wizard Plugin</li>
+                                                    <li>Added  AJAX  submit option on Wizard Plugin</li>
+                                                    <li>Added iOS style radio and checkbox plugin</li>
+                                                    <li>Fixed the overflowing Wizard Navigation progress width</li>
+                                                </ul>
+
+                                                <h5>Version 1.1 - 10/10/2012</h5>
+                                                <ul>
+                                                    <li>Optimize the image size on gallery page</li>
+                                                    <li>Fixed apple-touch-icon missing image</li>
+                                                    <li>Login box and its error message is now responsive</li>
+                                                    <li>Replaced Google Visualization library with Flot due to lack of support on Android prior to version 3.1</li>
+                                                    <li>Added prettyCheckboxes plugin</li>
+                                                    <li>Made the table outside scrollable panels responsive</li>
+                                                    <li>Fixed a display bug on toolbar panel</li>
+                                                    <li>Removed the statistic widget page</li>
+                                                </ul>
+
+                                                <h5>Version 1.0 - 10/02/2012</h5>
+                                                <ul>
+                                                    <li>Initial Release</li>
+                                                </ul>
+                                            </div>
+                                        </section>
+
+                                        <section id="credits" class="widget">
+                                            <div class="widget-content">
+                                                <h3>Credits</h3>
+
+                                                <h5>JavaScript Libraries</h5>
+                                                <ul>
+                                                    <li>Bootstrap
+                                                        <br><a href="http://twitter.github.com/bootstrap" target="_blank">http://twitter.github.com/bootstrap</a>
+                                                    </li>
+                                                    <li>jQuery
+                                                        <br><a href="http://www.jquery.com" target="_blank">http://www.jquery.com</a>
+                                                    </li>
+                                                    <li>jQuery-UI
+                                                        <br><a href="http://www.jqueryui.com" target="_blank">http://www.jqueryui.com</a>
+                                                    </li>
+                                                    <li>Explorer Canvas
+                                                        <br><a href="http://excanvas.sourceforge.net/" target="_blank">http://excanvas.sourceforge.net/</a>
+                                                    </li>
+                                                </ul>
+
+                                                <h5>JavaScript Plugins</h5>
+                                                <ul>
+                                                    <li>AutoSize
+                                                        <br><a href="http://www.jacklmoore.com/autosize" target="_blank">http://www.jacklmoore.com/autosize</a>
+                                                    </li>
+                                                    <li>ColorPicker
+                                                        <br><a href="http://www.eyecon.ro/colorpicker/" target="_blank">http://www.eyecon.ro/colorpicker/</a>
+                                                    </li>
+                                                    <li>DataTables
+                                                        <br><a href="http://datatables.net/" target="_blank">http://datatables.net/</a>
+                                                    </li>
+                                                    <li>elFinder
+                                                        <br><a href="http://elfinder.org/" target="_blank">http://elfinder.org/</a>
+                                                    </li>
+                                                    <li>elRTE
+                                                        <br><a href="http://elrte.org/" target="_blank">http://elrte.org/</a>
+                                                    </li>
+                                                    <li>Flot
+                                                        <br><a href="http://flotcharts.org/" target="_blank">http://flotcharts.org/</a>
+                                                    </li>
+                                                    <li>FullCalendar
+                                                        <br><a href="http://arshaw.com/fullcalendar/" target="_blank">http://arshaw.com/fullcalendar/</a>
+                                                    </li>
+                                                    <li>iButton
+                                                        <br><a href="http://www.givainc.com/labs/ibutton_jquery_plugin.htm" target="_blank">http://www.givainc.com/labs/ibutton_jquery_plugin.htm</a>
+                                                    </li>
+                                                    <li>jGrowl
+                                                        <br><a href="http://stanlemon.net/pages/jgrowl" target="_blank">http://stanlemon.net/pages/jgrowl</a>
+                                                    </li>
+                                                    <li>PhotoSwipe
+                                                        <br><a href="http://www.photoswipe.com/" target="_blank">http://www.photoswipe.com/</a>
+                                                    </li>
+                                                    <li>PLUpload
+                                                        <br><a href="http://www.plupload.com/" target="_blank">http://www.plupload.com/</a>
+                                                    </li>
+                                                    <li>Google Prettify
+                                                        <br><a href="https://code.google.com/p/google-code-prettify/" target="_blank">https://code.google.com/p/google-code-prettify/</a>
+                                                    </li>
+                                                    <li>prettyPhoto
+                                                        <br><a href="http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/" target="_blank">http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/</a>
+                                                    </li>
+                                                    <li>Select2
+                                                        <br><a href="http://ivaynberg.github.com/select2/" target="_blank">http://ivaynberg.github.com/select2/</a>
+                                                    </li>
+                                                    <li>jQuery Validate Plugin
+                                                        <br><a href="http://bassistance.de/jquery-plugins/jquery-plugin-validation/" target="_blank">http://bassistance.de/jquery-plugins/jquery-plugin-validation/</a>
+                                                    </li>
+                                                    <li>Zocial CSS3 Vector Social Buttons
+                                                        <br><a href="http://zocial.smcllns.com/" target="_blank">http://zocial.smcllns.com/</a>
+                                                    </li>
+                                                </ul>
+
+                                                <h5>Icons</h5>
+                                                <ul>
+                                                    <li>Glyhpicons Web Font Icons
+                                                        <br><a href="http://www.glyphicons.com" target="_blank">http://www.glyphicons.com</a>
+                                                    </li>
+                                                    <li>
+                                                        Led Icon Set
+                                                        <br><a href="http://led24.de/iconset/" target="_blank">http://led24.de/iconset/</a>
+                                                    </li>
+                                                </ul>
+
+                                                <h5>Photos and Images</h5>
+                                                <ul>
+                                                    <li><a href="http://photodune.net/item/orchid-flower/1379221" target="_blank">http://photodune.net/item/orchid-flower/1379221</a></li>
+                                                    <li><a href="http://photodune.net/item/tigon-flower/1668129" target="_blank">http://photodune.net/item/tigon-flower/1668129</a></li>
+                                                    <li><a href="http://photodune.net/item/tigon-flower/1668130" target="_blank">http://photodune.net/item/tigon-flower/1668130</a></li>
+                                                    <li><a href="http://photodune.net/item/yellow-apricot-blossom/1372934" target="_blank">http://photodune.net/item/yellow-apricot-blossom/1372934</a></li>
+                                                    <li><a href="http://photodune.net/item/mountain-flowers/1054931" target="_blank">http://photodune.net/item/mountain-flowers/1054931</a></li>
+                                                    <li><a href="http://photodune.net/item/yellow-apricot-blossom-3/1336781" target="_blank">http://photodune.net/item/yellow-apricot-blossom-3/1336781</a></li>
+                                                    <li><a href="http://photodune.net/item/dahlia/1543527" target="_blank">http://photodune.net/item/dahlia/1543527</a></li>
+                                                    <li><a href="http://photodune.net/item/blossoming/1125633" target="_blank">http://photodune.net/item/blossoming/1125633</a></li>
+                                                    <li><a href="http://photodune.net/item/blossoming/1148527" target="_blank">http://photodune.net/item/blossoming/1148527</a></li>
+                                                    <li><a href="http://photodune.net/item/water-lily/983545" target="_blank">http://photodune.net/item/water-lily/983545</a></li>
+                                                    <li><a href="http://photodune.net/item/flowers/2275760" target="_blank">http://photodune.net/item/flowers/2275760</a></li>
+                                                    <li><a href="http://photodune.net/item/flowers/2171169" target="_blank">http://photodune.net/item/flowers/2171169</a></li>
+                                                    <li><a href="http://photodune.net/item/flowers/2201731" target="_blank">http://photodune.net/item/flowers/2201731</a></li>
+                                                    <li><a href="http://photodune.net/item/flowers/2168477" target="_blank">http://photodune.net/item/flowers/2168477</a></li>
+                                                    <li><a href="http://photodune.net/item/helipterum/1118036" target="_blank">http://photodune.net/item/helipterum/1118036</a></li>
+                                                    <li><a href="http://photodune.net/item/multicolored-violet-flowers/1491058" target="_blank">http://photodune.net/item/multicolored-violet-flowers/1491058</a></li>
+                                                    <li><a href="http://photodune.net/item/tulips/1981642" target="_blank">http://photodune.net/item/tulips/1981642</a></li>
+                                                    <li><a href="http://photodune.net/item/flowers/2275760" target="_blank">http://photodune.net/item/flowers/2275760</a></li>
+                                                    <li><a href="http://themeforest.s3.amazonaws.com/asset_library/FDassets_nature.zip" target="_blank">http://themeforest.s3.amazonaws.com/asset_library/FDassets_nature.zip</a></li>
+                                                </ul>
+
+                                                <h5>Other Images</h5>
+                                                <ul>
+                                                    <li>Error Page Hanger
+                                                        <br><a href="http://www.pixeden.com/psd-web-elements/hanging-note-sign-psd" target="_blank">http://www.pixeden.com/psd-web-elements/hanging-note-sign-psd</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer id="footer">
+            <div class="footer-left">Dandelion Admin - Responsive Admin Template</div>
+            <div class="footer-right"><p>Copyright 2012. All Rights Reserved.</p></div>
+        </footer>
+        
+    </div>
+
+	<!-- Core Scripts -->
+	<script src="assets/js/libs/jquery-1.8.2.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+    
+    <!-- Template Script -->
+
+    <!-- Google Prettify Script -->
+    <script src="plugins/prettify/prettify.js"></script>
+
+    <!-- Docs Scripts -->
+    <script src="assets/js/docs.js"></script>
+
+</body>
+
+</html>

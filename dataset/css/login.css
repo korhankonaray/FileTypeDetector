@@ -1,0 +1,251 @@
+/*
+ * Dandelion Admin v2.0 - Home Box (Login, Register) Stylesheet
+ *
+ * This file is part of Dandelion Admin, an Admin template build for sale at ThemeForest.
+ * For questions, suggestions or support request, please mail me at maimairel@yahoo.com
+ *
+ * Development Started:
+ * March 25, 2012
+ * Last Update:
+ * December 07, 2012
+ *
+ */
+ 
+/* General Elements
+================================================== */
+
+body {
+    padding: 0;
+    background-color: #f2f2f2;
+    background-image: url(../images/bg/blueprint.png);
+}
+
+::-webkit-input-placeholder {
+    color: #999;
+}
+
+:-moz-placeholder {
+    color: #999;
+}
+
+.placeholder {
+    color: #999;
+}
+
+/* Home Wrapper
+================================================== */
+
+#da-home-wrap {
+    max-width: 320px;
+    margin: 80px auto;
+    padding: 0 70px;
+    position: relative;
+}
+
+#da-home-wrap:after {
+    content: '';
+    position: absolute;
+    width: 99px;
+    height: 26px;
+    left: 50%;
+    top: 100%;
+    margin-left: -48px;
+    margin-top: -13px;
+    background: url(../images/login-tape.png) no-repeat center center;
+}
+
+#da-home-wrap-inner {
+    padding-left: 70px;
+    margin-left: -70px;
+    background: url(../images/login-top-shadow-l.png) no-repeat left top;
+}
+
+#da-home-inner {
+    margin-right: -70px;
+    padding-right: 70px;
+    padding-top: 1px;
+    background: url(../images/login-top-shadow-r.png) no-repeat right top;
+}
+
+#da-home-box {
+    background: #fff url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAADklEQVR42mNgQAVcZHAABVgAKX8FJDUAAAAASUVORK5CYII=');
+    padding: 0 32px;
+    padding-bottom: 48px;
+    border: 1px solid #ddd;
+    border-top: 1px solid #c5c5c5;
+    -webkit-box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+}
+
+#da-home-box-header {
+    margin: 0 -32px;
+    margin-bottom: 20px;
+    padding: 32px;
+    border-bottom: 1px dashed #888;
+    background: url(../images/login-header-shadow.png) no-repeat center top;
+}
+
+#da-home-box-header .da-home-box-title {
+    font-size: 21px;
+    line-height: 1;
+}
+
+#da-home-box-header .da-home-box-link {
+    line-height: 21px;
+    float: right;
+}
+
+.da-home-box-separator {
+    font-size: 18px;
+    color: #999;
+    font-weight: normal;
+    text-align: center;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVR42mO4e/cuAAUyApj98CkjAAAAAElFTkSuQmCC');
+    background-repeat: repeat-x;
+    background-position: left center;
+}
+
+.da-home-box-separator span {
+    background: #fff url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAADklEQVR42mNgQAVcZHAABVgAKX8FJDUAAAAASUVORK5CYII=');
+    display: inline-block;
+    padding: 0 16px;
+}
+
+.da-home-box-separator, 
+#da-home-social {
+    margin-bottom: 25px;
+}
+
+/* Home Form
+================================================== */
+
+.da-home-form .da-form-row {
+    border: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.da-home-form-big {
+    position: relative;
+}
+
+.da-home-form-big input[type="text"], 
+.da-home-form-big input[type="password"] {
+    min-height: 48px;
+    height: 38px;
+    width: 100%;
+    border-bottom-width: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+.da-home-form-big:first-child input[type="text"], 
+.da-home-form-big:first-child input[type="password"] {
+    -webkit-border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+}
+
+.da-home-form-big:last-child input[type="text"], 
+.da-home-form-big:last-child input[type="password"] {
+    border-bottom-width: 1px;
+    -webkit-border-radius: 0 0 3px 3px;
+    -moz-border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3px 3px;
+}
+
+.da-home-form-btn-big .btn {
+    line-height: 28px;
+    font-size: 16px;
+}
+
+#da-login-username, 
+#da-login-password {
+    padding-left: 40px;
+    background-repeat: no-repeat;
+    background-position: 12px center;
+}
+
+#da-login-username {
+    background-image: url(../images/icons/led/src/user.png);
+}
+
+#da-login-password {
+    background-image: url(../images/icons/led/src/key.png);
+}
+
+.da-home-form label.error {
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    z-index: 100;
+    width: auto;
+    background: #a5010d;
+    padding: 8px 6px;
+    color: #fff;
+    font-size: 10px;
+    line-height: 1;
+    margin-top: -13px;
+    margin-left: 10px;
+    white-space: nowrap;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.da-home-form label.error:after {
+    height: 0;
+    width: 0;
+    border: 6px solid transparent;
+    border-right-color: #a5010d;
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    content: '';
+    margin-top: -6px;
+}
+
+
+/* IE < 9
+================================================== */
+
+.lt-ie9 .da-home-form-big input[type="text"], 
+.lt-ie9 .da-home-form-big input[type="password"] {
+    line-height: 38px;
+    min-height: 38px;
+    border-bottom-width: 1px;
+    margin-top: -1px;
+}
+
+/* Media Queries
+================================================== */
+
+@media only screen and (max-width: 480px) {
+    #da-home-wrap {
+        min-width: 300px;
+        padding: 0 10px;
+    }
+
+    #da-home-wrap-inner, 
+    #da-home-inner {
+        padding: 0;
+        margin: 0;
+        background: none;
+    }
+
+    #da-home-box {
+        padding: 0 24px 48px;
+        border-top-color: #ddd;
+    }
+
+    #da-home-box-header {
+        margin: 0 -24px;
+        margin-bottom: 20px;
+        padding: 32px 24px;
+    }
+}

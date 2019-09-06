@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Bootstrap Stylesheet -->
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" media="screen">
+
+<!-- Theme Stylesheet -->
+<link rel="stylesheet" href="assets/css/dandelion.theme.css" media="screen">
+<!-- Icon Stylesheet -->
+<link rel="stylesheet" href="assets/css/fonts/glyphicons/style.css" media="screen">
+<!--  Main Stylesheet -->
+<link rel="stylesheet" href="assets/css/dandelion.css" media="screen">
+<!-- Demo Stylesheet -->
+<link rel="stylesheet" href="assets/css/demo.css" media="screen">
+
+<title>Dandelion Admin - UI Elements</title>
+
+</head>
+
+<body>
+
+    <!-- Dandelion Customizer (remove if not needed) -->
+    <div id="da-customizer">
+        <div id="da-customizer-content">
+            <ul>
+                <li>
+                    <span class="da-customizer-title">Background Pattern</span>
+                    <span id="da-customizer-body-bg"></span>
+                </li>
+                <li>
+                    <span>Header Pattern</span>
+                    <span id="da-customizer-header-bg"></span>
+                </li>
+                <li>
+                    <span>Layout</span>
+                    <ul id="da-customizer-layouts" class="clearfix">
+                        <li>
+                            <input type="radio" id="da-customizer-fluid" name="da-layout" checked="checked">
+                            <label for="da-customizer-fluid">Fluid</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="da-customizer-fixed" name="da-layout">
+                            <label for="da-customizer-fixed">Fixed</label>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div id="da-customizer-button">
+                <button class="btn btn-danger">Get CSS</button>
+            </div>
+        </div>
+        <span id="da-customizer-pulldown"><i class="icon-cogwheels"></i></span>
+    </div>
+    
+	<!-- Main Wrapper. Set this to 'fixed' for fixed layout and 'fluid' for fluid layout' -->
+	<div id="da-wrapper">
+    
+        <!-- Header -->
+        <div id="da-header">
+        
+            <div id="da-header-top">
+                
+                <!-- Container -->
+                <div class="da-container clearfix">
+                    
+                    <!-- Logo Container. All images put here will be vertically centere -->
+                    <div id="da-logo-wrap">
+                        <div id="da-logo">
+                            <div id="da-logo-img">
+                                <a href="dashboard.html">
+                                    <img src="assets/images/logo.png" alt="Dandelion Admin">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Header Toolbar Menu -->
+                    <div id="da-header-toolbar" class="clearfix">
+                        <div id="da-user-profile-wrap">
+                            <div id="da-user-profile" data-toggle="dropdown" class="clearfix">
+                                <div id="da-user-avatar">
+                                    <img src="assets/images/pp.jpg" alt="">
+                                </div>
+                                <div id="da-user-info">
+                                    John Doe
+                                    <span class="da-user-title">Creative Director</span>
+                                </div>
+                            </div>
+                            <ul class="dropdown-menu">
+                                <li><a href="dashboard.html">Dashboard</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Profile</a></li>
+                                <li><a href="#">Settings</a></li>
+                                <li><a href="#">Change Password</a></li>
+                            </ul>
+                        </div>
+                        <div id="da-header-button-container">
+                            <ul>
+                                <li class="da-header-button-wrap">
+                                    <div class="da-header-button" data-toggle="dropdown">
+                                        <span class="btn-count">32</span>
+                                        <a href="#"><i class="icon-circle-exclamation-mark"></i></a>
+                                    </div>
+                                    <ul class="dropdown-menu pull-right">
+                                        <li>
+                                            <span class="da-dropdown-sub-title">Notifications</span>
+                                            <ul class="da-dropdown-sub">
+                                                <li class="unread">
+                                                    <a href="#">
+                                                        <span class="thumbnail"><img src="assets/images/pp.jpg" alt=""></span>
+                                                        <span class="info">
+                                                            <span class="name">John Doe</span>
+                                                            <span class="message">
+                                                                Lorem ipsum dolor sit amet consectetur adipiscing elit, et al commore
+                                                            </span>
+                                                            <span class="time">
+                                                                January 21, 2012
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li class="unread">
+                                                    <a href="#">
+                                                        <span class="thumbnail"><img src="assets/images/pp.jpg" alt=""></span>
+                                                        <span class="info">
+                                                            <span class="name">John Doe</span>
+                                                            <span class="message">
+                                                                Lorem ipsum dolor sit amet consectetur adipiscing elit, et al commore
+                                                            </span>
+                                                            <span class="time">
+                                                                January 21, 2012
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li class="read">
+                                                    <a href="#">
+                                                        <span class="thumbnail"><img src="assets/images/pp.jpg" alt=""></span>
+                                                        <span class="info">
+                                                            <span class="name">John Doe</span>
+                                                            <span class="message">
+                                                                Lorem ipsum dolor sit amet consectetur adipiscing elit, et al commore
+                                                            </span>
+                                                            <span class="time">
+                                                                January 21, 2012
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li class="read">
+                                                    <a href="#">
+                                                        <span class="thumbnail"><img src="assets/images/pp.jpg" alt=""></span>
+                                                        <span class="info">
+                                                            <span class="name">John Doe</span>
+                                                            <span class="message">
+                                                                Lorem ipsum dolor sit amet consectetur adipiscing elit, et al commore
+                                                            </span>
+                                                            <span class="time">
+                                                                January 21, 2012
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <a class="da-dropdown-sub-footer" href="#">
+                                                View all notifications
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="da-header-button-wrap">
+                                    <div class="da-header-button" data-toggle="dropdown">
+                                        <span class="btn-count">5</span>
+                                        <a href="#"><i class="icon-envelope"></i></a>
+                                    </div>
+                                    <ul class="dropdown-menu pull-right">
+                                        <li>
+                                            <span class="da-dropdown-sub-title">Messages</span>
+                                            <ul class="da-dropdown-sub">
+                                                <li class="unread">
+                                                    <a href="#">
+                                                        <span class="thumbnail"><img src="assets/images/pp.jpg" alt=""></span>
+                                                        <span class="info">
+                                                            <span class="name">John Doe</span>
+                                                            <span class="message">
+                                                                Lorem ipsum dolor sit amet consectetur adipiscing elit, et al commore
+                                                            </span>
+                                                            <span class="time">
+                                                                January 21, 2012
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li class="unread">
+                                                    <a href="#">
+                                                        <span class="thumbnail"><img src="assets/images/pp.jpg" alt=""></span>
+                                                        <span class="info">
+                                                            <span class="name">John Doe</span>
+                                                            <span class="message">
+                                                                Lorem ipsum dolor sit amet consectetur adipiscing elit, et al commore
+                                                            </span>
+                                                            <span class="time">
+                                                                January 21, 2012
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li class="read">
+                                                    <a href="#">
+                                                        <span class="thumbnail"><img src="assets/images/pp.jpg" alt=""></span>
+                                                        <span class="info">
+                                                            <span class="name">John Doe</span>
+                                                            <span class="message">
+                                                                Lorem ipsum dolor sit amet consectetur adipiscing elit, et al commore
+                                                            </span>
+                                                            <span class="time">
+                                                                January 21, 2012
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li class="read">
+                                                    <a href="#">
+                                                        <span class="thumbnail"><img src="assets/images/pp.jpg" alt=""></span>
+                                                        <span class="info">
+                                                            <span class="name">John Doe</span>
+                                                            <span class="message">
+                                                                Lorem ipsum dolor sit amet consectetur adipiscing elit, et al commore
+                                                            </span>
+                                                            <span class="time">
+                                                                January 21, 2012
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <a class="da-dropdown-sub-footer" href="#">
+                                                View all messages
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="da-header-button-wrap">
+                                    <div class="da-header-button">
+                                        <a href="index.html"><i class="icon-power"></i></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                                    
+                </div>
+            </div>
+            
+            <div id="da-header-bottom">
+                <!-- Container -->
+                <div class="da-container clearfix">
+                
+                	<div id="da-search">
+                    	<form>
+                        	<input type="text" class="search-query" placeholder="Search...">
+                        </form>
+                    </div>
+                	
+                    <!-- Breadcrumbs -->
+                    <div id="da-breadcrumb">
+                        <ul>
+                            <li><a href="dashboard.html"><i class="icon-home"></i> Dashboard</a></li>
+                            <li class="active"><span>UI Elements</span></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    
+        <!-- Content -->
+        <div id="da-content">
+            
+            <!-- Container -->
+            <div class="da-container clearfix">
+            
+                <!-- Sidebar Separator do not remove -->
+                <div id="da-sidebar-separator"></div>
+                
+                <!-- Sidebar -->
+                <div id="da-sidebar">
+
+                    <!-- Navigation Toggle for < 480px -->
+                    <div id="da-sidebar-toggle"></div>
+                
+                    <!-- Main Navigation -->
+                    <div id="da-main-nav" class="btn-container">
+                        <ul>
+                            <li>
+                                <a href="dashboard.html">
+                                    <!-- Icon Container -->
+                                    <span class="da-nav-icon">
+                                        <i class="icon-home"></i>
+                                    </span>
+                                    Dashboard
+                                </a>
+                            </li>
+                            <li>
+                                <a href="statistics.html">
+                                    <!-- Nav Notification -->
+                                    <span class="da-nav-count">32</span>
+                                    <!-- Icon Container -->
+                                    <span class="da-nav-icon">
+                                        <i class="icon-stats"></i>
+                                    </span>
+                                    Statistics
+                                </a>
+                            </li>
+                            <li>
+                                <a href="calendar.html">
+                                    <!-- Icon Container -->
+                                    <span class="da-nav-icon">
+                                        <i class="icon-calendar"></i>
+                                    </span>
+                                    Calendar
+                                </a>
+                            </li>
+                            <li>
+                                <a href="file.html">
+                                    <!-- Icon Container -->
+                                    <span class="da-nav-icon">
+                                        <i class="icon-folder-open"></i>
+                                    </span>
+                                    File Handling
+                                </a>
+                            </li>
+                            <li>
+                                <a href="table.html">
+                                    <!-- Icon Container -->
+                                    <span class="da-nav-icon">
+                                        <i class="icon-table"></i>
+                                    </span>
+                                    Table
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <!-- Icon Container -->
+                                    <span class="da-nav-icon">
+                                        <i class="icon-edit"></i>
+                                    </span>
+                                    Form
+                                </a>
+                                <ul>
+                                    <li><a href="form-layouts.html">Layouts</a></li>
+                                    <li><a href="form-elements.html">Elements</a></li>
+                                    <li><a href="form-validation.html">Validation</a></li>
+                                    <li><a href="form-wizard.html">Wizard</a></li>
+                                </ul>
+                            </li>
+                            <li class="active">
+                                <a href="ui.html">
+                                    <!-- Icon Container -->
+                                    <span class="da-nav-icon">
+                                        <i class="icon-settings"></i>
+                                    </span>
+                                    UI Elements
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <!-- Icon Container -->
+                                    <span class="da-nav-icon">
+                                        <i class="icon-font"></i>
+                                    </span>
+                                    Layout and Typography
+                                </a>
+                                <ul class="closed">
+                                    <li><a href="grids.html">Grids and Panels</a></li>
+                                    <li><a href="typography.html">Typography</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="gallery.html">
+                                    <!-- Icon Container -->
+                                    <span class="da-nav-icon">
+                                        <i class="icon-picture"></i>
+                                    </span>
+                                    Gallery
+                                </a>
+                            </li>
+                            <li>
+                                <a href="error.html">
+                                    <!-- Icon Container -->
+                                    <span class="da-nav-icon">
+                                        <i class="icon-warning-sign"></i>
+                                    </span>
+                                    Error Page (404)
+                                </a>
+                            </li>
+                            <li>
+                                <a href="icons.html">
+                                    <!-- Icon Container -->
+                                    <span class="da-nav-icon">
+                                        <i class="icon-crown"></i>
+                                    </span>
+                                    Icons
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                
+                <!-- Main Content Wrapper -->
+                <div id="da-content-wrap" class="clearfix">
+                
+                	<!-- Content Area -->
+                	<div id="da-content-area">
+
+                        <div class="row-fluid">
+                        	<div class="span12">
+                            	<div class="da-panel">
+                                	<div class="da-panel-header">
+                                    	<span class="da-panel-title">
+                                            <i class="icol-ui-slider-2"></i>
+                                            Slider
+                                        </span>
+                                    </div>
+                                    <div class="da-panel-content da-form-container">
+                                    	<form class="da-form da-form-inline">
+                                        	<div class="da-form-row">
+                                            	<label class="da-form-label">Default Slider</label>
+                                                <div class="da-form-item">
+                                                	<div id="da-ex-slider"></div>
+                                                </div>
+                                            </div>
+                                        	<div class="da-form-row">
+                                            	<label class="da-form-label">Range Slider</label>
+                                                <div class="da-form-item">
+                                                    <span id="da-ex-slider-range-info" class="form-help left">Price Range: <span class="da-highlight">$75 - $300</span></span>
+                                                	<div id="da-ex-slider-range"></div>
+                                                </div>
+                                            </div>
+                                        	<div class="da-form-row">
+                                            	<label class="da-form-label">Range Slider with Fixed Minimum</label>
+                                                <div class="da-form-item">
+                                                	<span id="da-ex-slider-range-fixed-info" class="form-help left">Maximum Price: <span class="da-highlight">$37</span></span>
+                                                	<div id="da-ex-slider-range-fixed"></div>
+                                                </div>
+                                            </div>
+                                        	<div class="da-form-row">
+                                            	<label class="da-form-label">Equalizer</label>
+                                                <div class="da-form-item">
+                                                    <div id="da-slider-equalizer">
+                                                        <span>88</span>
+                                                        <span>77</span>
+                                                        <span>55</span>
+                                                        <span>33</span>
+                                                        <span>40</span>
+                                                        <span>45</span>
+                                                        <span>70</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        	<div class="da-form-row">
+                                            	<label class="da-form-label">Color Sliders</label>
+                                                <div class="da-form-item">
+                                                	<div class="da-ex-color-slider green"></div>
+                                                	<div class="da-ex-color-slider red"></div>
+                                                	<div class="da-ex-color-slider blue"></div>
+                                                	<div class="da-ex-color-slider orange"></div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                            	<div class="da-panel">
+                                	<div class="da-panel-header">
+                                    	<span class="da-panel-title">
+                                            Progressbar
+                                        </span>
+                                    </div>
+                                    <div class="da-panel-content da-form-container">
+                                    	<form class="da-form da-form-inline">
+                                        	<div class="da-form-row">
+                                            	<label class="da-form-label">Default Progressbar</label>
+                                                <div class="da-form-item">
+                                                	<div id="da-ex-pb"></div>
+                                                </div>
+                                            </div>
+                                        	<div class="da-form-row">
+                                            	<label class="da-form-label">Animated (no IE)</label>
+                                                <div class="da-form-item">
+                                                	<span class="form-help left">
+                                                    	<a href="#" id="da-ex-pba-trigger">Randomize value</a>
+                                                        (modern browsers will display a CSS3 animated progressbar)
+                                                    </span>
+                                                	<div id="da-ex-pba" class="animated blue"></div>
+                                                </div>
+                                            </div>
+                                        	<div class="da-form-row">
+                                            	<label class="da-form-label">Color Progressbars</label>
+                                                <div class="da-form-item">
+                                                	<div class="da-ex-color-pb green"></div>
+                                                	<div class="da-ex-color-pb red"></div>
+                                                	<div class="da-ex-color-pb blue"></div>
+                                                	<div class="da-ex-color-pb orange"></div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row-fluid">
+                        	<div class="span6">
+                            	<div class="da-panel">
+                                	<div class="da-panel-header">
+                                    	<span class="da-panel-title">
+                                            <i class="icon-display"></i>
+                                            Dialog
+                                        </span>
+                                        
+                                    </div>
+                                    <div class="da-panel-content">
+                                    	<div style="text-align:center">
+                                            <button id="da-ex-dialog" class="btn btn-info">Default UI Dialog</button>
+                                            <button id="da-ex-dialog-modal" class="btn btn-primary">Modal UI Dialog</button>
+                                            <button id="da-ex-dialog-form" class="btn btn-success">Form in UI Dialog</button>
+                                        </div>
+                                        
+                                        <div id="da-ex-dialog-div" style="display:none;">
+                                        	<p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+                                            <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+                                        </div>
+                                        
+                                        <div id="da-ex-dialog-form-div" class="form-container">
+                                            <form id="da-ex-dialog-form-val" class="da-form">
+                                                <div id="da-validate-error" class="da-message error" style="display:none;"></div>
+                                                <div class="da-form-inline">
+                                                    <div class="da-form-row">
+                                                        <label class="da-form-label">Required Validation</label>
+                                                        <div class="da-form-item large">
+                                                            <input type="text" name="reqField">
+                                                        </div>
+                                                    </div>
+                                                    <div class="da-form-row">
+                                                        <label class="da-form-label">File Input Validation</label>
+                                                        <div class="da-form-item large">
+                                                            <input type="file" name="picture" class="da-custom-file">
+                                                            <span class="form-help">JPEG, JPG, PNG, GIF only</span>
+                                                        	<label for="picture" class="error" generated="true" style="display:none;"></label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="da-form-row">
+                                                        <label class="da-form-label">Date Validation</label>
+                                                        <div class="da-form-item large">
+                                                        	<input id="da-ex-dialog-dp" type="text" readonly="readonly" name="dateField">
+                                                        </div>
+                                                    </div>
+                                                    <div class="da-form-row">
+                                                        <label class="da-form-label">Radiobutton Validation</label>
+                                                        <div class="da-form-item large">
+                                                            <ul class="da-form-list">
+                                                                <li><input id="gender_male" type="radio" name="gender"> <label for="gender_male">Male</label></li>
+                                                                <li><input id="gender_female" type="radio" name="gender"> <label for="gender_female">Female</label></li>
+                                                            </ul>
+                                                            <label for="gender" class="error plain" generated="true" style="display:none"></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        	<div class="span6">
+                            	<div class="da-panel">
+                                	<div class="da-panel-header">
+                                    	<span class="da-panel-title">
+                                            <i class="icol-microphone"></i>
+                                            Growl
+                                        </span>
+                                        
+                                    </div>
+                                    <div class="da-panel-content">
+                                    	<div style="text-align:center">
+                                            <button id="da-ex-growl" class="btn btn-info">Default Growl</button>
+                                            <button id="da-ex-growl-1" class="btn btn-primary">Sticky Growl</button>
+                                            <button id="da-ex-growl-2" class="btn btn-success">Growl with Header</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row-fluid">
+                        	<div class="span12">
+                            	<div class="da-panel">
+                                	<div class="da-panel-header">
+                                    	<span class="da-panel-title">
+                                            <i class="icon-display"></i>
+                                            UI Buttons
+                                        </span>
+                                    </div>
+                                    <div class="da-panel-content da-form-container">
+                                    	<form class="da-form">
+                                        	<div class="da-form-row">
+                                            	<label class="da-form-label">UI Buttons</label>
+                                                <div class="da-form-item">
+                                                    <button class="da-ex-buttons">A button element</button>
+                                                    <input type="submit" value="A submit button" class="da-ex-buttons">
+                                                    <a href="#" class="da-ex-buttons">An anchor</a>
+                                                </div>
+                                            </div>
+                                        	<div class="da-form-row">
+                                            	<label class="da-form-label">Radio UI Buttons</label>
+                                                <div class="da-form-item">
+                                                    <div id="da-ex-buttons-radio">
+                                                        <input type="radio" id="radio1" name="radio"><label for="radio1">Choice 1</label>
+                                                        <input type="radio" id="radio2" name="radio" checked="checked"><label for="radio2">Choice 2</label>
+                                                        <input type="radio" id="radio3" name="radio"><label for="radio3">Choice 3</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        	<div class="da-form-row">
+                                            	<label class="da-form-label">Checkbox UI Buttons</label>
+                                                <div class="da-form-item">
+                                                    <div id="da-ex-buttons-checkbox">
+                                                        <input type="checkbox" id="check1"><label for="check1">B</label>
+                                                        <input type="checkbox" id="check2"><label for="check2">I</label>
+                                                        <input type="checkbox" id="check3"><label for="check3">U</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        	<div class="da-form-row">
+                                            	<label class="da-form-label">Icon UI Buttons</label>
+                                                <div class="da-form-item large">
+                                                	<div id="da-ex-buttons-icon">                                            
+                                                        <button>Button with icon only</button>
+                                                        <button>Button with icon on the left</button>
+                                                        <button>Button with two icons</button>
+                                                        <button>Button with two icons and no text</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                            	<div class="da-panel">
+                                	<div class="da-panel-header">
+                                    	<span class="da-panel-title">
+                                            <i class="icol-calendar-2"></i>
+                                            Datepicker
+                                        </span>
+                                    </div>
+                                    <div class="da-panel-content da-form-container">
+                                    	<form class="da-form da-form-inline">
+                                        	<div class="da-form-row">
+                                            	<label class="da-form-label">Default Datepicker</label>
+                                                <div class="da-form-item">
+                                                	<input id="da-ex-datepicker" type="text">
+                                                </div>
+                                            </div>
+                                        	<div class="da-form-row">
+                                            	<label class="da-form-label">Inline Datepicker</label>
+                                                <div class="da-form-item">
+                                                	<div id="da-ex-datepicker-inline"></div>
+                                                </div>
+                                            </div>
+                                        	<div class="da-form-row">
+                                            	<label class="da-form-label">Datetime Picker</label>
+                                                <div class="da-form-item">
+                                                	<input id="da-ex-datetimepicker" type="text">
+                                                </div>
+                                            </div>
+                                        	<div class="da-form-row">
+                                            	<label class="da-form-label">Time Picker</label>
+                                                <div class="da-form-item">
+                                                	<input id="da-ex-timepicker" type="text">
+                                                </div>
+                                            </div>
+                                        	<div class="da-form-row">
+                                            	<label class="da-form-label">Datepicker with Week</label>
+                                                <div class="da-form-item">
+                                                	<input id="da-ex-datepicker-week" type="text">
+                                                </div>
+                                            </div>
+                                        	<div class="da-form-row">
+                                            	<label class="da-form-label">Datepicker with Multiple Months</label>
+                                                <div class="da-form-item">
+                                                	<input id="da-ex-datepicker-months" type="text">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row-fluid">
+                            <div class="span6">
+                            	<div class="da-panel">
+                                	<div class="da-panel-header">
+                                    	<span class="da-panel-title">
+                                            <i class="icol-ui-tab-content"></i>
+                                            Tabs
+                                        </span>
+                                    </div>
+                                    <div id="da-ex-tabs">
+                                        <ul>
+                                            <li><a href="#tabs-1">Nunc tincidunt</a></li>
+                                            <li><a href="#tabs-2">Proin dolor</a></li>
+                                            <li><a href="#tabs-3">Aenean lacinia</a></li>
+                                        </ul>
+                                        <div id="tabs-1">
+                                            <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+                                        </div>
+                                        <div id="tabs-2">
+                                            <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+                                        </div>
+                                        <div id="tabs-3">
+                                            <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+                                            <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="span6">
+                                <div id="da-ex-tabs-plain">
+                                    <ul>
+                                        <li><a href="#tabs-1">Nunc tincidunt</a></li>
+                                        <li><a href="#tabs-2">Proin dolor</a></li>
+                                        <li><a href="#tabs-3">Aenean lacinia</a></li>
+                                    </ul>
+                                    <div id="tabs-1">
+                                        <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+                                    </div>
+                                    <div id="tabs-2">
+                                        <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+                                    </div>
+                                    <div id="tabs-3">
+                                        <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+                                        <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row-fluid">
+                            <div class="span6">
+                            	<div class="da-panel">
+                                	<div class="da-panel-header">
+                                    	<span class="da-panel-title">
+                                            <i class="icol-ui-saccordion"></i>
+                                            Accordion
+                                        </span>
+                                        
+                                    </div>
+                                    <div id="da-ex-accordion">
+                                        <h3><a href="#">Section 1</a></h3>
+                                        <div>
+                                            <p>
+                                            Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                                            ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                                            amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                                            odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+                                            </p>
+                                        </div>
+                                        <h3><a href="#">Section 2</a></h3>
+                                        <div>
+                                            <p>
+                                            Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+                                            purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+                                            velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+                                            suscipit faucibus urna.
+                                            </p>
+                                        </div>
+                                        <h3><a href="#">Section 3</a></h3>
+                                        <div>
+                                            <p>
+                                            Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+                                            Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+                                            ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+                                            lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+                                            </p>
+                                            <ul>
+                                                <li>List item one</li>
+                                                <li>List item two</li>
+                                                <li>List item three</li>
+                                            </ul>
+                                        </div>
+                                        <h3><a href="#">Section 4</a></h3>
+                                        <div>
+                                            <p>
+                                            Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+                                            et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+                                            faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+                                            mauris vel est.
+                                            </p>
+                                            <p>
+                                            Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+                                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                                            inceptos himenaeos.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="span6">
+                                <div id="da-ex-accordion-plain">
+                                    <h3><a href="#">Section 1</a></h3>
+                                    <div>
+                                        <p>
+                                        Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                                        ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                                        amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                                        odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+                                        </p>
+                                    </div>
+                                    <h3><a href="#">Section 2</a></h3>
+                                    <div>
+                                        <p>
+                                        Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+                                        purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+                                        velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+                                        suscipit faucibus urna.
+                                        </p>
+                                    </div>
+                                    <h3><a href="#">Section 3</a></h3>
+                                    <div>
+                                        <p>
+                                        Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+                                        Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+                                        ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+                                        lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+                                        </p>
+                                        <ul>
+                                            <li>List item one</li>
+                                            <li>List item two</li>
+                                            <li>List item three</li>
+                                        </ul>
+                                    </div>
+                                    <h3><a href="#">Section 4</a></h3>
+                                    <div>
+                                        <p>
+                                        Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+                                        et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+                                        faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+                                        mauris vel est.
+                                        </p>
+                                        <p>
+                                        Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+                                        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                                        inceptos himenaeos.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row-fluid">
+                        	<div class="span12">
+                            	<div class="da-panel">
+                                	<div class="da-panel-header">
+                                    	<span class="da-panel-title">
+                                            Buttons
+                                        </span>                    
+                                    </div>
+                                    <div class="da-panel-content">
+                                        <div style="margin-bottom:16px;">
+                                            <p>Small Buttons</p>
+                                            <div class="btn-toolbar">
+                                                <input type="button" class="btn btn-danger btn-small" value="Red Button">
+                                                <input type="button" class="btn btn-success btn-small" value="Green Button">
+                                                <input type="button" class="btn btn-primary btn-small" value="Blue Button">
+                                                <input type="button" class="btn btn-info btn-small" value="Pink Button">
+                                                <input type="button" class="btn btn-warning btn-small" value="Orange Button">
+                                                <input type="button" class="btn gray btn-small" value="Gray Button">
+                                            </div>
+                                        </div>
+                                        
+                                        <div style="margin-bottom:16px;">
+                                            <p>Regular Buttons</p>
+                                            <div class="btn-toolbar">
+                                                <input type="button" class="btn btn-danger" value="Red Button">
+                                                <input type="button" class="btn btn-success" value="Green Button">
+                                                <input type="button" class="btn btn-primary" value="Blue Button">
+                                                <input type="button" class="btn btn-info" value="Pink Button">
+                                                <input type="button" class="btn btn-warning" value="Orange Button">
+                                                <input type="button" class="btn" value="Gray Button">
+                                            </div>
+                                        </div>
+                                        
+                                        <div style="margin-bottom:16px;">
+                                            <p>Large Buttons</p>
+                                            <div class="btn-toolbar">
+                                                <input type="button" class="btn btn-danger btn-large" value="Red Button">
+                                                <input type="button" class="btn btn-success btn-large" value="Green Button">
+                                                <input type="button" class="btn btn-primary btn-large" value="Blue Button">
+                                                <input type="button" class="btn btn-info btn-large" value="Pink Button">
+                                                <input type="button" class="btn btn-warning btn-large" value="Orange Button">
+                                                <input type="button" class="btn gray btn-large" value="Gray Button">
+                                            </div>
+                                        </div>
+                                        
+                                        <div style="margin-bottom:16px;">
+                                            <p>Buttons with Icons</p>
+                                            <div class="btn-toolbar">
+                                            	<a href="#" class="btn btn-danger">
+                                                    <i class="icol-wand"></i>
+                                                	Red button
+                                                </a>
+                                            	<a href="#" class="btn btn-success">
+                                                    <i class="icol-chart-bar"></i>
+                                                	Green button
+                                                </a>
+                                            	<a href="#" class="btn btn-primary">
+                                                    <i class="icol-control-stop"></i>
+                                                	Blue button
+                                                </a>
+                                            	<a href="#" class="btn btn-info">
+                                                	Pink button
+                                                    <i class="icol-image-2"></i>
+                                                </a>
+                                            	<a href="#" class="btn btn-warning">
+                                                	Orange button
+                                                    <i class="icol-calendar-2"></i>
+                                                </a>
+                                            	<a href="#" class="btn">
+                                                	Gray button
+                                                    <i class="icol-bomb"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div style="margin-bottom:16px;">
+                                            <p>Button Group</p>
+                                            <div class="btn-toolbar">
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn"><i class="icol-text-align-left"></i></button>
+                                                    <button type="button" class="btn"><i class="icol-text-align-center"></i></button>
+                                                    <button type="button" class="btn"><i class="icol-text-align-right"></i></button>
+                                                </div>
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn">Button</button>
+                                                    <button type="button" class="btn" disabled="disabled">Disabled</button>
+                                                </div>
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn"><i class="icon-fast-backward"></i></button>
+                                                    <button type="button" class="btn"><i class="icon-play"></i></button>
+                                                    <button type="button" class="btn"><i class="icon-fast-forward"></i></button>
+                                                    <button type="button" class="btn"><i class="icon-stop"></i></button>
+                                                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                                                    <ul class="dropdown-menu pull-right">
+                                                        <li><a href="#">Search Music Online</a></li>
+                                                        <li><a href="#">Music News</a></li>
+                                                        <li><a href="#">Exit Media Player</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-fluid">
+                            <div class="span6">
+                            	<div class="da-panel">
+                                	<div class="da-panel-header">
+                                    	<span class="da-panel-title">
+                                            <i class="icol-lightbulb"></i>
+                                            Tooltips
+                                        </span>
+                                    </div>
+                                    <div class="da-panel-content" style="text-align: center">
+                                    	<button type="button" rel="tooltip" data-placement="top" class="btn" title="This is a tooltip">Top</button>
+	                                    <button type="button" rel="tooltip" data-placement="left" class="btn" title="This is a tooltip">Left</button>
+    	                                <button type="button" rel="tooltip" data-placement="bottom" class="btn" title="This is a tooltip">Bottom</button>
+	                                    <button type="button" rel="tooltip" data-placement="right" class="btn" title="This is a tooltip">Right</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="da-panel span6">
+                                <div class="da-panel-header">
+                                    <span class="da-panel-title"><i class="icon-comment"></i> Popovers</span>
+                                </div>
+                                <div class="da-panel-content" style="text-align: center">
+                                    <div class="btn" rel="popover" data-trigger="hover" data-placement="top" data-content="Euphoria (semantically opposite of dysphoria) is medically recognized as a mental and emotional condition in which a person experiences intense feelings of well-being, elation, happiness, ecstasy, excitement, and joy." data-original-title="Euphoria">Top</div>
+                                    <div class="btn" rel="popover" data-trigger="hover" data-placement="left" data-content="Asthma is the common chronic inflammatory disease of the airways characterized by variable and recurring symptoms, reversible airflow obstruction, and bronchospasm." data-original-title="Asthma">Left</div>
+                                    <div class="btn" rel="popover" data-trigger="hover" data-placement="right" data-content="A wing is an appendage with a surface that produces lift for flight or propulsion through the atmosphere, or through another gaseous or liquid fluid. A wing is an airfoil, which has a streamlined cross-sectional shape producing a useful lift to drag ratio." data-original-title="Wing">Right</div>
+                                    <div class="btn" rel="popover" data-trigger="hover" data-placement="bottom" data-content="Silicones are inert, synthetic compounds with a variety of forms and uses. Typically heat-resistant and rubber-like, they are used in sealants, adhesives, lubricants, medical applications (e.g., breast implants), cookware, and insulation." data-original-title="Sillicone">Bottom</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row-fluid">
+                            <div class="da-panel span6">
+                                <div class="da-panel-header">
+                                    <span class="da-panel-title"><i class="icon-cogwheels"></i> Toolbar (Top)</span>
+                                </div>
+                                <div class="da-panel-toolbar">
+                                    <div class="btn-toolbar">
+                                        <div class="btn-group">
+                                            <a href="#" class="btn"><i class="icol-accept"></i> Accept</a>
+                                            <a href="#" class="btn"><i class="icol-cross"></i> Reject</a>
+                                            <a href="#" class="btn"><i class="icol-printer"></i> Print</a>
+                                            <a href="#" class="btn"><i class="icol-arrow-refresh"></i> Renew</a>
+                                            <a href="#" class="btn dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+                                            <ul class="dropdown-menu pull-right">
+                                                <li><a href="#"><i class="icol-disconnect"></i> Disconnect From Server</a></li>
+                                                <li class="divider"></li>
+                                                <li class="dropdown-submenu">
+                                                    <a href="#">More Options</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#">Contact Administrator</a></li>
+                                                        <li><a href="#">Destroy Table</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="da-panel-content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nisi tellus, faucibus tristique faucibus sit amet, lacinia at velit. Proin pretium vulputate orci, nec luctus odio volutpat ac. Curabitur semper adipiscing tellus sed venenatis. Integer vitae diam dui. Ut ut quam ac ante eleifend aliquam. Cras tincidunt pulvinar sollicitudin. Nullam mattis justo nec nisl adipiscing ullamcorper. Curabitur fermentum egestas massa, eu dictum ligula accumsan id. Duis elit arcu, adipiscing vel consectetur ac, fermentum ac nisl. Quisque varius ipsum vitae mauris cursus eu tristique velit dapibus. Cras eu viverra neque.</p>
+                                </div>
+                            </div>
+
+                            <div class="da-panel span6">
+                                <div class="da-panel-header">
+                                    <span class="da-panel-title"><i class="icon-cogwheels"></i> Toolbar (Top)</span>
+                                </div>
+                                <div class="da-panel-content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nisi tellus, faucibus tristique faucibus sit amet, lacinia at velit. Proin pretium vulputate orci, nec luctus odio volutpat ac. Curabitur semper adipiscing tellus sed venenatis. Integer vitae diam dui. Ut ut quam ac ante eleifend aliquam. Cras tincidunt pulvinar sollicitudin. Nullam mattis justo nec nisl adipiscing ullamcorper. Curabitur fermentum egestas massa, eu dictum ligula accumsan id. Duis elit arcu, adipiscing vel consectetur ac, fermentum ac nisl. Quisque varius ipsum vitae mauris cursus eu tristique velit dapibus. Cras eu viverra neque.</p>
+                                </div>
+                                <div class="da-panel-toolbar">
+                                    <div class="btn-toolbar">
+                                        <div class="btn-group dropup">
+                                            <a href="#" class="btn"><i class="icol-accept"></i> Accept</a>
+                                            <a href="#" class="btn"><i class="icol-cross"></i> Reject</a>
+                                            <a href="#" class="btn"><i class="icol-printer"></i> Print</a>
+                                            <a href="#" class="btn"><i class="icol-arrow-refresh"></i> Renew</a>
+                                            <a href="#" class="btn dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+                                            <ul class="dropdown-menu pull-right">
+                                                <li><a href="#"><i class="icol-disconnect"></i> Disconnect From Server</a></li>
+                                                <li class="divider"></li>
+                                                <li class="dropdown-submenu">
+                                                    <a href="#">More Options</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#">Contact Administrator</a></li>
+                                                        <li><a href="#">Destroy Table</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <!-- Footer -->
+        <div id="da-footer">
+        	<div class="da-container clearfix">
+            	<p>Copyright 2012. Dandelion Admin. All Rights Reserved.
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- JS Libs -->
+    <script src="assets/js/libs/jquery-1.8.3.min.js"></script>
+    <script src="assets/js/libs/jquery.placeholder.min.js"></script>
+    <script src="assets/js/libs/jquery.mousewheel.min.js"></script>
+
+    <!-- JS Bootstrap -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    
+    <!-- jQuery-UI JavaScript Files -->
+    <script src="assets/jui/js/jquery-ui-1.9.2.min.js"></script>
+    <script src="assets/jui/jquery.ui.timepicker.min.js"></script>
+    <script src="assets/jui/jquery.ui.touch-punch.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/jui/css/jquery.ui.all.css" media="screen">
+
+    <link rel="stylesheet" href="plugins/elrte/css/elrte.css" media="screen">
+    <link rel="stylesheet" href="plugins/elfinder/css/elfinder.css" media="screen">
+
+    <!-- JS Plugins -->
+
+    <!-- Validation Plugin -->
+    <script src="plugins/validate/jquery.validate.min.js"></script>
+
+    <!-- jGrowl Plugin -->
+    <script src="plugins/jgrowl/jquery.jgrowl.min.js"></script>
+    <link rel="stylesheet" href="plugins/jgrowl/jquery.jgrowl.css" media="screen">
+
+    <!-- JS Demo -->
+    <script src="assets/js/demo/demo.ui.js"></script>
+
+    <!-- JS Template -->
+    <script src="assets/js/core/dandelion.core.js"></script>
+
+    <!-- JS Customizer -->
+    <script src="assets/js/core/dandelion.customizer.js"></script>
+    
+</body>
+</html>

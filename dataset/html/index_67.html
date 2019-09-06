@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<!--[if lte IE 8]>              <html class="ie8 no-js" lang="en">     <![endif]-->
+<!--[if IE 9]>					<html class="ie9 no-js" lang="en">     <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="not-ie no-js" lang="en">  <!--<![endif]-->
+<head>
+	<!-- Google Web Fonts
+  ================================================== -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic:400,600' rel='stylesheet' type='text/css'>
+	
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--[if ie]><meta http-equiv='X-UA-Compatible' content="IE=edge,IE=9,IE=8,chrome=1" /><![endif]-->
+	
+	<title>Documentation</title>
+	
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut" href="images/favicon.ico" />
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/shDocumenter.css" />
+	<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" />
+
+	<!-- HTML5 Shiv
+	================================================== -->
+	<script src="js/jquery.modernizr.js"></script>
+	
+</head>
+<body>
+	
+	<section id="menu" role="complementary">
+		
+		<nav id="documenter-nav" class="documenter-nav">
+
+			<a id="tm-logo" href="#"><img src="images/logo.png" alt="" /></a>
+
+			<ul class="navigation">
+				<li class="current-nav"><a href="#start">Start</a></li>
+				<li><a href="#install">Installation</a></li>
+				<li><a href="#one-click-demo-install">One-click-demo-install</a></li>
+				<li><a href="#permissions-for-cache-folder">Permission for “cache”/ “timthumb_cache” folder</a></li>
+				<li><a href="#layout-constructor">Layout Constructor</a></li>
+				<li><a href="#shortcodes">Shortcodes</a></li>
+				<li><a href="#pages">Custom Page Templates</a></li>
+				<li><a href="#post-types">Post Types</a></li>
+				<li><a href="#sliders">Sliders</a></li>
+				<li><a href="#blog">Blog page</a></li>
+				<li><a href="#gallery">Gallery page</a></li>
+				<li><a href="#portfolio">Portfolio page</a></li>
+				<li><a href="#events">Events adding</a></li>
+				<li><a href="#contact-form">Contact form</a></li>
+				<li><a href="#custom-menu">Custom Menu</a></li>
+				<li><a href="#theme-options">Theme Options</a></li>
+				<li><a href="#mail-subscriber">Mail Subscriber</a></li>
+				<li><a href="#custom-pg-options">Custom Options</a></li>
+				<li><a href="#seo-options">SEO Options</a></li>
+				<li><a href="#widgets">Widgets</a></li>
+				<li><a href="#javascript">JavaScript</a></li>
+				<li><a href="#files">PSD Files</a></li>
+				<li><a href="#sources">Sources and Credits</a></li>
+			</ul>
+
+			<footer id="footer">
+
+				<p>
+					Once again, thank you so much for purchasing this theme.
+
+				</p>
+
+				<ul class="items">
+					<li class="get-support">
+						<a href="http://forums.webtemplatemasters.com/" target="_blank">
+							<span class="circle-logo"></span>
+							Get Free Support 
+						</a>
+					</li>
+					<li class="support-tickets">
+						<a href="http://tickets.webtemplatemasters.com/" target="_blank">
+							<span class="circle-logo"></span>
+							Support Tickets
+						</a>
+					</li>
+					<li class="follow-twitter">
+						<a href="https://twitter.com/ThemeMakers" target="_blank">
+							<span class="circle-logo"></span>
+							Follow on Twitter
+						</a>
+					</li>
+					<li class="follow-facebook">
+						<a href="http://www.facebook.com/wpThemeMakers" target="_blank">
+							<span class="circle-logo"></span>
+							Follow on Facebook				
+						</a>
+					</li>
+					<li class="subscribe-rss">
+						<a href="feed://themeforest.net/feeds/users/ThemeMakers" target="_blank">
+							<span class="circle-logo"></span>
+							Subscribe by RSS					
+						</a>
+					</li>
+				</ul>
+
+			</footer><!--/ #footer-->
+
+		</nav><!--/ #documenter-nav-->	
+		
+	</section>
+	
+	<div id="documenter-content" class="documenter-content">
+
+		<section id="start">
+
+			<div class="heading">
+				<h6>“Blessing Theme” Documentation by “ThemeMakers” v1.0</h6>
+				<h1>"Blessing Premium Responsive WordPress Theme"</h1>
+			</div><!--/ .heading-->
+
+			<table class="table-description">
+				<tr>
+					<td class="desc-column-1">
+						<span class="author-created">
+							Created: 09/18/2012 <br/>
+							By: ThemeMakers
+						</span>
+						<span class="author-link"><a href="#">http://themeforest.net/user/ThemeMakers</a></span>
+					</td>
+					<td class="desc-column-2">
+						<blockquote>
+							<span>Thank you for purchasing our theme.</span> If you have any questions that are beyond 
+							the scope of this help file, please feel free to contact us via <a href="http://forums.webtemplatemasters.com" target="_blank">Support Forums</a> or create a personal ticket in our <a href="http://tickets.webtemplatemasters.com" target="_blank">Support System</a>.<br /> <span>Thanks so much!</span>
+						</blockquote>
+					</td>
+				</tr>
+			</table><!--/ .table-description-->
+
+		</section><!--/ #start-->
+
+		<section id="install">
+
+			<h3 class="tm-title">Installation</h3>
+
+			<p><b>The theme can be uploaded in two ways:</b></p>
+			
+			<ul>
+				<li>FTP upload: Using your FTP program, upload the non-zipped Blessing folder into the /wp-content/themes/ folder on your server.</li>
+				<li>WordPress upload: Navigate to Appearance > Add New Themes > Upload. Go to browse, and select the zipped Blessing folder. Hit Install Now and the theme will be uploaded and installed. </li>
+			</ul>
+			<p>Once the theme is uploaded, you need to activate it. Go to Appearance > Themes and activate Blessing theme.</p>
+			<p>After that you should define either you are going to use one-click-demo-install service to get the website content as we we have on our demo version, or you will build your website on your own wihout using demo installation.</p>
+			<p><b>It is very important</b>. If you do not need demo content then after first theme activation go to Theme Options panel and press "Save all changes" button.</p>
+			
+			<h6>Videocast</h6>
+			<p>Blessing WP theme Installation <a href="http://www.screenr.com/H1h7">http://www.screenr.com/H1h7</a></p>
+
+		</section><!--/ #install-->
+
+		<section id="one-click-demo-install">
+			<h3 class="tm-title">One Click Demo Install</h3>
+
+			<p>We made it so easy for you to get demo content for your website as demo site has. You only need to know, to check  and to do few important things:</p>
+
+			<ol>
+				<li>One-click-demo-install service works only on freshly installed WordPress.</li>
+				<li>In your main theme package look for "uploads" folder and upload it on your website <b>wp-content > uploads</b>. Do the same for Revolution Slider plugin.</li>
+				<li>Activate the theme and go to Theme Options panel </li>
+				<li>Go to admin > Appearance > Theme Options > General and press Install button. In new pop-up window select "Yes".</li>
+				<li>Once the demo installation is completed the page will be refreshed and you will be asked to log in.</li>
+				<li>Please use "demo" for username and password to log in</li>
+				<li>All is dome. Have fun!</li>
+			</ol>
+			
+			<h6>Videocast: this video has been recorded for one of our other WP themes, so please use as an example</h6>
+			<p>One-click-demo-install <a href="http://www.screenr.com/8yI7">http://www.screenr.com/8yI7</a></p>
+
+
+			</section><!--/ #one-click-demo-install-->
+
+		<section id="permissions-for-cache-folder">
+
+			<h3 class="tm-title">Permission for “cache”/ “timthumb_cache” folder</h3>
+			<p><b>NOTICE:</b> This information will be useful if you would like this theme works with timthumb service.</p>
+			<p>Once you install and activate  the theme  your next step it to set permissions 777 for folder <b>“cache”/ “timthumb_cache”</b> folder to your hosting.</p>
+			<p>First of all follow this way to find it:</p>
+			<p><b>(../wp-content/themes/your-theme-name/timthumb_cache)</b></p>
+			<h5 class="tm-title">Step 1</h5>
+			<p>Please set connection with your server using your FTP client or just make sure it is already connected. Then go to the root directory with the theme.</p>
+			<p><img class="bordered align-center" src="images/step1.png"></p>
+			<h5 class="tm-title">Step 2</h5>
+			<p>Click on the folder <b>"timthumb_cache"</b> right mouse button and select settings "Change permissions".</p>
+			<p><img class="bordered align-center" src="images/step2.png"></p>
+			<h5 class="tm-title">Step 3</h5>
+			<p>In the pop-up window of the <b>"Change permissions"</b> please select the settings <b>"Octal notation" 777</b> as the access rights to the folder. Don't forget to put a tick "Process selected directories recursively". And click <b>"Change"</b> button.</p>
+			<p><img class="bordered align-center" src="images/step3.png"></p>
+
+
+		</section><!--/ #permissions-for-cache-folder-->
+		<section id="layout-constructor">
+			<h3 class="tm-title">Layout Constructor</h3>
+			
+			<p>The Layout constructor provides a view of the objects on your page or post and with the help of which the objects may be manipulated and controlled. It makes so easy to define your page or post structure.</p>
+			<p>Let's view it more detailed.</p>
+            <p>First of all you need to get this Layout constructor from your Screen Options panel:
+			</p>
+			<p><img class="bordered align-center" src="images/layout_constructor_1.png"></p>
+			<p>Simply check box for Constructor and it appears under your Edit field:</p>
+            <p><img class="bordered align-center" src="images/layout_constructor_2.png"></p>
+            <p>Each item represents the object on front page. Layout constructor builds schematic view of page real layout.</p>
+           <p> <img class="bordered align-center" src="images/layout_const_description.png"></p
+       >
+            <p>To get it started press Add row button which creates a row for elements added. </p>
+            <p><img class="bordered align-center" src="images/add_row_button.png"></p
+       >
+            <p>All objects displayed in the Layout Constructor are dragable, so can be easily manipulated, e.g. added, edited, reordered, deleted.
+            <p>Let's say you would like to split text in four columns in first row and 3 columns in second.</p>
+            <p>For this:</p>
+            <ol> 
+            	<li>press Add column button four times</li>
+            	<li>press Add row</li>
+            	<li>in just added row press Add column button three times</li>
+            </ol>
+            <p>Ending up all these pressings you should get this:</p>
+            <p><img class="bordered align-center" src="images/layout_constructor_5.png"></p
+       >
+            <p>Now you see schematic layout template of your text. The Layout constructor allows you to regulate each box width by a click "+"</p>
+            <p><img class="bordered align-center" src="images/width.png"></p
+       >
+            <p>Let's try to fill all these boxes with content. You no longer need to insert shortcodes inside shortcodes, it's never been so simple.</p>
+            <p>To add and edit content for each column just press <img class="bordered align-center" src="images/pensil.png"></p>
+            <p>In pop-up window you get Column content editor:</p>
+           <p><img class="bordered align-center" src="images/column _content _editor.png"/></p
+       >
+			
+			<p>Here you can add any content you like, add media files, add text, format text, moreover all shortcodes are available here under green "+" button. So once you are done and your first column is ready press "Apply".
+			<p>Here are simple examples how your text can be shown up with the help of this Layout constructor:</p>
+			<p><img class="bordered align-center" src="images/columns_1.png"/><img class="bordered align-center" src="images/columns_2.png"/></p>
+			<p>You can add to each column images, videos, any other shortcodes, etc.
+			This Layout constructor makes you website looks alive.
+		</p>
+		<h6>Videocast:</h6>
+		<p>Layout Constructor in use <a href="http://www.screenr.com/Y57H">http://www.screenr.com/Y57H</a></p>
+			
+		</section><!--/#layout-constr-->
+
+		<section id="shortcodes">
+			<h3 class="tm-title">Shortcodes</h3>
+			<p>Blessing WP theme allows you to add 22 shortcodes. With the help of shortcodes you can make your page content varied, not dull and simple, but very alive and colorful.</p>
+			<p><img class="bordered align-center" src="images/all_shortcodes.png"></p>
+
+			<h4>Alert</h4>
+			<p><img class="bordered align-center" src="images/alerts.png"></p>
+			<h6>Videocast:</h6>
+			<p>Alert <a href=" http://www.screenr.com/4pW7 ">http://www.screenr.com/4pW7 </a></p>
+			<hr>
+
+			<h4>Alternative gallery</h4>
+			<p><img class="bordered align-center" src="images/.png"></p>
+			<h6>Videocast:</h6>
+			<p>Alternative gallery shortcode <a href=""></a></p>
+			<hr>
+
+			<h4>Audio</h4>
+			<p><img class="bordered align-center" src="images/audio.png"></p>
+			<h6>Videocast:</h6>
+			<p>Audio shortcode <a href="http://www.screenr.com/FpW7"></a>http://www.screenr.com/FpW7</p>
+			<hr>
+
+			<h4>Blog</h4>
+			<p><img class="bordered align-center" src="images/blog_sk.png"></p>
+			<h6>Videocast:</h6>
+			<p>Blog shortcode <a href="http://www.screenr.com/bpW7">http://www.screenr.com/bpW7</a></p>
+			<hr>
+
+			<h4>Button</h4>
+			<p><img class="bordered align-center" src="images/buttons.png"></p>
+			<h6>Videocast:</h6>
+			<p>Button shortcode <a href="http://www.screenr.com/JpW7">http://www.screenr.com/JpW7</a></p>
+			<hr>
+
+			<h4>Chart</h4>
+			
+            <p>Charts shortcode allows the adding of 7 diagram types: <b><i>Pie Chart, Bar Chart, Column Chart, Geochart, Line chart, Area chart, Combo Chart</i></b>. In settings to this shortcode you need specify Chart Type, Title, Chart width, Chart height,  Font family, Font size, Background color, Chart titles and Chart data.</p>
+            <p>Pie Chart</p>
+            <p><img class="bordered align-center" src="images/pie.png"></p>
+            <p>Bar Chart</p>
+            <p><img class="bordered align-center" src="images/bar.png"></p>
+            <p>Column Chart</p>
+            <p><img class="bordered align-center" src="images/column _chart.png"></p>
+            <p>GeoChart</p>
+            <p><img class="bordered align-center" src="images/geo.png"></p>
+            <p>Line Chart</p>
+            <p><img class="bordered align-center" src="images/line.png"></p>
+            <p>Area Chart</p>
+            <p><img class="bordered align-center" src="images/area.png"></p>
+            <p>Combo Chart</p>
+            <p><img class="bordered align-center" src="images/combo.png"></p>
+            <h6>Videocast:</h6>
+			<p>Chart shortcode <a href="http://www.screenr.com/gAW7">http://www.screenr.com/gAW7</a></p>
+
+            <hr>
+
+			<h4>Column</h4>
+			<p><img class="bordered align-center" src="images/columns.png"></p>
+			<h6>Videocast:</h6>
+			<p>Column shortcode <a href="http://www.screenr.com/yFW7">http://www.screenr.com/yFW7</a></p>
+			<hr>
+
+			<h4>Column post</h4>
+			<p><img class="bordered align-center" src="images/column_post.png"></p>
+			<h6>Videocast:</h6>
+			<p>Column post shortcode <a href="http://www.screenr.com/fLW7">http://www.screenr.com/fLW7</a></p>
+			<hr>
+
+			<h4>Contact form</h4>
+			<p><img class="bordered align-center" src="images/contact_form.png"></p>
+			<h6>Videocast:</h6>
+			<p>Contact form shortcode <a href="http://www.screenr.com/2qW7">http://www.screenr.com/2qW7</a></p>
+			<hr>
+
+			<h4>Divider</h4>
+			<p><img class="bordered align-center" src="images/solid_divider.png"></p>
+			<p><img class="bordered align-center" src="images/back_to_top_divider.png"></p>
+			<h6>Videocast:</h6>
+			<p>Divider shortcode <a href="http://www.screenr.com/AqW7">http://www.screenr.com/AqW7</a></p>
+			<hr>
+
+			<h4>Google Map</h4>
+			<p>This shortcode adds Google map to the page. Settings allow to select  height, width, latitude, longitude, mode, specify Zoom (from 1 to 19), put an address also choose the Map Type (ROADMAP, SATELLITE, HYBRID, TERRAIN) and show/hide marker, make it dragable, disable/enable pop-up and scrollwheel.</p>
+			<p><img class="bordered align-center" src="images/google_map.png"></p>
+
+			<h6>Videocast:</h6>
+			<p>Google map shortcode <a href="http://www.screenr.com/0qW7">http://www.screenr.com/0qW7</a></p>
+			
+			<hr>
+
+			<h4>Google table</h4>
+			<p><img class="bordered align-center" src="images/google_table.png"></p>
+			<h6>Videocast:</h6>
+			<p>Google table shortcode <a href="http://www.screenr.com/ZqW7">http://www.screenr.com/ZqW7</a></p>
+			<hr>
+
+			<h4>Home Holder</h4>
+			<p><img class="bordered align-center" src="images/home_holder.png"></p>
+			<h6>Videocast:</h6>
+			<p>Home Holder shortcode <a href="http://www.screenr.com/6qW7">http://www.screenr.com/6qW7</a></p>
+			<hr>
+
+			<h4>Image</h4>
+			<p><img class="bordered align-center" src="images/image.png"></p>
+			<p><img class="bordered align-center" src="images/image2.png"></p>
+			<h6>Videocast:</h6>
+			<p>Image shortcode <a href="http://www.screenr.com/SuW7">http://www.screenr.com/SuW7</a></p>
+			<hr>
+
+			<h4>List</h4>
+			<p><img class="bordered align-center" src="images/list.png"></p>
+			<h6>Videocast:</h6>
+			<p>List shortcode <a href="http://www.screenr.com/CuW7">http://www.screenr.com/CuW7</a></p>
+			<hr>
+
+			<h4>Quotes</h4>
+			<p><img class="bordered align-center" src="images/quote.png"></p>
+			<h6>Videocast:</h6>
+			<p>Quotes shortcode <a href="http://www.screenr.com/DeW7">http://www.screenr.com/DeW7</a></p>
+			<hr>
+
+			<h4>Tabbed content</h4>
+			<p><img class="bordered align-center" src="images/tabs.png"></p>
+			<h6>Videocast:</h6>
+			<p>Column shortcode <a href="http://www.screenr.com/FeW7">http://www.screenr.com/FeW7</a></p>
+			<hr>
+
+			<h4>Title</h4>
+			<p><img class="bordered align-center" src="images/titles.png"></p>
+			<h6>Videocast:</h6>
+			<p>Title shortcode <a href="http://www.screenr.com/6eW7"> http://www.screenr.com/6eW7 </a></p>
+			<hr>
+
+			<h4>Toggle</h4>
+			<p><img class="bordered align-center" src="images/toggles.png"></p>
+			<h6>Videocast:</h6>
+			<p>Toggle shortcode <a href="http://www.screenr.com/PeW7">http://www.screenr.com/PeW7</a></p>
+			<hr>
+
+			<h4>Twitter</h4>
+			<h6>Videocast:</h6>
+			<p>Twitter shortcode <a href="http://www.screenr.com/ieW7">http://www.screenr.com/ieW7 </a></p>
+			<hr>
+
+			<h4>Upcoming events</h4>
+			<p><img class="bordered align-center" src="images/upcomings_events.png"></p>
+			<h6>Videocast:</h6>
+			<p>Upcoming events shortcode <a href="http://www.screenr.com/SaW7"></a>http://www.screenr.com/SaW7</p>
+			<hr>
+
+			<h4>Video</h4>
+			<p><img class="bordered align-center" src="images/video.png"></p>
+			<h6>Videocast:</h6>
+			<p>Video shortcode <a href="http://www.screenr.com/XiW7">http://www.screenr.com/XiW7</a></p>
+			<hr>	
+
+		
+		</section><!--/ #shortcodes-->
+
+
+		<section id="pages">
+
+			<h3 class="tm-title">Custom Page Templates</h3>
+			
+			<p>The Blessing theme comes with eleven inbuilt custom page templates: Default Template, Blog layout, Events Calendar Layout, Events List Layout, Gallery, Portfolio 1 column, Portfolio 2 column, Portfolio 3 column, Staff Page, Subscription Page, Testimonials. These templates can be used on individual pages to alter the display or functionality.
+			<p><img class="bordered align-center" src="images/all_templates.png"></p>
+	
+		</section><!--/ #pages-->
+
+		<section id="post-types">
+
+			<h3 class="tm-title">Post types</h3>
+			<p>You are able to add posts based on few types: default, video, audio, link, quote and gallery.</p>
+<p>First you need to create few categories. Further all posts can be devided into categories (topics, themes, groups). Also you can add few tages for each post.</p>
+<p><img class="bordered align-center" src="images/post_types.png"/></p>
+
+			<p><b>Default post</b> allows you to add any content, using all shortcodes, etc.</p>
+			<p><img class="bordered align-center" src="images/default_post.png"/></p>
+			<p><b>Video post</b> adds video to your posts. Under edit field you will see Post data type box, where you need to upload video wanted.</p>
+			<p><img class="bordered align-center" src="images/video_post.png"/></p>
+			<p><b>Audio post</b> does the same as video, but you need to upload an audiofile. </p>
+			<p><img class="bordered align-center" src="images/audio_post.png"/></p>
+			<p><b>Quote post</b> helps you to point out some information and make it a quote. Just put a part of text for this  quote.</p>
+			<p><img class="bordered align-center" src="images/quote_post.png"/></p>
+			<p><b>Gallery post</b> shows up images in slider. You simply need to add as many images as you need in Post type data field.</p>
+			<p><img class="bordered align-center" src="images/gallery_post.png"/></p>
+			<p>For each post you can add a short preview. Take a look on Excerpt box and put there few first words regarding a post.</p> 
+			<p><img class="bordered align-center" src="images/excerpt.png"/></p>
+			<p>If you do not see it on your backend, follow this way:</p>
+			<p><img class="bordered align-center" src="images/excerpt_screen_options.png"/></p>
+			<p>Once you add as many posts as you need we are going to show them on our Blog page. Go to Pages > Add new, and here in Page Attributes box select Blog template type for this pag.</p>
+        <p><img class="bordered align-center" src="images/blog.png"/></p>
+        <h6>Videocast:</h6>
+        <p>Post types <a href="http://www.screenr.com/0vh7">http://www.screenr.com/0vh7</a></p>
+        <p>Blog page creation <a href="http://www.screenr.com/IdM7">http://www.screenr.com/IdM7</a></p>
+
+
+		</section><!--/ #post-types-->
+
+		<section id="sliders">
+
+			<h3 class="tm-title">Sliders</h3>
+			
+		<p>Blessing includes two powerful slider types:  Flex and Revolution slider plugin. They work fast, accurate and bright. That's how they look:</p>
+		<p><b>Flexslider</b></p>
+		<p><img class="bordered align-center" src="images/flex_slider.png"></p>
+		<p><b>Revolution slider plugin</b></p>
+		<p><img class="bordered align-center" src="images/rev_slider.png"></p>
+		<p>First step to make  slider is to create one or more slider groups to show. For more quick and convenient work we recomend at first upload all images for your slider and other theme media elements to Media Library.</p>
+		<h6>Videocast:</h6>
+        <p>Post types <a href="http://www.screenr.com/edM7">http://www.screenr.com/edM7</a></p>
+			
+			<p>To do this you go to <b>admin panel > Slider Groups</b></p>
+		<p><img class="bordered align-center" src="images/add_new_slide.png"></p>
+		<p>From the very beginning give a name for this slider group. 
+			<p><b><b>Note:</b></b> Please keep in mind do not repeat the names for slider groups even if you delete one.</p> 
+			<p>Pressing "+" button opens new window where you can add and edit slides.</p> <p> So you can set a title, description, put a link link for downloaded image and choose color for title and description text (Advanced options). To save all changes for current slide you need to check box in top right corner. Pressing "Save All Changes" you save all changes for the whole Slider Group. </p>
+		<p><img class="bordered align-center" src="images/insert_media_slider.png"></p>
+        <p>Once all images for slider are added and slider group is full we are going to show it on our Home page. By the way, it is possible to have slider on any page you like. For this we are going to <b>Pages > Home</b>. In Page slider box you need to choose slider type and slider group to show up.</p>
+        <p><img class="bordered align-center" src="images/Home_slider_type.png"/></p>
+        <p>Save changes and refresh your Home page, new created slider will appear.</p>
+        <h6>Videocast</h6>
+       <p>Setting Home page as a front page <a href="http://www.screenr.com/exM7">http://www.screenr.com/exM7</a></p> 
+       
+       <p>Additional options for Flex slider you can find in <b>Appearance > Theme Options > Slider Settings > Flex Sldier</b>.
+
+        <p><b><i>Options for Flex slider allow to:</i></b></p>
+<ul>
+	<li>choose Slide width</li>
+	<li>enable/disable captions</li>
+	<li>choose caption width </li>
+	<li>enable/disable slideshow</li>
+	<li>activate animation loop</li>
+	<li>set the speed of animations</li>
+	<li>set the speed of the slideshow cycling</li>
+	<li>select your animation type: "fade" or "slide"</li>
+	<li>enable/disable randomize slide order </li>
+	<li>reverse the animation direction</li>
+	
+    <p><img class="bordered align-center" src="images/flex_slider_theme_options.png"/></p>
+</ul>
+<h6>Videocast:</h6>
+	<p>Flex Slider <a href="http://www.screenr.com/4xs7">http://www.screenr.com/4xs7</a></p>
+<p><b><i>Revolution slider plugin is already built-in to our Blessing theme. You have to install it at first. It can be found in theme package. After installation this plugin will be placed on your admin panel.</i></b></p>
+<p><img class="bordered align-center" src="images/rev_slider_admin.png"/></p>
+<h6>Videocasts:</h6>
+<p>Revolution slider plugin Installation <a href="http://www.screenr.com/W1h7">http://www.screenr.com/W1h7</a></p>
+<p>Revolution slider plugin in use<a href="http://www.screenr.com/wdh7">http://www.screenr.com/wdh7</a></p>
+<p>Setting Home page as a front page <a href="http://www.screenr.com/7dh7">http://www.screenr.com/7dh7</a></p>
+
+
+
+			
+		</section><!--/ #sliders-->
+
+
+		<section id="blog">
+
+			<h3 class="tm-title">Blog page</h3>
+
+			<p>This page shows all posts you have. Firstly add as much posts as you need and than go to Pages > Add new, and here in Page Attributes box select Blog type for this page.</p>
+		<p><img class="bordered align-center" src="images/pages_templates.png"/></p>
+		<p>On front end you will get your posts listed like this:</p>
+		<p><img class="bordered align-center" src="images/blog_list.png"/></p>
+		<h6>Videocasts:</h6>
+		<p>Blog page <a href="http://www.screenr.com/IdM7">http://www.screenr.com/IdM7</a></p>
+
+		</section><!--/ #blog-->
+
+		<section id="gallery">
+
+			<h3 class="tm-title">Gallery page</h3>
+			<p>
+			First of all you need to create one or more gallery itmes. For this go to <b>Galleries > Add New</b>.</p> 
+			<p><img class="bordered align-center" src="images/new_gallery.png"/></p>
+			<p>To add some images you want to have in one particular gallery please go a bit down and find Gallery metabox. Here you can upload all pictures to this gallery. Next you need to specify a category for this gallery/item, also you are able to set few Clients for each gallery item and add special Skills if needed.</p>
+			<p>In case you need to put few words about this gallery you should add a short description in Excerp box</p>
+
+<p>To make some image like a preview for a gallery you need upload Featured Image, which is the cover of this gallery</p> 
+<p>To add more information about this gallery you can also specify its Release Date, Project URL, URL Title and Tools.</p>
+<p>Do not forget press Save or Upload after making some changes in order to save all your options.</p>
+
+<p>When all galleries are added next we are going to in order to show up all images from galleries  is to create the Gallery Page. 
+For this go to Pages and add new page for future gallery. Here you have a choice, since there are two Gallery page templates are available: Gallery and Gallery Alternate.
+
+The difference between them is the way of visual items outputting:
+
+<p><b>Gallery</b></p>
+<p><img class="bordered align-center" src="images/gallery_temp.png"/></p>
+<p><b>Gallery alternate</b></p>
+<p><img class="bordered align-center" src="images/gallery_alt.png"/></p>
+<p><b>Simple Gallery</b></p>
+<p>This type of gallery has been made with the help of shortcode "Image". You simply need to insert this shortcode as many times as you need making all settings requested, and all galleries will be shown up with Fancy box effect.</p>
+<p><img class="bordered align-center" src="images/simple_gallery.png"/></p>
+<p><b>NOTE:</b> There is one more way to add gallery to your website - we have added special short Altrenate Gallery, which allows you to add unlimited gallery pages. Just choose this one from the shortcodes list and make all settings requested.</p>
+<h6>Videocasts:</h6>
+		<p>Gallery page (part 1) <a href="http://www.screenr.com/R3h7">http://www.screenr.com/R3h7</a></p>
+		<p>Gallery page (part 2) <a href="http://www.screenr.com/k3h7">http://www.screenr.com/k3h7</a></p>
+		<p>Gallery page. Alternate gallery made by using shortcode Image (part 3) <a href="http://www.screenr.com/l1P7">http://www.screenr.com/l1P7</a></p>
+			
+		</section><!--/ #gallery-->
+
+		<section id="portfolio">
+
+			<h3 class="tm-title">Portfolio page</h3>
+			<p><img class="bordered align-center" src="images/portfolio.png"/></p>
+		<p>Portfolio Page is created by analogy to Gallery Page. Therefore at first you need to create one or more portfolios - go to to  <b>Portfolios > Add New</b>. In Editor field enter some description text of this portfolio. Also you have an ability to note some more information in Portfolio attributes block (Release Date, Project Url, Url Title, Tools, Images Gallery). 	
+		<p><img class="bordered align-center" src="images/port_attributes.png"/></p>
+		<p>Here in Images Gallery Area add all images or videos needed. In Clients block you can pick or add new client, and also you are able to add Skills Tags needed to each portfolio.</p>
+		<p><img class="bordered align-center" src="images/clients_skills.png"/></p>	
+		<p>Once all portfolios are full and ready to be published on front-end we are going to create special page for that. We go to <b>Pages > Add new</b> and as a template for this page select 1-, 2- or 3-columns Portfolio</p>
+		<p><img class="bordered align-center" src="images/portfolio_templates.png"/></p>
+		<h6>Videocasts:</h6>
+		<p>Portfolio page (part 1) <a href="http://www.screenr.com/dJh7">http://www.screenr.com/dJh7</a></p>
+		<p>Portfolio page (part 2) <a href="http://www.screenr.com/0Jh7">http://www.screenr.com/0Jh7</a></p>
+
+		</section><!--/ #portfolio-->
+
+<section id="events">
+	<h3 class="tm-title">Events adding</h3>
+<p>Events are added to the theme by the analogy to portfolio and gallery items adding. At first you need to add all your events and then simply choose page template needed to show them up. So let's start, to add one and more events we go to <b>admin > Events > Add new</b></p>
+<p><img class="bordered align-center" src="images/event_adding.png"/></p>
+<p>So at first, give the name for an event, describe it in appropriate fileds (Edit and Excerpt boxes), add categories if needed. Then goes the block of main setting for an event: you need to select its repeating setting if needed, put an event start and end time, and define its duration. If you would like to show the place of this event you need to fill in special fields for coordinates. Basically that's it, an event is ready and we press "Publish" to finish it. So now you go ahead  and add as many events as you like the same way.</p>
+<p>Blessing WP theme offers you two ways of Events showing up: 1) as a list of events; 2) as a calendar:</p>
+	<p><b>Events Listing page</b></p>
+<p><img class="bordered align-center" src="images/event_listing.png"/></p>
+<p><b>Events Calendar</b></p>
+<p><img class="bordered align-center" src="images/calendar.png"/></p>
+<p>So we go to <b>admin > Pages > Add new</b> and here in special Page Attribute box choose one of two templates available for your events</p>
+<p><img class="bordered align-center" src="images/page_attribute.png"/></p>
+<h6>Videocasts:</h6>
+<p>Events adding <a href="http://www.screenr.com/aFg7">http://www.screenr.com/aFg7</a></p>
+
+</section><!--/ #events-->
+
+		<section id="contact-form">
+
+			<h3 class="tm-title">Contact form</h3>
+			<p>To make Contact Form Page  firstly you need to build the form itself. Go to <b>Theme Options > Contact forms</b> and create a form here. From the very beginning give a name to this form and press + "Add" </p>
+			<p><img class="bordered align-center" src="images/contact_form_new.png"/></p>
+			<p>In new pop-up widndow fill in appropriate fields</p>
+			<p><img class="bordered align-center" src="images/contact_form_back.png"/></p>
+<p>When you're done with contact form and it's ready, we go to show it uo on our front-end. <b>Pages > Add new</b>.
+Your next step is to add <b>Contact Form Shortcode</b>. In shortcode options choose Contact Form which was made before and press Insert Shortcode.</p>
+<p>Also you can add this form to your sidebar or footer area with the help of special widget (Appearance > Widgets, find Contact Form widget and drag and drop it either to sidebar or to footer). Only thing you need to do here – to select conatc form created before in dropdown menu.</p>
+<h6>Videocasts:</h6>
+		<p>Contact Form (part 1) <a href="http://www.screenr.com/jqg7">http://www.screenr.com/jqg7</a></p>
+		<p>Contact Form (part 2) <a href="http://www.screenr.com/s5p7">http://www.screenr.com/s5p7</a></p>
+
+			
+		</section><!--/ #contact-form-->
+
+
+		<section id="custom-menu">
+
+			<h3 class="tm-title">Custom Menu</h3>
+			
+			<p>In tag Appearance > Menus you can add and manage your menu. Please make sure than Menu Name is not changed, and Primary Menu is selected (or any other Menu you added).</p>
+			<img class="bordered align-center" src="images/custom_menu.png"/>
+			<p>To this menu you can add all Pages, Posts and Categories created, moreover you can arrange the hierarchy – to add submenu items in few levels. In Primary Menu block you can  manage and sort each part of Menu. All items are dragable, so simply drag a page or a category needed and drop to the place wanted. Do not forget save changes!</p>
+            <p>On video we show how to work with menu and how to create dropdown menu.</p>
+            <h6>Videocast:</h6>
+            <p>Custom Menu <a href="http://www.screenr.com/YxM7">http://www.screenr.com/YxM7</a></p> 
+            <p>Dropdown menu <a href="http://www.screenr.com/04K7">http://www.screenr.com/04K7</a></p>
+            <p>In case if some Pages, Categories, Posts boxes are missing on Menu page take a look at the top right “Screen option” tab, where you can manage admin > Appearance> Menus  back-end.</p>
+            <p><img class="bordered align-center" src="images/screen_options_menu.png"/></p>
+
+		</section><!--/ #custom-menu-->
+
+		<section id="theme-options">
+
+			<h3 class="tm-title">Theme Options</h3>
+			
+			<p>Theme Options extended panel helps you to customize current theme the way you personally need. Let's get it started to view everything in depth.</p>
+			<p>Here is like <b>Options Panel</b> looks</p>
+			<img class="bordered align-center" src="images/theme_options_panel.png"/>
+			<p>At the left top side you can see links for Theme Help Documentation and our Support Forum, where you always can get an answer on your questions or instructions needed for resolving occured issues.</p>
+			<p><img class="bordered align-center" src="images/docs_forum.png"/>
+			
+			<h4>General</h4>
+			<p>Main panel starts from section <b>“General”</b> which provides with next options:</p>
+			<ol>
+				<li>to upload favicon for your website. It will appear in your browser's address bar as per example below. Recommended dimensions: 16x16. Recommended image types: png, ico.</li>
+				<p><img class="bordered align-center" src="images/favicon.png"/></p>
+				<li>choose your website Logo : either Image or text</li>
+			<p>If you prefer to show text for your logo then check Text box, enter a name, choose font family for it, choose color for this text  as well</p>
+			<img class="bordered align-center" src="images/logo_text.png"/>
+
+            <p>If as a website logo you choose to show an image then check Image box and upload your logo image there. Recommended dimensions: width = 300px, height = any. Recommended image types: png, gif, jpg.</p>
+			<img class="bordered align-center" src="images/site_logo_image.png"/>
+			<li>to choose Logo font family if text Logo has been chosen</li>
+			<li>to choose Logo Text color</li>
+			<li>to select your default sidebar position</li>
+			<li>to define if all your website images are cropped and resized with or without Timthumb</li>
+			<li>to enable/disable breadcrumbs. If checked, the breadcrumbs area will be disabled for all the website.</li>
+			<li>to enable/disable footer. If checked, all the footer widgets will not be appeared in the bottom of each page.</li>
+			<li>to enable/disable default image media settings. If checked, all the images you upload will not be cropped to default wordpress images sizes. We recommend to leave it as "checked".</li>
+			<li>to enable/disable WP texturize, which is recommended option</li>
+			<li>to enable/disable PIE (for better look in IE)</li>
+			<li>to apply  your customization </li>
+			<li>to place tracking code for Google Analytics. It will be inserted before closing body tag in your theme.</li>
+			<li>to to add FeedBurner URL. Enter your full FeedBurner URL (or any other preferred feed URL) if you wish to use FeedBurner over the standard WordPress Feed. </li>
+			<li>to enter your item purchase code. It will be used for future free theme updates.</li>
+			<img class="bordered align-center" src="images/cust.tracking.feed.png"/>
+			
+			<hr>
+
+            <h4>Styling</h4>
+            <p>Next section is “Styling” the most capacious  one. It includes options for:</p>
+            <ol>
+            	<li>General</li>
+            	<li>Headings</li>
+            	<li>Main Navigation</li>
+            	<li>Content</li>
+            	<li>Buttons</li>
+            	<li>Widgets</li>
+            	<li>Images</li>
+        </ol>
+          <img class="bordered align-center" src="images/styling_general.png"/>
+          </ol>
+          <p><b>“General Styling”</b> subcategory allows to:</p>
+          <ol>
+          	<li>to choose default website font family</li> 
+          	<li>to set Header background color</li>
+          	<img class="bordered align-center" src="images/back_color.png"/>
+          	<li>to change background separator (Jaggy, Wavy, Lineal)</li>
+          	<img class="bordered align-center" src="images/separator.png"/>	
+          	<li>to choose website links color</li> 
+          	<li>to choose website links hover color</li>
+          	<li>to choose Theme color scheme</li>
+            <li>to choose Default website background type (patterns, custom background image or color)</li>
+            <li>if Patterns background type has been chosen yocan also select a pattern type and color of it</li>
+    </ol>
+    <p>In case you do not like all settings you made about backgrounds you can always get back to default website background settings.</p>
+    <p>Styling General section allows you to change Header background color and Header background image in case you do not like our default blue clouds in header.</p>
+    <img class="bordered align-center" src="images/clouds_back.png"/><img class="bordered align-center" src="images/clouds_front.png"/>
+    <hr>
+    <p>In <b>Headings section</b>  you can work with font families for all headings of your website from H1 to H6.</p>
+    <img class="bordered align-center" src="images/headings.png"/>
+    <hr>
+    <p><b>Main Navigation</b> section is responsible for all setting for main console:
+    <img class="bordered align-center" src="images/main_navigation.png"/></p>
+    <p><b>General settings:</b> for Main Navigation</p>
+    <ul>
+    	<li>font family </li>
+    </ul>
+    <p>Settings for <b>Gradient background color</b></p>
+    <ul>
+    	<li>you can choose Background Color Top</li>
+    	<li>you can set Background Color Bottom</li>
+    </ul>
+        
+    <p><b>Text colo settings:</b></p>
+    <ul>
+    	<li>default</li>
+    	<li>current</li>
+    	<li>hover</li>
+    </ul>
+<p><b>Background Colors Settings</b></p>
+<hr>
+
+<p><b>Content</b> styling options make possible to modify: </p>
+<img class="bordered align-center" src="images/content.png"/>
+<ul>
+	<li>font family</li>
+	<li>font size</li>
+	<li>text color</li>	
+</ul>
+<hr>
+<p><b>Buttons</b> styling let you select:</p>
+<img class="bordered align-center" src="images/buttons_back.png"/>
+<ul>
+	<li>font family</li>
+	<li>font size</li>
+	<li>text color</li> 
+</ul>
+<hr>
+<p><b>Sidebar Widgets</b> styling section allows you to edit sidebar widgets by changing:</p>
+<ul>
+	<li>font family for widgets</li>
+	<li>heading font size</li>
+	<li>title color</li> 
+	<li>text color</li> 
+</ul>
+<p>Also here are presented settings for Testimonials widget:</p>
+<ul>
+	<li>testimonials text color</li>
+	<li>testimonials author text color</li>
+</ul>
+
+<img class="bordered align-center" src="images/sidebar_widgets.png"/>
+<hr>
+<p><b>Images</b> styling provides with settings for:
+	<ul>
+		<li>image frame background color</li>
+		<li>image frame hover background color</li>
+	</ul>
+<img class="bordered align-center" src="images/images.png"/>
+
+<hr>
+<p><b>Footer Area settings offer you:</b></p>
+<ul>
+	<li>to change fooetr background color</li>
+	<li>to change title and text color for footer widgets</li>
+	<li>to choose normal links color and color on over</li>
+</ul>
+<img class="bordered align-center" src="images/footer_area.png"/>
+<hr>
+
+<h4>Sliders Settings</h4>
+<p>General Slider Settings tab gives only one option - to choose Slider Height</p>
+<p>Sliders Settings panel provides with options for Flex slider. </p>
+	<img class="bordered align-center" src="images/flex_slider_theme_options.png"/>
+	<p>So you are able to:</p>
+	<ul>
+	<li>choose Slide width</li>
+	<li>enable/disable captions</li>
+	<li>choose caption width </li>
+	<li>enable/disable slideshow</li>
+	<li>activate animation loop</li>
+	<li>set the speed of animations</li>
+	<li>set the speed of the slideshow cycling</li>
+	<li>select your animation type: "fade" or "slide"</li>
+	<li>enable/disable randomize slide order </li>
+	<li>reverse the animation direction</li>
+	</ul>
+
+	<p>Since the Revolution slider is the built-in plugin all settings for this tslider type you'll find on your admin panel</p>
+	<img class="bordered align-center" src="images/rev_slider_admin.png"/>
+
+	<hr>
+	<h4>Slider Groups</h4>
+	<p>First step to make  slider is to create one or more slider groups to show. To do this you go to <b>admin panel > Slider Groups</b></p>
+		<p><img class="bordered align-center" src="images/add_new_slide.png"></p>
+		<p>From the very beginning give a name for this slider group. 
+			<p><b><b>Note:</b></b> Please keep in mind do not repeat the names for slider groups even if you delete one.</p> 
+			<p>Pressing "+" button opens new window where you can add and edit slides.</p> <p> So you can set a title, description, put a link link for downloaded image and choose color for title and description text (Advanced options). To save all changes for current slide you need to check box in top right corner. Pressing "Save All Changes" you save all changes for the whole Slider Group. </p>
+		<p><img class="bordered align-center" src="images/insert_media_slider.png"></p>
+        <p>Once all images for slider are added and slider group is full we are going to show it on our Home page. By the way, it is possible to have slider on any page you like. For this we are going to <b>Pages > Home</b>. In Page slider box you need to choose slider type and slider group to show up.</p>
+        <p><img class="bordered align-center" src="images/Home_slider_type.png"/></p>
+        <p>Save changes and refresh your Home page, new created slider will appear.</p>
+        <h6>Videocast:</h6>
+        <p>Flex Slider <a href="http://www.screenr.com/4xs7">http://www.screenr.com/4xs7</a></p>
+	
+
+	<h4>Blog</h4>
+	<p>In this section you can make all setting for your Blog page where your posts are shown up.</p>
+	<img class="bordered align-center" src="images/blog_settings.png"/>
+	 <p>You can disable author info, blog comments, ctegories, enable related posts, choose either to show full content or excerps, and also you can set symbol count for posts.</p>
+	 <p>Two alternative options are presented:</p>
+	 <ul>
+	 	<li>show/hide comment notes after comment form</li>
+	 	<li>cut blog images proportionally</li>
+	 </ul>
+<hr>
+<h4>Portfolio</h4>
+<p>Here you can choose:</p>
+<ul>
+	<li>portfolio slider width: small, middle, large, extra large.</li>
+	<li>enable/disable portfolio comments</li>
+	<li>enable/disable portfolio filter</li>
+</ul>
+<p>Also Archive page layout can be managed here - choose page columns layout and sidebar position</p>
+<img class="bordered align-center" src="images/portfolio_options.png"/>
+
+<hr>
+<h4>Gallery</h4>
+<p>This section helps you to choose slider width: small, middle, large, extra large.</p>
+<hr>
+
+<h4>Contact Forms</h4>
+<p><b>Blessing</b>  has an option to build special contact form to get messages from your visitors, users and customers.</p>
+<img class="bordered align-center" src="images/contact_form.png"/>
+<p>You do not need any additional plugins or application. This function is already built in. Moreover, you are allowed to add as many contact forms as you need and use them on few different pages.</p>
+<p>So, let's get it started!</p>
+<p>At first we go to <b>admin > Appearance > Theme Options > Contact Forms</b>. System asks you to add new form. For this enter a title for the form and press “+” Add.</p>
+<img class="bordered align-center" src="images/contact_form_way.png"/>
+<p>Once you press "+",  you get special contact form constructor </p>
+<img class="bordered align-center" src="images/Whole_CF.png"/>
+<p>Please be aware that you can add as many blocks as you need by pressing “+” button at the top, all blocks are dragable, in case you need to change blocks order simple drag and drop it. </p>
+<p>So, first block asks you to <b>choose “Submit” button color and put receiver's e-mail address.</b></p> 
+<p>All next blocks are added in depends on your personal wish and need: choose <b>field type</b> to each next block (Textinput, e-mail, subject, message body, select).</p> 
+<p>Each block gives you an option to make it required or not. So in case you need to enable * simple check <b>“Required field” box</b>.</p>
+
+<p>When all blocks are added and you basically finished your form building then we are going to show it up on front-end. We do it with the help of shortcode “Contact Form”. For that we go to admin > Pages and add new page called “Contact us”, for example. Then, take a look at green “+” shortcodes  icon and click on it. In front of you full shortcodes list appears. Choose “Contact form” among others.</p>
+<img class="bordered align-center" src="images/contact_form_shortcode.png"/>
+<p>In new pop-up window you get Contact forms list, from which  you need to choose one to display.</p>
+<img class="bordered align-center" src="images/select_CF.png"/>
+<p>Do not forget press “Publish” to save all changes.</p>
+<h6>Videocast:</h6>
+<p>Contact form <a href="http://www.screenr.com/2qW7">http://www.screenr.com/2qW7</a></p>
+
+<hr>
+
+<h4>Custom Sidebar</h4>
+<p>This theme allows to create custom sidebars in case default ones are not enough for you. Custom Sidebar creation need only few things:</p>
+<ol>
+	<li>add a title for this sidebar</li>
+<img class="bordered align-center" src="images/custom_sidebar.png"/>
+    <li>once you put sidebar name and press “Add”, you are requested to specify page/pages and category/categories where this exact sidebar will be displayed</li><br>
+<img class="bordered align-center" src="images/custom_sidebar_2.png"/>
+
+<li>after saving all changes we go to <b>Appearance > Widgets</b> to fill our just created sidebar with widgets.</li>
+<img class="bordered align-center" src="images/custom_sidebar_3.png"/>
+</ol>
+<h6>Videocast:</h6>
+<p>Custom Sidebar creation <a href="http://www.screenr.com/YJw7">http://www.screenr.com/YJw7</a></p>
+
+<hr>
+
+<h4>SEO Tools and SEO Groups</h4>
+<p>The theme includes built-in SEO tools and options. For more detailed information please go to  SEO options chapter</p>
+
+<hr>
+<h4>Events</h4>
+<p>This section helps to set Events. You can:</p>
+<ul>
+	<li>hide time zone</li>
+	<li>show events with am/pm time format</li>
+	<li>show selector of categories on events listing page</li>
+</ul>
+<h4>Footer</h4>
+	<p>Here you are able to change footer signature</p><br>
+	<img class="bordered align-center" src="images/footer_copyright.png"/>
+	
+	<p>Simply remove  existing text or put your own and save changes.</p>
+<hr>
+
+		</section><!--/ #theme-options-->
+
+
+<section id="mail-subscriber">
+	<h3>A) Mail Subscriber main function</h3>
+		
+			<p>Mail Subscriber is the application inside the theme, which greatly helps you to notify all and each of your subscribers about further important dates, events, news, meetings, actions, etc.</p>
+			<p>The main function of this application is to send out notification letters to people who got subscribed to be informed with your web-site latest news. To sign up with this service your visitors can by using of special widget “TheamMakers Newsletters Subscription”.</p>
+
+    	<hr>
+		
+		<h3>B) Mail Subscriber in Use</h3>
+		
+			<p>Starting work with Mail Subscriber go to your web-site admin WP panel, and take a look at the left bottom section. Here you see “Mail Subscriber”.</p>
+			<p><img class="bordered align-center" src="images/pic1.png"/></p>
+			<p>Let's highlight few tips how to work with Mail Subscriber.
+Before you start edit or create news letters, you should think - about which topics, subjects or themes you would like to inform your customers. Each user after registration receives log in and password to his/her e-mail address to manage their subscriptions: to change the topic of news, or even unsubscribe.</p>
+			<p>You can split up your news into several groups. So, your first step is to create several e-mail groups for news due to the subjects.</p>
+
+    	<hr>
+		
+		<h3>C) Email Groups creation</h3>
+		
+			<p>First, you go to Mail Composer. Here you are able to choose Email Layouts: one column or two columns.</p>
+			<p><img class="bordered align-center" src="images/pic2.png"/></p>
+			
+			<p>Than goes the list of all themes and topics you created.</p>
+			<p><img class="bordered align-center" src="images/pic3.png"/></p>
+		
+			<p>You can split up your news into several groups. So, your next step is to create several e-mail groups for news due to the subjects.</p>
+			<p>To add or create new topic you go to Subscription Groups and create here a new one by putting a title and pressing on “+”.</p>
+			<p><img class="bordered align-center" src="images/pic4.png"/></p>
+			<p>This new group is displayed in section Mail Composer.
+Moreover, you can see the certain amount of subscribers near the each of your topics created.</p>
+<p><img class="bordered align-center" src="images/pic3.png"/></p>
+
+    	<hr>
+		
+		<h3>D) Newsletter Text Editing</h3>
+		
+			<p>Also, here you can check how your newsletter looks like. (one column, image below),</p>
+			<p><img class="bordered align-center" src="images/pic5.png"/></p>
+			<p>two columns, image below</p>
+			<p><img class="bordered align-center" src="images/pic6.png"/></p>
+			<p>The example letter can be edited over here by a click on the zone you can change. So, clicking on the text you will see the text editor, which helps you to change font family, font size, to bold, italic or underline some words, to align text in way you need, and many others.</p>
+			<p><img class="bordered align-center" src="images/pic7.png"/></p>
+			<p>Pay attention that when you already made all changes and need to save
+them, you should press on the Floppy Icon at the up left corner of this editor.</p>
+<img class="bordered align-center" src="images/pic8.png"/>
+
+    	<hr>
+		
+		<h3>E) Manage your Mail Subscriber application</h3>
+		
+			<p>Settings section gives you an ability to edit this mail service. Here you can set:</p>
+			<ul>
+				<li><b>User subscribe page id</b> (choose the page id where all users will have an ability to subscribe/unsubscribe from their subscriptions.)<br><img class="bordered align-center" src="images/pic9.png"/>
+				<li><b>Letters per minute</b> (on Web Hosting Hub servers, there is a limit to the number of emails that can be sent per hour (50 messages per domain, per hour). This is for the protection of servers and to help prevent spam. If your mailing list is greater than 50 email addresses, the first 50 messages,for example, would be sent, but the remaining messages would not. You would also not be able to send emails from any email account on that domain for one hour. If you have a need to send more than 50 emails per hour, you can send request to hoster)<br><img class="bordered align-center" src="images/pic10.png"/>
+				<li><b>Set senders mail address</b> (Set an e-mail address from which mails would come to subscribers, by default it is the web-site admin)<br><img class="bordered align-center" src="images/pic11.png"/>
+				<li><b>Set mail header</b> (Set default text for your subscribers which will be shown at the very top, right above your e-mail body)<br><img class="bordered align-center" src="images/pic12.png"/>
+				<li><b>Set mail footer</b> (Set default text for your subscribers which will be shown at the very bottom, right below your e-mail body)<br><img class="bordered align-center" src="images/pic13.png"/>
+					
+				<li><b>New user registration text</b> (Set default text for your subscribers after subscription)<br>
+					<img class="bordered align-center" src="images/pic14.png"/>
+			</ul>
+			<p>Please make sure that after each editing you save all changes!</p>
+
+    	<hr>
+		
+		<h3>F) Newsletters Sending</h3>
+		
+			<p>When all changes are made and you are ready to send these newsletters to your subscribers, go back to Mail Composer, mark email groups (it's very important, cause if do not mark – letters will not be sent).</p>
+			<img class="bordered align-center" src="images/pic15.png"/>
+			<p>So, you make sure that e-mail groups needed are marked, next press “Send
+letter” button.<br>
+Than you will be asked to confirm the sending. When you confirmed it, the Progress Bar appears in front of you, where you can see the sending process.</p>
+
+    	<hr>
+		
+		<h3>G) History</h3>
+		
+			<p>Mail Subscriber application memorizes all letters sent to your subscribers.</p>
+			<img class="bordered align-center" src="images/pic16.png"/>
+			<p>It helps if you need to change some title, words, dates, not all information, but some of it. You can pick one letter from History and in the same way to
+edit it, make some changes, and send.</p>
+			<p>If for some reasons your subscriber gets some troubles with sign up, log in, or editing his/her subscription, you can do it on your own. Go to Users in WP admin panel, choose one user and do actions requested.</p>
+			<img class="bordered align-center" src="images/pic17.png"/>
+		
+
+
+
+	</section><!--/ #mail-subscriber-->
+
+		<section id="custom-pg-options">
+
+			<h3 class="tm-title">Custom Page options</h3>
+			
+	<p>Blessing theme provides with variety of options and abilities. We did our best to make it maximum customizable in order for you to be not limited by default settings. That is why you are able to choose and customize: <b>Page Background and Page Sidebar Position.</b> </p>
+	<p><b>Page Background</b></p>
+	<img class="bordered align-center" src="images/custom_page_options.png"/>
+	
+	<p>You are able to use color for background as well images. For that in Page Background  dropdawn choose an option</p>
+	<ul>
+		<li>if color is selected, then with the help of color picker choose the color</li>
+	<img class="bordered align-center" src="images/background_color_pickers.png"/>
+		
+    <li>if an image is selected – upload an image and choose repeat setting</li>
+    <img class="bordered align-center" src="images/image_page_background.png"/>
+<li><b>Page sidebar position</b></li>
+<img class="bordered align-center" src="images/sidebar_position.png"/>
+
+<p>For each page and post you are also allowed to control sidebar position. Simply check box needed and save all changes</p>
+
+</ul>
+		</section><!--/ #custom-pg-options-->
+		
+		<section id="seo-options">
+
+			<h3 class="tm-title">SEO options</h3>
+<p>This theme allows to control Meta fields for each post, page, portfolio and gallery. Just fill each field (Meta Title, Meta keywords and Meta description) with proper information.</p>
+<img class="bordered align-center" src="images/SEO_options.png"/>
+<p>Also you are able to manage SEO options in tab <b>Theme Options > SEO Tools > General</b>.</p>
+<img class="bordered align-center" src="images/SEO.png"/>
+<p>Here you can set Meta fields for your Home Page, Post listing, Portfolio listing and  Gallery listing as well.</p>
+<p>On tab <b>Theme Options > SEO Tools > SEO Groups </b> you can create few groups for the categories, however pay attention that one SEO group can be used only for one category.</p>
+			
+		</section><!--/ #seo-options-->
+
+		<section id="widgets">
+
+			<h3 class="tm-title">Widgets</h3>
+			
+<p>Blessing provides with 6 sidebars for widgets to be located. Once theme is installed and activated your sidebars contain default widgets. All widgets are dragable, so to replace default items with other ones you simply need to drag and drop a widget needed to any of sidebars.
+</p>
+<img class="bordered align-center" src="images/widgets.png"/>
+<p><b>Default sidebar on front-end</b></p>
+<img class="bordered align-center" src="images/default_sidebar.png"/>
+<p><b>Footer Sidebars 1,2,3,4 on front-end</b></p>
+<img class="bordered align-center" src="images/footer_sidebar.png"/>
+<p><b>Header sidebar on front-end</b></p><br>
+<p><img class="bordered align-center" src="images/header_sidebar.png"/></p>
+<p>We recommend to use for these sidebars not big and volume widgets. Such as Soonest Event, Social Links, Search.<p>
+
+<h6><b><b>There are next widgets available within this theme:</b></b></h6>
+
+<h6>ThemeMakers Contact Info</h6>
+<p>With the help of this widget you can add your personal or corporate information in order for users and customers easily reach you vie e-mail, phone, etc. You need to set a title for this widget, add e-mail address and phone number.</p>
+
+<h6>ThemeMakers Contact Form</h6>
+<p>With the help of this widget already created contact form can be shown. Just pick the name of the form needed in dropdowm menu.</p>
+
+<h6>ThemeMakers Facebook LikeBox</h6>
+<p>Shows  up people who liked your website, and also give an ability to press "Like" button.
+Insert title for this widget, you Facebook page ID, amount of  people to show, and specify box height.</p>
+
+<h6>ThemeMakers Flickr feed</h6>
+<p>This widget makes possible to display all images from your account http://www.flickr.com if you have some.In options just set title for this widget, your Flickr username and number of images you would like to be shown.</p>
+
+<h6>ThemeMakers Google Map</h6>
+<p>ThemeMakers Google Map allows you to add map from Google to one of sidebar. Set a title   for this widget, specify latitude and longitude, define zoom, select map type and chose either display marker or not.</p>
+
+
+<h6>ThemeMakers Latest Tweets</h6>
+<p>The widget can display your latest tweets from Twitter. For this you need to enter a  title, Twitter username and the number of tweets to display.</p>
+
+<h6>ThemeMakers Recent Posts</h6>
+<p>Makes available to show up recent posts in widgets. You need just specify posts categories, number of posts, enable or disable thumbnails, excerpt, See All Button, and specify excerpts symbols count.</p>
+
+<h6>ThemeMakers Recent Projects</h6>
+<p>All recent portfolio projects will be displayed in this widget. Add a title, items number to show,  enable or disable thumbnails and  excerpts, specify excerpt symbols count.</p>
+
+<h6>ThemeMakers Social Links</h6>
+<p>Shows up your accounts in Social networks, such as Facebook, Google, Twitter , LinkedIn, Vimeo and  RSS.</p>
+
+<h6>ThemeMakers Testimonials</h6>
+<p>All your web-site testimonials selected are displayed in this widget. Just make all appropriate settings.</p>
+
+<h6>Events Calendar</h6>
+<p>Allows you to show calendar with all events added.</p>
+
+<h6>Soonest Event</h6>
+<p>This widget can be placed to header sidebar to show the soonest event from your calendar, as on demo theme version.</p>
+
+<h6>NewsLetter Subscription</h6>
+<p>The widget where the form of subscription is located. Please be aware that if you are an admin then to see its appropriate look you need to log out.</p>
+
+<h6>Upcoming Events</h6>
+<p>Displays all events which are coming up.</p>
+<h6>Videocast:</h6>
+
+<p> Widgets in use <a href="http://www.screenr.com/x57H">http://www.screenr.com/x57H</a> 
+			
+		</section><!--/ #widgets-->
+
+		<section id="javascript">
+
+	<h3 class="tm-title">Javascript Plugins/Scripts</h3>			
+
+<p>This theme imports various Javascript files.</p>
+<ol>
+	<li>jQuery</li>
+                    <li>Flex Slider</li>
+					<li>Revolution Slider</li>
+					<li>Sudo Slider</li>
+					<li>Theme's Custom JS</li>
+					<li>Fancybox</li>
+					<li>jQuery UI</li>
+				</ol>
+
+
+				  
+				<ol>
+					<li>jQuery is a Javascript library that greatly reduces the amount of code that you must write.</li>
+                    <li>Flex Slider. More Info <a href="http://tympanus.net/codrops/2011/10/10/circle-navigation-effect-with-css3/">here</a></li>
+					<li>Revolution Slider. More Info <a href="http://codecanyon.net/item/slider-revolution-responsive-jquery-plugin/2580848">here</a>. Authors documentation also included.</li>
+					<li>SudoSlider. More Info <a href="http://webbies.dk/SudoSlider/">here</a></li>
+					<li>The theme's custom JS file defines various colour transitions, opacity transitions and dropdown menu settings.</li>
+					<li>jQuery Fancybox plugin. It’s a full blown media lightbox. More Info <a href="http://fancybox.net/">here</a></li>
+					<li>jQuery UI. More Info <a href="http://docs.jquery.com/UI">here</a></li>
+				</ol>
+		
+		<hr>
+		
+		</section><!--/ #javascript-->
+
+		<section id="files">
+
+			<h3 class="tm-title">PSD Files</h3>
+			<p>We've included three main psds with this theme:</p>
+				
+					<ol>
+						<li>01_Home</li>
+						<li>02_Blog</li>
+					    <li>03_Blog_single</li>
+					</ol>
+				
+				<p>All the  PSDs contain styling for all necessary elements including layers and slices.</p>
+		
+		        <hr>
+
+		</section><!--/ #files-->
+
+		<section id="sources">
+
+			<h3 class="tm-title">Sources and Credits</h3>
+			<p>I've used the following sources, icons or other files as listed.
+				
+				<ul>
+                    <li><a href="http://codecanyon.net/item/slider-revolution-responsive-jquery-plugin/2580848">Revolution - The jQuery Slider Plugin</a></li>
+				</ul>
+
+				<p>Purchased images:</p>
+
+				<ul>
+					<li>
+						<a href="http://photodune.net/item/religious-moment/866918">Religious moment</a></li>
+					<li>
+						<a href="http://photodune.net/item/bible/482191">Bible</a></li>
+					<li>
+						<a href="http://photodune.net/item/nature/1674501">Nature</a></li>
+					<li>
+						<a href="http://photodune.net/item/hope-and-freedom/689404">Hope and freedom</a></li>
+					<li>
+						<a href="http://photodune.net/item/happy-man-enjoying-freedoom-against-sky/659605">Happy man enjoying freedom against sky</a></li>
+					<li>
+						<a href="http://photodune.net/item/child-bubble/1805869">Child buble</a></li>
+					<li>
+						<a href="http://photodune.net/item/city-skyline/1011301">City skyline</a></li>
+					<li>
+						<a href="http://photodune.net/item/sunset/524369">Sunset</a></li>
+					<li>
+						<a href="http://photodune.net/item/nature/930538">Nature</a></li>
+					<li>
+						<a href="http://photodune.net/item/freedom/1610494">Freedom</a></li>
+				</ul>
+		
+		<hr>	
+			
+		</section><!--/ #sources-->
+
+	</div><!--/ #documenter-content-->
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+<script src="js/jquery.easing.1.3.min.js"></script>
+<script src="js/jquery.scrollto.min.js"></script>
+<script src="js/setup.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/fancybox/jquery.fancybox.pack.js"></script>
+<script src="js/shCore.js"></script>
+<script src="js/shBrushCss.js"></script>
+<script src="js/shBrushXml.js"></script>
+<script src="js/shBrushJScript.js"></script>
+<script>SyntaxHighlighter.defaults['toolbar'] = false;SyntaxHighlighter.all();</script>
+<script type="text/javascript">
+		// Call template init (optional, but faster if called manually)
+		jQuery(function() {
+			$.template.init();	
+		});
+</script>
+<script src="js/custom.js"></script>
+</body>
+</html>

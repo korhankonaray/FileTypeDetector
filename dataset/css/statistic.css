@@ -1,0 +1,193 @@
+/*
+ * Dandelion Admin v2.0 - Statistical Widget Stylesheet
+ *
+ * This file is part of Dandelion Admin, an Admin template build for sale at ThemeForest.
+ * For questions, suggestions or support request, please mail me at maimairel@yahoo.com
+ *
+ * Development Started:
+ * March 25, 2012
+ * Last Update:
+ * December 07, 2012
+ *
+ */
+
+/* Circular Stats
+================================================== */
+
+.circular-stat {
+    position: relative;
+}
+
+.circular-stat .digit-label, 
+.circular-stat .text-label {
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    width: 75%;
+    left: 12.5%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.circular-stat .digit-label {
+    top: 12.5%;
+    width: 75%;
+    padding: 20px 10px;
+    font-size: 15px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.circular-stat .text-label {
+    top: 50%;
+    left: 21.875%;
+    width: 56.25%;
+}
+
+/* Statistic Widget
+================================================== */
+
+.da-stats-container {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.da-stats-container li {
+    display: inline-block;
+    margin: 0 5px 5px 5px;
+    position: relative;
+}
+
+/* Summary Stats
+================================================== */
+
+.da-summary-stat, 
+.da-summary-stat li {
+    margin: 0;
+    list-style: none;
+}
+
+.da-summary-stat li:after {
+    clear: both;
+    content: ' ';
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.da-summary-stat li {
+    display: block;
+    clear: both;
+}
+
+.da-summary-stat > li > a, 
+.da-summary-stat > li > span {
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-transition: all 100ms ease-out;
+    -moz-transition: all 100ms ease-out;
+    transition: all 100ms ease-out;
+    *zoom: 1;
+}
+
+.da-summary-stat > li > a:before, 
+.da-summary-stat > li > span:before,
+.da-summary-stat > li > a:after, 
+.da-summary-stat > li > span:after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+
+.da-summary-stat > li > a:after, 
+.da-summary-stat > li > span:after {
+    clear: both;
+}
+
+.da-summary-stat > li:hover > a, 
+.da-summary-stat > li:hover > span {
+    background-color: #f0f0f0;
+}
+
+.da-summary-stat li .da-summary-icon {
+    width: 48px;
+    height: 48px;
+    display: block;
+    float: left;
+    position: relative;
+    text-align: center;
+    background-color: #656565;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.da-summary-stat li .da-summary-icon [class^="icon-"], 
+.da-summary-stat li .da-summary-icon [class*=" icon-"] {
+    font-size: 21px;
+    color: #fff;
+    line-height: 48px;
+}
+
+.da-summary-stat li .da-summary-text {
+    margin-left: 56px;
+    padding: 4px 0;
+    margin-top: 1px;
+    display: block;
+    color: #656565;
+}
+
+.da-summary-stat li .da-summary-text .value {
+    color: #444444;
+    font-size: 21px;
+    font-weight: bold;
+    display: block;
+    display: inline-block;
+}
+
+.da-summary-stat li .da-summary-text .text {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.da-summary-stat li .da-summary-text .value.up {
+    background: url(../images/up.png) no-repeat right center;
+    padding-right: 24px;
+}
+
+.da-summary-stat li .da-summary-text .value.down {
+    background: url(../images/down.png) no-repeat right center;
+    padding-right: 24px;
+}
+
+
+/* Flot Tooltips
+================================================== */
+
+#flotTip {
+    background-color: #000;
+    opacity: 0.75;
+    color: #fff;
+    -moz-opacity: 0.75;
+    filter: alpha(opacity=75);
+    padding: 4px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}

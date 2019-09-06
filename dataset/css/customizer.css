@@ -1,0 +1,176 @@
+/*
+ * Dandelion Admin v2.0 - Customizer Stylesheet
+ *
+ * This file is part of Dandelion Admin, an Admin template build for sale at ThemeForest.
+ * For questions, suggestions or support request, please mail me at maimairel@yahoo.com
+ *
+ * Development Started:
+ * March 25, 2012
+ * Last Update:
+ * December 07, 2012
+ *
+ */
+
+/* Customizer
+================================================== */
+
+#da-customizer {
+    z-index: 300;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    left: 50%;
+    margin-left: -91px;
+    -webkit-transition: opacity 150ms linear;
+    -moz-transition: opacity 150ms linear;
+    transition: opacity 150ms linear;
+}
+
+#da-customizer.active {
+    opacity: 1;
+    filter: none;
+}
+
+/* Customizer Content
+================================================== */
+
+#da-customizer-content {
+    background: #ffffff;
+    padding: 8px 16px;
+    width: 150px;
+    padding-top: 0;
+    border-color: #999;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-style: solid;
+    border-width: 1px;
+    border-top-width: 0;
+    -webkit-border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+    border-radius: 0 0 4px 4px;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#da-customizer-content ul, 
+#da-customizer-content ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#da-customizer-content ul {
+    margin-bottom: 5px;
+}
+
+#da-customizer-content ul li {
+    padding: 4px;
+}
+
+#da-customizer-tooltip {
+    display: inline-block;
+    position: relative;
+}
+
+#da-customizer-content .da-customizer-title {
+    display: block;
+    margin-bottom: 4px;
+}
+
+#da-customizer-content ul li select {
+    background-color: #fcfcfc;
+    border: 1px solid #d1d1d1;
+    padding: 4px;
+    margin: 0;
+    outline: none;
+    width: 100%;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#da-customizer-layouts {
+    list-style: none;
+    margin: 0;
+}
+
+#da-customizer-layouts li {
+    float: left;
+    padding: 0;
+    padding-right: 8px;
+}
+
+#da-customizer-layouts li label, 
+#da-customizer-layouts li input {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    margin-left: 2px;
+    vertical-align: middle;
+}
+
+#da-customizer-button {
+    padding-bottom: 5px;
+}
+
+#da-customizer-button button {
+    width: 100%;
+}
+
+#da-customizer-dialog {
+    padding: 0;
+}
+
+#da-customizer-dialog textarea {
+    background-color: #fcfcfc;
+    border: none;
+    padding: 6px;
+    outline: none;
+    width: 100%;
+    margin: 0;
+    color: #444;
+    font-size: 1em;
+    height: 200px;
+    resize: none;
+    font-family: "Courier New", Courier, monospace;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0 1px 0 #fff, inset 0 1px 1px rgba(0, 0, 0, 0.04);
+    -moz-box-shadow: 0 1px 0 #fff, inset 0 1px 1px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 1px 0 #fff, inset 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+/* Customizer Pulldown
+================================================== */
+
+#da-customizer-pulldown {
+    display: block;
+    left: 50%;
+    position: relative;
+    margin-left: -20px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-top: -1px;
+    font-size: 21px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-top-width: 0;
+    -webkit-border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+    border-radius: 0 0 4px 4px;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}

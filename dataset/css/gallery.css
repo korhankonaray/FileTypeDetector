@@ -1,0 +1,223 @@
+/*
+ * Dandelion Admin v2.0 - Gallery Stylesheet
+ *
+ * This file is part of Dandelion Admin, an Admin template build for sale at ThemeForest.
+ * For questions, suggestions or support request, please mail me at maimairel@yahoo.com
+ *
+ * Development Started:
+ * March 25, 2012
+ * Last Update:
+ * December 07, 2012
+ *
+ */
+
+.da-gallery ul, 
+.da-gallery ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.da-gallery ul li {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    position: relative;
+    margin: 15px;
+    width: 150px;
+    height: 150px;
+}
+
+.da-gallery ul li a {
+    display: block;
+    position: relative;
+    z-index: 15;
+}
+
+.da-gallery ul li a img {
+    padding: 6px;
+    max-width: 136px;
+    max-height: 136px;
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+    border: 1px solid rgba(255, 255, 255, 0);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.da-gallery ul li a:after, 
+.da-gallery ul li a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 6px solid #fafafa;
+    background-color: #808080;
+    left: 0;
+    top: 0;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.da-gallery ul li a:after {
+    z-index: -10;
+    -webkit-transform: rotate(8deg);
+    -moz-transform: rotate(8deg);
+    transform: rotate(8deg);
+}
+
+.da-gallery ul li a:before {
+    z-index: -5;
+    -webkit-transform: rotate(4deg);
+    -moz-transform: rotate(4deg);
+    transform: rotate(4deg);
+}
+
+.da-gallery ul li:nth-child(even) a:after {
+    -webkit-transform: rotate(-6deg);
+    -moz-transform: rotate(-6deg);
+    transform: rotate(-6deg);
+}
+
+.da-gallery ul li:nth-child(even) a:before {
+    -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+}
+
+.da-gallery ul li:nth-child(3n) a:after {
+    -webkit-transform: rotate(6deg);
+    -moz-transform: rotate(6deg);
+    transform: rotate(6deg);
+}
+
+.da-gallery ul li:nth-child(3n) a:before {
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    transform: rotate(3deg);
+}
+
+.da-gallery ul li:nth-child(5n) a:after {
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+}
+
+.da-gallery ul li:nth-child(5n) a:before {
+    -webkit-transform: rotate(-4deg);
+    -moz-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+}
+
+.da-gallery ul li:nth-child(8n) a:after {
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+}
+
+.da-gallery ul li:nth-child(8n) a:before {
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}
+
+.da-gallery .da-gallery-hover ul li, 
+.da-gallery .da-gallery-hover ul li a, 
+.da-gallery .da-gallery-hover ul li a:after, 
+.da-gallery .da-gallery-hover ul li a:before {
+    width: auto;
+    height: auto;
+    border: none;
+    margin: auto;
+    -webkit-transform: none;
+    -moz-transform: none;
+    transform: none;
+}
+
+.da-gallery .da-gallery-hover {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 0; top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.da-gallery .da-gallery-hover ul {
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    position: relative;
+    margin-top: -20px;
+}
+
+.da-gallery .da-gallery-hover ul li {
+    padding: 0;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: middle;
+    margin: 0 1px;
+}
+
+.da-gallery .da-gallery-hover ul li a {
+    display: block;
+    text-decoration: none;
+    width: 40px; height: 40px;
+    margin: 0; padding: 0;
+    opacity: 0;
+    color: #fff;
+    position: relative;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+    border: 1px solid #111;
+
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    background: #222;
+}
+
+.da-gallery .da-gallery-hover [class^="icon-"], 
+.da-gallery .da-gallery-hover [class*=" icon-"] {
+    font-size: 16px;
+    line-height: 40px;
+}
+
+.da-gallery li:hover .da-gallery-hover ul li a {
+    opacity: 1;
+    top: auto !important;
+    bottom: auto !important;
+}
+
+.da-gallery .da-gallery-hover .da-gallery-update a {
+    top: -25px;
+}
+
+.da-gallery .da-gallery-hover .da-gallery-delete a {
+    bottom: -25px;
+}
+
+.da-gallery .da-gallery-hover ul li a:hover {
+    background-color: #111;
+}
