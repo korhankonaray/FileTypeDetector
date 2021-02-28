@@ -1,3 +1,3 @@
 # FileTypeDetector
 
-Assets related to article https://ieeexplore.ieee.org/document/8946393
+This repo contains assets related to article https://ieeexplore.ieee.org/document/8946393
